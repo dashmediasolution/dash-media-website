@@ -55,7 +55,7 @@ export function Testimonials() {
 
                     {/* Left Column: Heading and Paragraph */}
                     <div className="text-center md:text-left">
-                        <h2 className="text-3xl md:text-4xl font-regular font-heading text-primary tracking-tight px-5 sm:px-0">
+                        <h2 className="text-4xl md:text-6xl font-regular font-heading text-primary tracking-tight px-5 sm:px-0">
                             What Our <span
                                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                                 style={{ backgroundSize: "300% 100%" }}
