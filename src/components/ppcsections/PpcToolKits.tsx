@@ -39,7 +39,7 @@ export function PpcToolkits() {
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                 style={{ backgroundSize: "300% 100%" }}
               >
-                Pay Per Click's
+                Pay Per Click
               </span>
               {" "}
               Toolkit

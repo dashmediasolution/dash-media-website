@@ -20,7 +20,7 @@ export default function ContactPage() {
                 Get in touch
             </h1>
             <p className="text-md lg:text-lg text-muted-foreground max-w-2xl leading-relaxed">
-                We help brands and businesses scale through digital solutions. Let's talk about your project.
+                We help brands and businesses scale through digital solutions. Let&apos;s talk about your project.
             </p>
         </div>
       </div>
@@ -70,7 +70,7 @@ export default function ContactPage() {
                             <h2 className="text-2xl font-bold">Message Sent Successfully</h2>
                         </div>
                         <p className="text-green-800/80 dark:text-green-300 text-lg">
-                            Thanks for reaching out! We'll be in touch with you within 24 hours.
+                            Thanks for reaching out! We&apos;ll be in touch with you within 24 hours.
                         </p>
                         <Button onClick={() => setIsSuccess(false)} variant="outline" className="mt-4 bg-white">
                             Send Another Message

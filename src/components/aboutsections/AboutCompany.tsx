@@ -19,7 +19,7 @@ export function AboutCompany() {
               </span> 
             </h2>
             <p className="text-md sm:text-lg text-muted-foreground leading-relaxed">
-              Dash Media Solutions was founded with a simple mission: to deliver transparent, data-driven marketing solutions that help businesses thrive in the digital age. We are passionate about crafting strategies that not only meet but exceed our clients' goals, fostering growth and building lasting partnerships.
+              Dash Media Solutions was founded with a simple mission: to deliver transparent, data-driven marketing solutions that help businesses thrive in the digital age. We are passionate about crafting strategies that not only meet but exceed our clients&apos; goals, fostering growth and building lasting partnerships.
             </p>
           </div>
 

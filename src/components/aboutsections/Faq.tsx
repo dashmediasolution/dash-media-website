@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   CustomAccordion,
@@ -44,7 +44,7 @@ export function Faq() {
                 Questions ?
               </span>
               <br />
-              We’ve Got 
+              We&apos;ve Got
                {" "}
               <span
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
@@ -56,7 +56,7 @@ export function Faq() {
           </div>
           <div className="text-center md:text-left">
             <p className="text-md text-muted-foreground">
-              We're a diverse group of designers, engineers, and thinkers united by one mission: building technology that makes life simpler, smarter, and more human.
+              We&apos;re a diverse group of designers, engineers, and thinkers united by one mission: building technology that makes life simpler, smarter, and more human.
             </p>
           </div>
         </div>

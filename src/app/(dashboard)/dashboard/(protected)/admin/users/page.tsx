@@ -52,6 +52,7 @@ export default function TeamManagementPage() {
         fetchUsers();
     }, []);
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
     const onSubmit = async (data: any) => {
         setIsLoading(true);
         try {

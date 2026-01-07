@@ -18,7 +18,7 @@ const companyLinks = {
 const servicesLinks = {
   title: "Services",
   items: [
-    { title: "SEO Services", href: "/services/seo" },
+    { title: "Search Engine Optimization (SEO)", href: "/services/seo" },
     { title: "Video Marketing", href: "/services/video-marketing" },
     { title: "Content Marketing", href: "/services/content-marketing" },
     { title: "Social Media", href: "/services/social-media" },
@@ -54,7 +54,7 @@ const socialLinks = {
 export function Footer() {
   return (
     <footer className="py-16 border-t bg-gray-50 dark:bg-zinc-950/50">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-6 lg:px-0">
         
         {/* Main Grid: Updated to 4 Columns for Company, Services, Links, Social */}
         <div className="grid gap-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">

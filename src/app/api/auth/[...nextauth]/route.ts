@@ -56,16 +56,18 @@ export const authOptions: NextAuthOptions = {
   async jwt({ token, user }) {
     if (user) {
       token.id = user.id;
-      console.log("✅ 2. JWT Callback - Setting Token Role:", (user as any).role);
-      token.role = (user as any).role; // 👈 CRITICAL: Grab role from DB user
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      token.role = (user as any).role; 
     }
     return token;
   },
   // 2. When the frontend asks for the session, pass the role from the token
   async session({ session, token }) {
     if (session.user) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (session.user as any).id = token.id;
-      (session.user as any).role = token.role; // 👈 CRITICAL: Pass role to Client
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (session.user as any).role = token.role; 
     }
     return session;
   },

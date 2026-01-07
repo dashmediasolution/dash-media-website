@@ -69,7 +69,7 @@ export function Testimonials() {
                             </span>
                         </h2>
                         <p className="text-md sm:text-lg text-muted-foreground leading-relaxed mt-6 p-5 md:p-0">
-                            Just don't take our word for it hear what our satisfied clients have to say about their experience partnering with us.
+                            Just don&apos;t take our word for it hear what our satisfied clients have to say about their experience partnering with us.
                         </p>
                     </div>
 

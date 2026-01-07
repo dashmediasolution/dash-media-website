@@ -313,8 +313,11 @@ const Stepper = React.forwardRef<HTMLDivElement, StepperProps>(
    },
 )
 
+// ✅ FIX 1: Add Display Name for Stepper
+Stepper.displayName = "Stepper"
+
 function VerticalContent({ children }: { children: React.ReactNode }) {
-   const { activeStep } = useStepper()
+   const { activeStep, steps } = useStepper() // destructure steps to access images if needed
 
    const childArr = React.Children.toArray(children)
    const stepCount = childArr.length
@@ -455,6 +458,9 @@ const Step = React.forwardRef<HTMLLIElement, StepProps>(
       return renderStep()
    },
 )
+
+// ✅ FIX 2: Add Display Name for Step
+Step.displayName = "Step"
 
 // <---------- VERTICAL STEP ---------->
 
@@ -636,6 +642,9 @@ const VerticalStep = React.forwardRef<HTMLDivElement, VerticalStepProps>(
    },
 )
 
+// ✅ FIX 3: Add Display Name for VerticalStep
+VerticalStep.displayName = "VerticalStep"
+
 // <---------- HORIZONTAL STEP ---------->
 
 const HorizontalStep = React.forwardRef<HTMLDivElement, StepSharedProps>(
@@ -740,6 +749,9 @@ const HorizontalStep = React.forwardRef<HTMLDivElement, StepSharedProps>(
       )
    },
 )
+
+// ✅ FIX 4: Add Display Name for HorizontalStep
+HorizontalStep.displayName = "HorizontalStep"
 
 // <---------- STEP BUTTON CONTAINER ---------->
 
@@ -923,6 +935,9 @@ const StepIcon = React.forwardRef<HTMLDivElement, StepIconProps>(
       ])
    },
 )
+
+// ✅ FIX 5: Add Display Name for StepIcon
+StepIcon.displayName = "StepIcon"
 
 // <---------- STEP LABEL ---------->
 

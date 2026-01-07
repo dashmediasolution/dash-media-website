@@ -62,7 +62,7 @@ export function Faq() {
               </span>
             </h2>
             <p className="mt-4 text-md sm:text-lg p-5 md:p-0 text-muted-foreground leading-relaxed">
-              Can't find the answer you're looking for? Feel free to reach out to our team for more information.
+              Can&apos;t find the answer you&apos;re looking for? Feel free to reach out to our team for more information.
             </p>
           </div>
 

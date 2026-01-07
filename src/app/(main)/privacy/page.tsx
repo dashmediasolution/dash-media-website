@@ -25,7 +25,7 @@ export default function PrivacyPage() {
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-muted-foreground text-md lg:text-lg">
                         <li><strong>Personal Data:</strong> While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you (e.g., Email address, First name and Last name, Phone number).</li>
-                        <li><strong>Usage Data:</strong> We may also collect information on how the Service is accessed and used (e.g., your computer's Internet Protocol address, browser type, browser version).</li>
+                        <li><strong>Usage Data:</strong> We may also collect information on how the Service is accessed and used (e.g., your computer&apos;s Internet Protocol address, browser type, browser version).</li>
                     </ul>
                 </section>
 
