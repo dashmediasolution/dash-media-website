@@ -23,7 +23,7 @@ export async function POST(request: Request) {
 
     const response = await new Promise((resolve, reject) => {
       const uploadStream = cloudinary.uploader.upload_stream(
-        { folder: 'dash-media-blogs' },
+        { folder: 'dash-media-blogs', format: 'webp', quality: 'auto' },
         (error, result) => {
           if (error) return reject(error);
           resolve(result);

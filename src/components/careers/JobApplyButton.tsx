@@ -18,7 +18,7 @@ const formSchema = z.object({
   email: z.string().email(),
   mobileNumber: z.string().min(10),
   resumeUrl: z.string().min(1, "Resume required"),
-  coverLetter: z.string().min(10), // Optional check happens in UI logic or schema refinement if needed
+  coverLetter: z.string().min(10).or(z.literal("")), // Optional check happens in UI logic or schema refinement if needed
 });
 
 // --- 2. The Form Component (Logic Extracted) ---
