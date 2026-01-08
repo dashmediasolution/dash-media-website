@@ -33,7 +33,7 @@
     "@tabler/icons-react": "^3.35.0",
     "@tiptap/extension-highlight": "^3.6.6",
     "@tiptap/extension-horizontal-rule": "^3.6.6",
-    "@tiptap/extension-image": "^3.6.6",
+    "@tiptap/extension-image": "^3.15.3",
     "@tiptap/extension-link": "^3.6.6",
     "@tiptap/extension-list": "^3.6.6",
     "@tiptap/extension-subscript": "^3.6.6",
