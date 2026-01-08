@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils"
 import * as React from "react"
-import type { HTMLAttributes } from "react"; // 👈 Added missing import
+import type { HTMLAttributes } from "react"; 
 
 interface GradientTextProps extends HTMLAttributes<HTMLDivElement> {
   colors?: string[]
@@ -27,6 +27,7 @@ export function GradientText({
         "relative mx-auto flex max-w-fit flex-row items-center justify-center",
         "rounded-[1.25rem] font-medium backdrop-blur transition-shadow duration-500",
         "overflow-hidden cursor-pointer",
+        "will-change-[background-position]",
         className
       )}
       {...props}

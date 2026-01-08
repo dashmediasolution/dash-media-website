@@ -4,7 +4,7 @@ import * as React from 'react'
 import { cva } from 'class-variance-authority'
 import type { LucideIcon } from 'lucide-react'
 import { CheckIcon, Loader2, X } from 'lucide-react'
-   
+
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import {
@@ -33,14 +33,14 @@ const StepperContext = React.createContext<
       setStep: (step: number) => void
    }
 >({
-            steps: [],
-            activeStep: 0,
-            initialStep: 0,
-            nextStep: () => {},
-            prevStep: () => {},
-            resetSteps: () => {},
-            setStep: () => {},
-         })
+   steps: [],
+   activeStep: 0,
+   initialStep: 0,
+   nextStep: () => { },
+   prevStep: () => { },
+   resetSteps: () => { },
+   setStep: () => { },
+})
 
 interface StepperContextProviderProps {
    value: Omit<StepperContextValue, 'activeStep'>
@@ -154,7 +154,7 @@ interface StepItem {
    description?: string
    icon?: IconType
    optional?: boolean
-   contentImage?:string
+   contentImage?: string
 }
 
 interface StepOptions {
@@ -251,7 +251,7 @@ const Stepper = React.forwardRef<HTMLDivElement, StepperProps>(
       const stepCount = items.length
 
       const isMobile = useMediaQuery(
-      `(max-width: ${mobileBreakpoint || '768px'})`,
+         `(max-width: ${mobileBreakpoint || '768px'})`,
       )
 
       const clickable = !!onClickStep
@@ -295,8 +295,8 @@ const Stepper = React.forwardRef<HTMLDivElement, StepperProps>(
                style={
                   {
                      '--step-icon-size':
-                variables?.['--step-icon-size']
-                || `${VARIABLE_SIZES[size || 'md']}`,
+                        variables?.['--step-icon-size']
+                        || `${VARIABLE_SIZES[size || 'md']}`,
                      '--step-gap': variables?.['--step-gap'] || '8px',
                   } as React.CSSProperties
                }
@@ -326,9 +326,9 @@ function VerticalContent({ children }: { children: React.ReactNode }) {
       <>
          {React.Children.map(children, (child, i) => {
             const isCompletedStep
-          = (React.isValidElement(child)
-          && (child.props as any).isCompletedStep)
-          ?? i < activeStep
+               = (React.isValidElement(child)
+                  && (child.props as any).isCompletedStep)
+               ?? i < activeStep
             const isLastStep = i === stepCount - 1
             const isCurrentStep = i === activeStep
 
@@ -399,7 +399,7 @@ interface StepInternalConfig {
    isLastStep?: boolean
 }
 
-interface FullStepProps extends StepProps, StepInternalConfig {}
+interface FullStepProps extends StepProps, StepInternalConfig { }
 
 const Step = React.forwardRef<HTMLLIElement, StepProps>(
    (props, ref: React.Ref<any>) => {
@@ -534,7 +534,7 @@ const VerticalStep = React.forwardRef<HTMLDivElement, VerticalStepProps>(
       const isLastStep = index === steps.length - 1
 
       const active
-      = variant === 'line' ? isCompletedStep || isCurrentStep : isCompletedStep
+         = variant === 'line' ? isCompletedStep || isCurrentStep : isCompletedStep
       const checkIcon = checkIconProp || checkIconContext
       const errorIcon = errorIconProp || errorIconContext
 
@@ -544,21 +544,14 @@ const VerticalStep = React.forwardRef<HTMLDivElement, VerticalStepProps>(
                <Collapsible open={isCurrentStep}>
                   <CollapsibleContent
                      ref={(node) => {
-                        if (
-                        // If the step is the first step and the previous step
-                        // was the last step or if the step is not the first step
-                        // This prevents initial scrolling when the stepper
-                        // is located anywhere other than the top of the view.
-                           scrollTracking
-                           && ((index === 0
-                           && previousActiveStep
-                           && previousActiveStep === steps.length)
-                           || (index && index > 0))
-                        ) {
-                           node?.scrollIntoView({
-                              behavior: 'smooth',
-                              block: 'center',
-                           })
+                        if (scrollTracking && ((index === 0 && previousActiveStep && previousActiveStep === steps.length) || (index && index > 0))) {
+                           // ✅ FIX: Wait for the next frame to avoid forced reflow
+                           requestAnimationFrame(() => {
+                              node?.scrollIntoView({
+                                 behavior: 'smooth',
+                                 block: 'center',
+                              });
+                           });
                         }
                      }}
                      className="data-[state=open]:animate-collapsible-down data-[state=closed]:animate-collapsible-up overflow-hidden"
@@ -682,7 +675,7 @@ const HorizontalStep = React.forwardRef<HTMLDivElement, StepSharedProps>(
       const opacity = hasVisited ? 1 : 0.8
 
       const active
-      = variant === 'line' ? isCompletedStep || isCurrentStep : isCompletedStep
+         = variant === 'line' ? isCompletedStep || isCurrentStep : isCompletedStep
 
       const checkIcon = checkIconProp || checkIconContext
       const errorIcon = errorIconProp || errorIconContext
@@ -985,46 +978,46 @@ function StepLabel({
 
    return shouldRender
       ? (
-            <div
-               aria-current={isCurrentStep ? 'step' : undefined}
-               className={cn(
-                  'stepper__step-label-container',
-                  'flex flex-col',
-                  variant !== 'line' ? 'ms-2' : orientation === 'horizontal' && 'my-2',
-                  variant === 'circle-alt' && 'text-center',
-                  variant === 'circle-alt' && orientation === 'horizontal' && 'ms-0',
-                  variant === 'circle-alt' && orientation === 'vertical' && 'text-start',
-                  styles?.['step-label-container'],
-               )}
-               style={{
-                  opacity,
-               }}
-            >
-               {!!label && (
-                  <span
-                     className={cn(
-                        'stepper__step-label',
-                        labelVariants({ size }),
-                        styles?.['step-label'],
-                     )}
-                  >
-                     {label}
-                  </span>
-               )}
-               {!!description && (
-                  <span
-                     className={cn(
-                        'stepper__step-description',
-                        'text-muted-foreground',
-                        descriptionVariants({ size }),
-                        styles?.['step-description'],
-                     )}
-                  >
-                     {description}
-                  </span>
-               )}
-            </div>
-         )
+         <div
+            aria-current={isCurrentStep ? 'step' : undefined}
+            className={cn(
+               'stepper__step-label-container',
+               'flex flex-col',
+               variant !== 'line' ? 'ms-2' : orientation === 'horizontal' && 'my-2',
+               variant === 'circle-alt' && 'text-center',
+               variant === 'circle-alt' && orientation === 'horizontal' && 'ms-0',
+               variant === 'circle-alt' && orientation === 'vertical' && 'text-start',
+               styles?.['step-label-container'],
+            )}
+            style={{
+               opacity,
+            }}
+         >
+            {!!label && (
+               <span
+                  className={cn(
+                     'stepper__step-label',
+                     labelVariants({ size }),
+                     styles?.['step-label'],
+                  )}
+               >
+                  {label}
+               </span>
+            )}
+            {!!description && (
+               <span
+                  className={cn(
+                     'stepper__step-description',
+                     'text-muted-foreground',
+                     descriptionVariants({ size }),
+                     styles?.['step-description'],
+                  )}
+               >
+                  {description}
+               </span>
+            )}
+         </div>
+      )
       : null
 }
 

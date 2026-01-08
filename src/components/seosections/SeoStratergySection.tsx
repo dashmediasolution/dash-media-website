@@ -155,6 +155,7 @@ export function SeoStrategySection() {
                     alt={step.title}
                     width={500}
                     height={760}
+                    priority
                     className=" rounded-2xl object-cover ring-1 ring-border hover:scale-105 transition-all duration-300"
                   />
                   {/* ✅ 2. Replaced the quote/figcaption with strategy details */}

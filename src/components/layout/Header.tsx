@@ -118,8 +118,9 @@ export function Header() {
                             src="/DashMediaLogo.png"
                             alt="Dash Media Solutions Logo"
                             width={200}
-                            height={32}
-                            className='item-start'
+                            height={30}
+                            priority
+                            className="h-15 w-auto object-contain"
                         />
                     </Link>
                 </div>

@@ -27,9 +27,9 @@ export function NewHero() {
 
   return (
     <section className={cn("flex flex-col items-center pt-45 sm:pt-35 pb-10 bg-gradient-to-b from-blue-50 to-gray-50 overflow-hidden")}>
-      <div className="container mx-auto px-4 md:px-6"> 
+      <div className="container mx-auto px-4 md:px-6">
         {/* ✅ FIX 1: Added px-4 to prevent edge-to-edge text touching screen sides */}
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-10 lg:gap-6 items-center">
 
           {/* Left Column: Heading, Description, Button */}
@@ -75,30 +75,36 @@ export function NewHero() {
             </div>
           </div>
 
+
           {/* Right Column: Images */}
           <div className="lg:flex flex-col items-center justify-center gap-4 animate-appear opacity-0 [animation-delay:500ms] lg:col-span-1">
+
+            {/* Image 1: Man with Book (Main) */}
             <div className="relative w-full h-[290px] sm:h-[350px]">
               <Image
                 src="/images/stats-removebg.png"
                 alt="Hero Section Illustration 1"
                 fill
-                style={{ objectFit: 'contain' }}
-                priority
-                className="rounded-xl"
+                priority // Keep priority because this is "Above the Fold"
+                sizes="(max-width: 1024px) 100vw, 50vw" // ✅ Perfect size calculation
+                className="rounded-xl object-contain" // Moved objectFit here
               />
             </div>
+
+            {/* Image 2: Stats Card (Secondary) */}
             <div className="hidden sm:block relative w-full h-[130px] sm:h-[190px]">
               <Image
                 src="/images/stats-2-removebg.png"
                 alt="Hero Section Illustration 2"
                 fill
-                style={{ objectFit: 'contain' }}
-                className="rounded-lg"
+                sizes="(max-width: 1024px) 100vw, 50vw" // ✅ Perfect size calculation
+                className="rounded-lg object-contain"
               />
             </div>
+
           </div>
 
-        </div> 
+        </div>
 
         {/* Our Latest Work section */}
         <div className=" hidden lg:block w-full max-w-full mt-20 md:mt-35 relative animate-appear opacity-0 [animation-delay:500ms]">
@@ -107,8 +113,8 @@ export function NewHero() {
               className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
               style={{ backgroundSize: "300% 100%" }}
             >
-            Latest Work
-            </span> 
+              Latest Work
+            </span>
           </h2>
           <MockupFrame>
             <Mockup type="responsive">

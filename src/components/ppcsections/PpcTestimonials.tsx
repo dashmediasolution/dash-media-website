@@ -87,6 +87,7 @@ export function Testimonials() {
                                                 src={testimonial.companyLogo}
                                                 alt={`${testimonial.name}'s company logo`}
                                                 fill
+                                                sizes="100px"
                                                 className="object-contain"
                                                 draggable={false}
                                             />
@@ -99,6 +100,7 @@ export function Testimonials() {
                                                 src={testimonial.avatar}
                                                 alt={testimonial.name}
                                                 fill
+                                                sizes="100px"
                                                 className="object-cover"
                                             />
                                         </div>

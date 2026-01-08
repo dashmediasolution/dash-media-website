@@ -53,7 +53,7 @@ const socialLinks = {
 
 export function Footer() {
   return (
-    <footer className="py-16 border-t bg-gray-50 dark:bg-zinc-950/50">
+    <footer className="py-12 border-t bg-gray-50 dark:bg-zinc-950/50">
       <div className="mx-auto max-w-6xl px-6 lg:px-0">
         
         {/* Main Grid: Updated to 4 Columns for Company, Services, Links, Social */}
@@ -127,7 +127,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Section: Logo and Copyright */}
-        <div className="mt-16 flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-border">
+        <div className="mt-16 flex flex-col md:flex-row justify-between items-center gap-2 pt-4 border-t border-border">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img
