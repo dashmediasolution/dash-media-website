@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client';
+import {prisma} from '@/lib/prisma';
 import { BlogCard } from '@/components/blog/BlogCard'; // Reverted to BlogCard
 import { BlogSidebar } from '@/components/blog/BlogSidebar';
 import { PaginationControls } from '@/components/ui/PaginationControls';
@@ -43,14 +43,12 @@ export const metadata: Metadata = {
     follow: false,
     nocache: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
     },
   },
 };
 
-const prisma = new PrismaClient();
 const BLOGS_PER_PAGE = 6;
 
 // ✅ Functions (Unchanged logic, added optional search query)

@@ -1,11 +1,9 @@
 // src/app/api/admin/users/[id]/route.ts
 import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
-import { PrismaClient } from "@prisma/client";
 import { hash } from "bcrypt";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
-
-const prisma = new PrismaClient();
+import {prisma }from '@/lib/prisma';
 
 // Helper to check admin access
 async function checkAdmin() {

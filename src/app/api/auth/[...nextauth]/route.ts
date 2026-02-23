@@ -1,9 +1,7 @@
 import NextAuth, { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { compare } from "bcrypt";
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
+import {prisma }from '@/lib/prisma';
 
 // 1. Export authOptions explicitly so other APIs can use it
 export const authOptions: NextAuthOptions = {

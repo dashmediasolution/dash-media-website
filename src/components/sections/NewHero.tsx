@@ -52,10 +52,10 @@ export function NewHero() {
           <div className="grid grid-cols-1 md:grid-cols-11 gap-5 items-stretch">
 
             {/* ✅ LEFT CARD: SEO Dominance 
-      Layout: Text Top / Image "Falling" off bottom
-  */}
+            Layout: Text Top / Image "Falling" off bottom
+            */}
             {/* LEFT CARD: Web Traffic & Performance */}
-            <div className="md:col-span-4 relative rounded-xl overflow-hidden group min-h-[500px] bg-white border border-gray-100 flex flex-col p-10 ">
+            <div className="md:col-span-4 relative rounded-xl overflow-hidden group min-h-[500px] bg-white border-none shadow-lg flex flex-col p-10 ">
 
               <div className="relative z-10 flex flex-col h-full">
                 {/* 1. Header Section - Keeping your new style */}
@@ -100,7 +100,7 @@ export function NewHero() {
               </div>
 
               {/* Lead Gen / Team Card - Avatars placed below the stat */}
-              <div className="relative rounded-xl overflow-hidden group flex-grow min-h-[350px] bg-white border border-gray-100 flex flex-col p-8 ">
+              <div className="relative rounded-xl overflow-hidden group flex-grow min-h-[350px] bg-white border-none shadow-xl flex flex-col p-8 ">
 
                 <div className="relative z-10 flex flex-col h-full">
                   {/* 1. Header Section */}
@@ -148,7 +148,7 @@ export function NewHero() {
   */}
             {/* RIGHT CARD: Our Services & Traffic Stats */}
             {/* RIGHT CARD: Our Services & Expertise */}
-            <div className="md:col-span-4 bg-white rounded-xl p-10 flex flex-col border border-gray-100  min-h-[500px] relative overflow-hidden">
+            <div className="md:col-span-4 bg-white rounded-xl p-10 flex flex-col border-none shadow-xl  min-h-[500px] relative overflow-hidden">
 
 
               <div className="relative z-10 flex flex-col h-full">

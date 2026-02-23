@@ -1,11 +1,10 @@
-import { PrismaClient } from "@prisma/client";
+import {prisma }from '@/lib/prisma';
 import { JobApplyButton } from "@/components/careers/JobApplyButton";
 import { JobDetailsModal } from "@/components/careers/JobDetailsModal";
 import { MapPin, Clock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 
-const prisma = new PrismaClient();
 export const dynamic = 'force-dynamic';
 
 export default async function CareersPage() {

@@ -21,20 +21,22 @@ export function BlogCard({ blog, hideDescription = false }: { blog: BlogProps, h
         group relative flex flex-col h-full
         bg-primary
         overflow-hidden rounded-xl
-        border border-gray-100/10
+        border-none
         shadow-sm hover:shadow-xl
         transition-all duration-300
         hover:-translate-y-1
       "
     >
       {/* --- Image Section --- */}
-      <div className="relative h-56 w-full overflow-hidden bg-gray-800">
+      {/* --- Improved Image Section --- */}
+      <div className="relative h-[325px] w-full overflow-hidden bg-gray-800">
         {blog.imageUrl ? (
           <Image
             src={blog.imageUrl}
             alt={blog.headline}
             fill
-            className="object-cover "
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover"
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center text-white/50 text-xs">
@@ -45,19 +47,19 @@ export function BlogCard({ blog, hideDescription = false }: { blog: BlogProps, h
 
       {/* --- Content Section --- */}
       <div className="flex flex-col flex-grow p-6">
-        
+
         {/* Top Row: Category & Date */}
         <div className="flex items-center justify-between mb-3">
-            <span className="text-[10px] font-bold text-white/70 uppercase tracking-widest">
-              {blog.category} 
-            </span>
+          <span className="text-[10px] font-bold text-white/70 uppercase tracking-widest">
+            {blog.category}
+          </span>
 
-            <span className="text-[10px] text-white/70 font-medium uppercase tracking-widest">
-              {new Date(blog.createdAt).toLocaleDateString("en-US", {
-                month: 'short',
-                day: 'numeric'
-              })}
-            </span>
+          <span className="text-[10px] text-white/70 font-medium uppercase tracking-widest">
+            {new Date(blog.createdAt).toLocaleDateString("en-US", {
+              month: 'short',
+              day: 'numeric'
+            })}
+          </span>
         </div>
 
         {/* Headline */}

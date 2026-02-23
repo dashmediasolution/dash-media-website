@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client';
+import {prisma} from '@/lib/prisma';
 import Image from 'next/image';
 import { type Metadata } from 'next';
 import { Badge } from "@/components/ui/badge";
@@ -8,7 +8,6 @@ import Link from 'next/link';
 // ✅ Import the new Sidebar Component
 import { BlogSidebar } from '@/components/blog/BlogSidebar';
 
-const prisma = new PrismaClient();
 
 type Props = {
   params: Promise<{ blogUrl: string }>
@@ -151,15 +150,15 @@ export default async function BlogPostPage({ params }: Props) {
             {blog.headline}
           </h1>
 
-          <div className="flex flex-wrap items-center justify-center gap-8 text-muted-foreground text-sm font-bold uppercase tracking-widest">
+          < div className="flex flex-wrap items-center justify-center gap-2 text-muted-foreground text-sm font-bold uppercase tracking-widest">
             <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center">
                     {blog.authorName.charAt(0)}
                 </div>
                 <span className="text-primary">{blog.authorName}</span>
             </div>
+            <span>|</span>
             <div className="flex items-center gap-2">
-                <CalendarDays className="w-4 h-4 text-accent" />
                 <time dateTime={blog.createdAt.toISOString()}>
                     {formatDate(blog.createdAt)}
                 </time>
@@ -177,11 +176,12 @@ export default async function BlogPostPage({ params }: Props) {
             <div className="lg:col-span-8">
                 
                 {blog.imageUrl && (
-                <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden mb-12 ">
+                <div className="relative w-full h-170 rounded-xl overflow-hidden mb-12 ">
                     <Image 
                         src={blog.imageUrl} 
                         alt={blog.headline} 
-                        fill 
+                        fill
+                        sizes="(max-width: 768px) 100vw, 80vw"
                         className="object-cover" 
                         priority
                     />

@@ -56,19 +56,19 @@ export function Footer() {
       <div className="container mx-auto px-5 max-w-7xl">
         
         {/* --- REFINED CTA: Expanded Image Banner --- */}
-        <div className="relative bg-blue-50/50 border border-blue-100 rounded-[3rem] mb-24 group overflow-hidden">
+        <div className="relative bg-blue-50/50 border border-gray-100 rounded-xl mb-24 group overflow-hidden">
           
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 items-center">
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-10 items-center">
             
             {/* Left Content Column */}
-            <div className="lg:col-span-7 px-8 py-12 md:px-20 md:py-20 flex flex-col items-start text-left">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-primary leading-[1.05] mb-10">
-                Ready to architect <br />
-                your digital growth?
+            <div className="lg:col-span-6 px-8 py-12 md:px-20 md:py-20 flex flex-col items-start text-left">
+              <h2 className="text-4xl md:text-5xl font-semibold tracking-tighter text-primary leading-[1.05] mb-10">
+                Ready to architect
+                your  <br /> digital growth?
               </h2>
               
               <Link href="/contact">
-                <button className="bg-primary text-white h-16 px-10 rounded-full font-bold text-md flex items-center gap-3 transition-all hover:bg-primary/80 ">
+                <button className="bg-primary text-white h-12 px-6 rounded-full font-bold text-md flex items-center gap-3 transition-all hover:bg-primary/80 ">
                   Get Started
                   <ArrowRight className="w-5 h-5 " />
                 </button>
@@ -76,17 +76,16 @@ export function Footer() {
             </div>
 
             {/* Right Image Column: Expanded and Bigger */}
-            <div className="lg:col-span-5 h-full min-h-[200px] relative">
+            <div className="lg:col-span-4 h-full min-h-[300px] relative">
               <div className="absolute inset-0 lg:-right-1">
                 <Image 
                   src="/footer-banner.png" 
                   alt="Growth Strategy" 
                   fill 
                   priority
-                  className="object-contain  "
+                  className="object-contain "
                 /> 
-                {/* Overlay for smoother blending with the left side on smaller screens */}
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-50/80 via-transparent to-transparent lg:hidden" />
+            
               </div>
             </div>
 
@@ -125,7 +124,7 @@ export function Footer() {
 
           {/* Column 2: Services */}
           <div className="col-span-2 md:col-span-3 lg:col-span-4 lg:pl-10">
-            <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-8">Specializations</h3>
+            <h3 className="text-sm font-bold uppercase tracking-[0.3em] text-primary mb-8">Specializations</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4">
               {servicesLinks.items.map((item, index) => (
                 <Link
@@ -142,7 +141,7 @@ export function Footer() {
 
           {/* Column 3: Company */}
           <div className="col-span-1 lg:col-span-2 lg:pl-10">
-            <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-8">Agency</h3>
+            <h3 className="text-sm font-bold uppercase tracking-[0.3em] text-primary mb-8">Agency</h3>
             <div className="flex flex-col space-y-4">
               {companyLinks.items.map((item, index) => (
                 <Link key={index} href={item.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
@@ -154,7 +153,7 @@ export function Footer() {
 
           {/* Column 4: Legal */}
           <div className="col-span-1 lg:col-span-2">
-            <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-8">Legal</h3>
+            <h3 className="text-sm font-bold uppercase tracking-[0.3em] text-primary mb-8">Legal</h3>
             <div className="flex flex-col space-y-4">
               {otherLinks.items.map((item, index) => (
                 <Link key={index} href={item.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
