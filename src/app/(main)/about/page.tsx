@@ -16,8 +16,8 @@ export default function AboutUsPage() {
       <AboutCompany/>
       <MarqueeSeparator />
       <AboutIntro />
-      <MarqueeSeparator />
-      <FoundersSection/>
+       {/*<MarqueeSeparator />
+     <FoundersSection/>*/}
     </>
   );
 }
