@@ -131,7 +131,7 @@ export function JobApplicationForm({ jobId, onSuccess }: JobApplicationFormProps
           </FormItem>
         )}/>
 
-        <Button type="submit" className="w-[60%] sm:w-full" disabled={form.formState.isSubmitting || isUploading}>
+        <Button type="submit" className="w-fit rounded-full" disabled={form.formState.isSubmitting || isUploading}>
             {form.formState.isSubmitting ? "Submitting..." : "Submit Application"}
         </Button>
       </form>
@@ -146,7 +146,7 @@ export function JobApplyButton({ job }: { job: any }) {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button className="w-[80%] sm:w-full ml-8 sm:ml-0">Apply Now</Button>
+        <Button className="w-fit rounded-full ml-8 sm:ml-0">Apply Now</Button>
       </DialogTrigger>
       
       {/* Retaining the padding fix for mobile */}

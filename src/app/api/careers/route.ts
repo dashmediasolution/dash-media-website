@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import {prisma }from '@/lib/prisma';
+import { prisma }from '@/lib/prisma';
 
 // GET: Fetch all active jobs (Public)
 export async function GET() {

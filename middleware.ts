@@ -51,5 +51,5 @@ export async function middleware(req: NextRequest) {
 
 // Applies this middleware ONLY to routes starting with /dashboard
 export const config = {
-  matcher: ["/dashboard/:path*"],
+  matcher: ["/dashboard/:path*", "/api/profile/:path*", "/api/blogs/:path*"],
 };

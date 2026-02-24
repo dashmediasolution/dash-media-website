@@ -5,70 +5,130 @@ export const metadata = {
 
 export default function TermsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-gray-50 dark:bg-zinc-950 pb-20">
-      {/* Header */}
-      <div className="pt-30 sm:pt-35 pb-20 text-center px-5 sm:px-0">
-        <h1 className="text-4xl lg:text-5xl text-primary font-bold mb-4">Terms and Conditions</h1>
-        <p className="text-muted-foreground text-md sm:text-lg">Please read these terms carefully before using our services.</p>
-        <p className="text-sm sm:text-md font-bold text-muted-foreground mt-2">Last Updated: December 2025</p>
-      </div>
+    <div className="min-h-screen bg-white pb-32">
+      
+      {/* --- Page Header: High Impact Editorial Style --- */}
+      <section className="bg-blue-50 border-b border-gray-100 pt-32 pb-20 md:pt-40 md:pb-24">
+        <div className="container mx-auto px-5 max-w-7xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-end gap-10">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-[0.3em] text-gray-500 mb-4 block">
+                Service Agreement
+              </span>
+              <h1 className="text-5xl lg:text-7xl font-bold tracking-tighter text-primary uppercase leading-[0.9]">
+                <span className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold" style={{ backgroundSize: "300% 100%" }}>
+                  Terms of <br /> Service
+                </span>
+              </h1>
+            </div>
+            <div className="lg:pb-2">
+              <p className="text-lg lg:text-xl text-muted-foreground max-w-md leading-relaxed">
+                Please review these guidelines carefully. They govern the architecture of our partnership and the professional use of our digital services.
+              </p>
+              <p className="text-[10px] font-bold uppercase tracking-widest text-primary mt-6 opacity-60">
+                Last Updated: December 2025
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <div className="container mx-auto  px-5 -mt-10 relative z-10 max-w-5xl">
-        {/* Removed Card Wrapper - Content sits directly on page structure */}
-        <div className="bg-white rounded-xl p-10"> 
-            <article className="max-w-none space-y-12">
-                
-                <section>
-                    <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-black">1. Introduction</h2>
-                    <p className="text-muted-foreground leading-relaxed text-md lg:text-lg">
-                        Welcome to Dash Media Solutions. By accessing our website and using our services, you agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, you may not access the service.
-                    </p>
-                </section>
+      {/* --- Content Section: Two Column Grid --- */}
+      <div className="container mx-auto px-6 max-w-6xl mt-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+          
+          {/* Left Side: Index Navigation (Sticky) */}
+          <aside className="hidden lg:block lg:col-span-4 sticky top-32 h-fit">
+            <h3 className="text-[11px] font-black uppercase tracking-[0.3em] text-accent mb-8">
+              Legal Framework
+            </h3>
+            <nav className="flex flex-col space-y-4">
+              {[
+                "Introduction", 
+                "Intellectual Property", 
+                "User Responsibilities", 
+                "Liability Terms", 
+                "Governing Law", 
+                "Modifications"
+              ].map((item, i) => (
+                <div key={i} className="group flex items-center gap-4 cursor-pointer">
+                  <span className="text-[10px] font-mono text-muted-foreground group-hover:text-accent transition-colors">0{i + 1}</span>
+                  <span className="text-sm font-bold text-primary/60 group-hover:text-primary transition-colors uppercase tracking-tight">{item}</span>
+                </div>
+              ))}
+            </nav>
+            
+            <div className="mt-16 p-8 bg-gray-50 rounded-2xl border border-gray-100">
+               <p className="text-xs font-bold text-primary mb-2 uppercase tracking-widest">Compliance</p>
+               <p className="text-sm text-muted-foreground mb-4 italic">
+                Dash Media Solutions operates under the laws of India.
+               </p>
+               <a href="mailto:support@dashmediasolutions.com" className="text-xs font-bold text-accent hover:underline uppercase tracking-widest">Legal Inquiries</a>
+            </div>
+          </aside>
 
-                <section>
-                    <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-black">2. Intellectual Property</h2>
-                    <p className="text-muted-foreground leading-relaxed text-md lg:text-lg">
-                        The service and its original content, features, and functionality are and will remain the exclusive property of Dash Media Solutions and its licensors. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Dash Media Solutions.
-                    </p>
-                </section>
+          {/* Right Side: Detailed Content */}
+          <main className="lg:col-span-8">
+            <article className="prose prose-slate max-w-none 
+              prose-h2:text-3xl prose-h2:font-bold prose-h2:tracking-tighter prose-h2:text-primary prose-h2:uppercase prose-h2:mb-8
+              prose-p:text-lg prose-p:leading-relaxed prose-p:text-muted-foreground prose-p:mb-8
+              prose-li:text-lg prose-li:text-muted-foreground prose-li:mb-2
+              prose-strong:text-primary prose-strong:font-bold">
 
-                <section>
-                    <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-black">3. User Responsibilities</h2>
-                    <ul className="list-disc pl-6 space-y-3 text-muted-foreground text-md lg:text-lg">
-                        <li>You must not use our website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website.</li>
-                        <li>You must not use our website in any way which is unlawful, illegal, fraudulent or harmful.</li>
-                        <li>You must not conduct any systematic or automated data collection activities on or in relation to our website without our express written consent.</li>
-                    </ul>
-                </section>
+              <section className="mb-20">
+                <h2>01. Introduction</h2>
+                <p>
+                  Welcome to Dash Media Solutions. By accessing our platform and using our web services, you agree to be bound by these Terms and Conditions. Our digital architecture is designed to drive growth, and these terms ensure a professional environment for all users.
+                </p>
+              </section>
 
-                <section>
-                    <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-black">4. Limitation of Liability</h2>
-                    <p className="text-muted-foreground leading-relaxed text-md lg:text-lg">
-                        In no event shall Dash Media Solutions, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the service.
-                    </p>
-                </section>
+              <section className="mb-20">
+                <h2>02. Intellectual Property</h2>
+                <p>
+                  The service and its original content, features, and functionality remain the exclusive property of Dash Media Solutions. Our trademarks and design assets are part of our unique "Architect" identity and may not be used without prior written consent.
+                </p>
+              </section>
 
-                <section>
-                    <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-black">5. Governing Law</h2>
-                    <p className="text-muted-foreground leading-relaxed text-md lg:text-lg">
-                        These Terms shall be governed and construed in accordance with the laws of India, without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.
-                    </p>
-                </section>
+              <section className="mb-20">
+                <h2>03. User Responsibilities</h2>
+                <p>To maintain the structural integrity of our platform, users must adhere to the following:</p>
+                <div className="grid grid-cols-1 gap-4 not-prose mb-10">
+                  {[
+                    "No damage to website accessibility",
+                    "No unlawful or fraudulent activities",
+                    "No unauthorized automated data collection",
+                    "Respect for system architecture & security"
+                  ].map((text, i) => (
+                    <div key={i} className="flex items-center gap-4 p-5 bg-blue-50/50 border border-blue-100 rounded-xl">
+                      <span className="text-sm font-semibold text-primary">{text}</span>
+                    </div>
+                  ))}
+                </div>
+              </section>
 
-                <section>
-                    <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-black">6. Changes to Terms</h2>
-                    <p className="text-muted-foreground leading-relaxed text-md lg:text-lg">
-                        We reserve the right, at our sole discretion, to modify or replace these Terms at any time. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms.
-                    </p>
-                </section>
+              <section className="mb-20">
+                <h2>04. Limitation of Liability</h2>
+                <p>
+                  Dash Media Solutions, including its directors and affiliates, shall not be liable for any indirect or consequential losses resulting from your use or inability to use our digital architecture.
+                </p>
+              </section>
 
-                <section className="pt-8 border-t mt-12">
-                    <p className="text-muted-foreground text-sm sm:text-md">
-                        If you have any questions about these Terms, please contact us at <a href="mailto:contact@dashmedia.com" className="text-primary hover:underline font-medium">contact@dashmedia.com</a>.
-                    </p>
-                </section>
+              <section className="mb-20">
+                <h2>05. Governing Law</h2>
+                <p>
+                  These Terms are governed by and construed in accordance with the laws of India. Any failure to enforce specific rights does not constitute a waiver of those legal frameworks.
+                </p>
+              </section>
+
+              <section className="mb-20">
+                <h2>06. Changes to Terms</h2>
+                <p>
+                  We reserve the right to modify these Terms as we evolve our service offerings. Continued use of our "Architecture of Growth" platform constitutes acceptance of updated revisions.
+                </p>
+              </section>
 
             </article>
+          </main>
         </div>
       </div>
     </div>

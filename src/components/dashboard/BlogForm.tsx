@@ -16,20 +16,22 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-import { useState, useEffect } from "react"; // ✅ Import useEffect
+import { useState, useEffect } from "react";
 import { type Blog } from "@prisma/client";
 import { Switch } from "@/components/ui/switch"
 import { RichTextEditor } from '@/components/ui/RichTextEditor'; 
 
-// --- 1. Helper Function ---
+// ✅ Import the SEO Components
+import { SEOAnalyzer } from "@/components/dashboard/SeoAnalyser";
+
 function slugify(text: string) {
   return text
     .toString()
     .toLowerCase()
     .trim()
-    .replace(/\s+/g, '-')        // Replace spaces with -
-    .replace(/[^\w\-]+/g, '')    // Remove all non-word chars
-    .replace(/\-\-+/g, '-');     // Replace multiple - with single -
+    .replace(/\s+/g, '-')
+    .replace(/[^\w\-]+/g, '')
+    .replace(/\-\-+/g, '-');
 }
 
 const formSchema = z.object({
@@ -54,8 +56,10 @@ type FormValues = z.infer<typeof formSchema>;
 export function BlogForm({ onFormSubmit, initialData }: BlogFormProps) {
     const [isUploading, setIsUploading] = useState(false);
     const [uploadMethod, setUploadMethod] = useState<'url' | 'upload'>('url');
-    // ✅ 2. State to track manual edits
     const [isSlugManuallyEdited, setIsSlugManuallyEdited] = useState(false);
+    
+    // ✅ Local state for the Focus Keyword used for analysis
+    const [focusKeyword, setFocusKeyword] = useState("");
     
     const isUpdateMode = !!initialData;
 
@@ -84,15 +88,11 @@ export function BlogForm({ onFormSubmit, initialData }: BlogFormProps) {
         },
     });
 
-    // ✅ 3. Watch for Headline changes
-    const headlineValue = form.watch("headline");
+    // ✅ Watch form values for real-time SEO analysis
+    const watchedValues = form.watch();
+    const headlineValue = watchedValues.headline;
 
-    // ✅ 4. Auto-generate slug effect
     useEffect(() => {
-        // Only auto-fill if:
-        // 1. We have a headline
-        // 2. The user hasn't manually edited the slug yet
-        // 3. We are NOT in update mode (usually you don't want to change existing URLs)
         if (headlineValue && !isSlugManuallyEdited && !isUpdateMode) {
             const slug = slugify(headlineValue);
             form.setValue("blogUrl", slug, { shouldValidate: true });
@@ -170,7 +170,6 @@ export function BlogForm({ onFormSubmit, initialData }: BlogFormProps) {
                     </FormItem>
                 )} />
 
-                {/* ✅ 5. Modified Field: Updates manual edit state on user input */}
                 <FormField control={form.control} name="blogUrl" render={({ field }) => (
                     <FormItem>
                         <FormLabel>Blog URL Slug</FormLabel>
@@ -179,8 +178,8 @@ export function BlogForm({ onFormSubmit, initialData }: BlogFormProps) {
                                 {...field} 
                                 placeholder="auto-generated-slug"
                                 onChange={(e) => {
-                                    field.onChange(e); // Call original handler
-                                    setIsSlugManuallyEdited(true); // Flag as manually edited
+                                    field.onChange(e);
+                                    setIsSlugManuallyEdited(true);
                                 }}
                             />
                         </FormControl>
@@ -254,6 +253,22 @@ export function BlogForm({ onFormSubmit, initialData }: BlogFormProps) {
 
                 <div className="space-y-4 rounded-md border p-4">
                     <h4 className="text-sm font-medium">SEO Details</h4>
+                    
+                    {/* Focus Keyword Input for Analysis Only */}
+                    <FormItem>
+                        <FormLabel>Focus Keyword (for SEO Analysis)</FormLabel>
+                        <FormControl>
+                            <Input 
+                                placeholder="Enter keyword to analyze" 
+                                value={focusKeyword}
+                                onChange={(e) => setFocusKeyword(e.target.value)}
+                            />
+                        </FormControl>
+                        <FormDescription>
+                            This keyword is used only for real-time analysis below.
+                        </FormDescription>
+                    </FormItem>
+
                     <FormField control={form.control} name="metaTitle" render={({ field }) => (
                         <FormItem><FormLabel>Meta Title</FormLabel><FormControl><Input {...field} /></FormControl><FormMessage /></FormItem>
                     )} />
@@ -263,6 +278,16 @@ export function BlogForm({ onFormSubmit, initialData }: BlogFormProps) {
                     <FormField control={form.control} name="metaKeywords" render={({ field }) => (
                         <FormItem><FormLabel>Meta Keywords</FormLabel><FormControl><Input placeholder="e.g., marketing, seo, growth" {...field} /></FormControl><FormDescription>Separate keywords with a comma.</FormDescription><FormMessage /></FormItem>
                     )} />
+
+                    {/* ✅ Real-time SEO Scorecard */}
+                    <SEOAnalyzer 
+                        content={watchedValues.content}
+                        keyword={focusKeyword}
+                        title={watchedValues.headline}
+                        metaTitle={watchedValues.metaTitle}
+                        metaDesc={watchedValues.metaDescription}
+                        metaKeywords={watchedValues.metaKeywords}
+                    />
                 </div>
 
                 <Button type="submit" disabled={form.formState.isSubmitting || isUploading} className="w-full">

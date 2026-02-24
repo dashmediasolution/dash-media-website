@@ -192,37 +192,37 @@
 
 /* --- Typography (Applied to both Editor and Public View) --- */
 
-/* H1 - 28px */
+/* H1 - I set this to 22px to keep it larger than H2 */
 .ProseMirror h1, 
 .prose h1 {
-  font-size: 28px; 
+  font-size: 30px; 
   font-weight: 700;
   margin-top: 0.8em;
   margin-bottom: 0.4em;
   line-height: 1.3;
 }
 
-/* H2 - 25px */
+/* H2 - 17px */
 .ProseMirror h2, 
 .prose h2 {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 600;
   margin-top: 0.75em;
   margin-bottom: 0.35em;
   line-height: 1.4;
 }
 
-/* H3 - 22px */
+/* H3 - 14px */
 .ProseMirror h3, 
 .prose h3 {
-  font-size: 22px !important;
+  font-size: 20px !important;
   font-weight: 600;
   margin-top: 0.75em;
   margin-bottom: 0.35em;
   line-height: 1.4;
 }
 
-/* H4 - 19px */
+/* H4 - 13px */
 .ProseMirror h4, 
 .prose h4 {
   font-size: 19px;
@@ -232,13 +232,19 @@
   line-height: 1.4;
 }
 
-/* Paragraph - 16px */
+/* Paragraph - 11px */
 .ProseMirror p, 
 .prose p {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.6; /* Increased line-height for readability on small text */
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+}
+
+.ProseMirror p:empty::before,
+.prose p:empty::before {
+  content: "\00a0"; /* Insert a non-breaking space */
+  display: inline-block;
 }
 
 /* Links */
@@ -257,7 +263,7 @@
 .prose ol {
   padding: 0 1rem;
   margin: 0.75em 0;
-  font-size: 16px;
+  font-size: 16px; /* Matching paragraph size */
 }
 
 .ProseMirror ul, 
@@ -278,16 +284,16 @@
   margin-bottom: 0.25em;
 }
 
-/* --- Images --- */
+/* --- Images (New) --- */
 .ProseMirror img, 
 .prose img {
-  width: 100%; /* Forces image to take full width */
-  height: auto; /* Maintains aspect ratio */
+  width: 100%; /* Forces image to take full width of the text container */
+  height: auto; /* Maintains aspect ratio so it doesn't look squashed */
   border-radius: 0.5rem; 
   display: block;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  object-fit: cover; 
+  object-fit: cover; /* Optional: acts like a banner if you set a fixed height */
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 }
 

@@ -44,9 +44,9 @@ const otherLinks = {
 const socialLinks = {
   title: "Social",
   items: [
-    { title: "Instagram", href: "#", icon: Instagram },
+    { title: "Instagram", href: "https://www.instagram.com/dashmediasolutions", icon: Instagram },
     { title: "Facebook", href: "#", icon: Facebook },
-    { title: "Twitter", href: "#", icon: Twitter },
+
   ],
 };
 
@@ -54,19 +54,19 @@ export function Footer() {
   return (
     <footer className="bg-white pt-10 pb-12 ">
       <div className="container mx-auto px-5 max-w-7xl">
-        
+
         {/* --- REFINED CTA: Expanded Image Banner --- */}
         <div className="relative bg-blue-50/50 border border-gray-100 rounded-xl mb-24 group overflow-hidden">
-          
+
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-10 items-center">
-            
+
             {/* Left Content Column */}
             <div className="lg:col-span-6 px-8 py-12 md:px-20 md:py-20 flex flex-col items-start text-left">
               <h2 className="text-4xl md:text-5xl font-semibold tracking-tighter text-primary leading-[1.05] mb-10">
                 Ready to architect
                 your  <br /> digital growth?
               </h2>
-              
+
               <Link href="/contact">
                 <button className="bg-primary text-white h-12 px-6 rounded-full font-bold text-md flex items-center gap-3 transition-all hover:bg-primary/80 ">
                   Get Started
@@ -78,14 +78,14 @@ export function Footer() {
             {/* Right Image Column: Expanded and Bigger */}
             <div className="lg:col-span-4 h-full min-h-[300px] relative">
               <div className="absolute inset-0 lg:-right-1">
-                <Image 
-                  src="/footer-banner.png" 
-                  alt="Growth Strategy" 
-                  fill 
+                <Image
+                  src="/footer-banner.png"
+                  alt="Growth Strategy"
+                  fill
                   priority
                   className="object-contain "
-                /> 
-            
+                />
+
               </div>
             </div>
 
@@ -94,7 +94,7 @@ export function Footer() {
 
         {/* --- Standard Link Grid --- */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-12 gap-y-16 gap-x-8 px-4">
-          
+
           {/* Column 1: Branding */}
           <div className="col-span-2 md:col-span-3 space-y-8">
             <Link href="/" className="inline-block">
@@ -103,7 +103,7 @@ export function Footer() {
                 alt="Dash Media Solutions"
                 width={160}
                 height={40}
-                className="h-10 w-auto object-contain"
+                className="h-14 w-auto object-contain"
               />
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
@@ -111,10 +111,13 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               {socialLinks.items.map((social, i) => (
-                <Link 
-                  key={i} 
-                  href={social.href} 
-                  className="w-10 h-10 rounded-full border border-gray-100 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all shadow-sm"
+                <Link
+                  key={i}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Follow us on ${social.title}`}
+                  className="w-10 h-10 rounded-full border-none flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
                 >
                   <social.icon className="h-4 w-4" />
                 </Link>
