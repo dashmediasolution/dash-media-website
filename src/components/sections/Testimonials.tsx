@@ -25,7 +25,7 @@ const testimonials = [
         avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300",
         name: "Aditya Mehta",
         role: "Marketing Head, Professional Service Firm.",
-        review: "We’ve been working with Dash Media since 2024, and it has been nothing short of phenomenal. They have been very responsive and curated the best website for our organization with amazing SEO practices",
+        review: "We’ve been working with Dash Media since 2024, and it has been nothing short of phenomenal. They have been very responsive and curated the best website for our organization with amazing SEO practices.",
     },
     {
         companyLogo: "/logos/paypal.svg",
@@ -74,7 +74,7 @@ export function Testimonials() {
                              {" "} Are Saying
                         </h2>
                         <p className="text-md sm:text-lg text-muted-foreground mt-6 leading-relaxed">
-                            Hear what our clients have to say about our professional digital marketing solutions and how they support their online journey. 
+                            Hear what our clients have to say about our professional digital marketing services in USA and how they support their online journey. 
                         </p>
                     </div>
                 </div>
@@ -100,7 +100,7 @@ export function Testimonials() {
                                 (1500+ Reviews)
                             </p>
                             <p className="text-md font-semibold leading-relaxed text-white mb-4">
-                                Discover Clients&apos; Experiences <br />That Define Our Partnerships.
+                                Discover Clients’ Experiences <br />That Define Our Partnerships.
                             </p>
                         </div>
 
@@ -149,7 +149,7 @@ export function Testimonials() {
                                                 {/* MOVED: Quote to right side and FLIPPED vertically */}
                                                 <Quote className="absolute -top-6 right-10 w-28 h-28 text-gray-100 fill-gray-100 -z-10 opacity-70 transform scale-y-[-1]" />
                                                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-regular break-words relative z-10">
-                                                    "{testimonial.review}"
+                                                    &quot;{testimonial.review}&quot;
                                                 </p>
                                             </div>
 

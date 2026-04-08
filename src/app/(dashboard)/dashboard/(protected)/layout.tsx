@@ -1,16 +1,25 @@
 import type { Metadata } from "next";
 import { SessionNavBar } from "@/components/ui/sidebar";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/lib/auth";
+import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Dashboard | Dash Media Solutions",
   description: "Admin dashboard for managing blogs and content.",
 };
 
-export default function DashboardLayout({
+export default async function DashboardLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const session = await getServerSession(authOptions);
+
+  if (!session) {
+    redirect("/dashboard/auth");
+  }
+
   return (
     <div className="flex h-screen w-screen flex-row overflow-hidden bg-background">
       {/* Sidebar - Fixed on the left */}

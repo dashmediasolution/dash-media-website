@@ -7,10 +7,12 @@ import { BlogSection } from "@/components/sections/BlogSection";
 import { MarqueeSeparator } from "@/components/ui/marquee-separator";
 import { Metadata } from "next";
 
+export const revalidate = 60; // Revalidate the page every 60 seconds to fetch new blog posts
+
 export const metadata: Metadata = {
-  title: "The Leading Digital Marketing Agency | Dash Media Solutions",
-  description: "Dash Media Solutions is a performance-driven digital marketing agency that offers customizable solutions to boost businesses' growth and online visibility.",
-  keywords: ["Dash Media Solutions", "Digital Marketing Agency for Business Growth", "Performance-Driven Marketing Solutions", "SEO & Paid Advertising Experts"],
+  title: "Dash Media Solutions: Leading Digital Marketing Services in USA",
+  description: "Looking for the best digital marketing company in USA? Dash Media Solutions delivers customizable strategies to boost your brand's visibility and ROI.",
+  keywords: ["digital marketing services in USA", "digital marketing agency in USA"],
 };
 
 export default function Home() {

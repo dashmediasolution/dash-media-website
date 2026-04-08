@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 const servicesData = [
   {
     title: "SEO Services",
-    description: "Improve website visibility by attracting organic visitors from search engine results.",
+    description: "Boost your website's visibility and organic traffic through our premier digital marketing services in USA.",
     imageSrc: "/images/services/seo.png",
     href: "/services/seo",
     gradient: "bg-gradient-to-br from-accent/70 to-accent/40",
@@ -21,7 +21,7 @@ const servicesData = [
   },
   {
     title: "Web Design",
-    description: "Professional UI/UX & design to ensure user functionality and engagement.",
+    description: "Professional UI/UX and design to ensure user functionality within the best digital marketing services in USA.",
     imageSrc: "/images/services/web-dev.png",
     href: "/services/web-design",
     gradient: "bg-gradient-to-br from-primary/80 to-primary/40",
@@ -29,15 +29,15 @@ const servicesData = [
   },
   {
     title: "Content Marketing",
-    description: "Develop a strategic approach to deliver valuable, relevant, and consistent content.",
+    description: "Develop a strategic approach to deliver valuable content, backed by a leading digital marketing agency in USA.",
     imageSrc: "/images/services/content-marketing.png",
     href: "/services/content-marketing",
     gradient: "bg-gradient-to-br from-teal-50 to-teal-100",
     accent: "text-teal-700"
   },
   {
-    title: "Social Media",
-    description: "Use social media to build brand awareness, drive traffic, and increase sales.",
+    title: "Social Media Marketing (SMM)",
+    description: "Use social media to build brand awareness and drive sales with expert digital marketing services in USA.",
     imageSrc: "/images/services/social-media.png",
     href: "/services/social-media",
     gradient: "bg-gradient-to-br from-indigo-50 to-indigo-100",
@@ -45,7 +45,7 @@ const servicesData = [
   },
   {
     title: "Pay Per Click (PPC)",
-    description: "Target your ad campaigns to receive instant traffic and improve ROI.",
+    description: "Target your campaigns for instant ROI with the best digital marketing agency in USA.",
     imageSrc: "/images/services/ppc.png",
     href: "/services/ppc",
     gradient: "bg-gradient-to-br from-purple-50 to-purple-100",
@@ -53,7 +53,7 @@ const servicesData = [
   },
   {
     title: "Email Marketing",
-    description: "Promote products or build communities with personalized, automated email marketing campaigns. ",
+    description: "Promote products or build communities with personalized, automated email marketing campaigns.",
     imageSrc: "/images/services/email-marketing.png",
     href: "/services/email-marketing",
     gradient: "bg-gradient-to-br from-pink-50 to-pink-100",
@@ -117,7 +117,7 @@ export function ServicesSection() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div className="max-w-3xl space-y-3">
             <h2 className="text-4xl font-regular font-heading text-primary lg:text-5xl leading-tight">
-              Our Performance
+              Explore Our Performance-
               Driven <br />
               {" "}
               <span
@@ -128,7 +128,7 @@ export function ServicesSection() {
               </span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed ">
-              Our professional digital marketing solutions are supported by an entire ecosystem of tools and platforms to help your business innovate and succeed.
+              Our professional digital marketing services in USA are intended to support clients with an entire ecosystem of the right tools and platforms to help their business grow and succeed.
             </p>
           </div>
 
@@ -191,7 +191,7 @@ export function ServicesSection() {
                     <div className="mt-auto flex items-center justify-between border-t border-gray-50 pt-4">
                       {/* Changed from {service.accent} to text-primary */}
                       <span className="text-sm font-bold text-white uppercase tracking-wider">
-                        View Details
+                        Learn More
                       </span>
 
                       <div className={`

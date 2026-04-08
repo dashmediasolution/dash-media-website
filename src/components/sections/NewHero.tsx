@@ -38,14 +38,14 @@ export function NewHero() {
           <div className="w-full text-center mb-10">
             <h1 className="items-center justify-center text-5xl md:text-6xl lg:text-[90px] font-semibold tracking-[-0.05em] leading-[1] text-primary uppercase">
 
-              We Create {" "}
+              Strategic {" "}
               <span
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                 style={{ backgroundSize: "300% 100%" }}
               >
-                impactful
+                Digital Marketing
               </span>
-              {" "} digital solutions
+              {" "} Agency in USA
             </h1>
           </div>
 
@@ -63,8 +63,8 @@ export function NewHero() {
                   <h3 className="text-7xl font-semibold text-primary tracking-tighter leading-none mb-6">
                     10+
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-snug font-medium max-w-[300px]">
-                    expert digital marketing solutions that offer tailored strategy, design, and performance management.
+                  <p className="text-sm text-muted-foreground leading-snug font-medium max-w-[320px]">
+                    years of digital marketing experience providing customized strategy, design, and performance management.
                   </p>
                 </div>
 
@@ -89,8 +89,7 @@ export function NewHero() {
               {/* Upper Text Area */}
               <div className="flex flex-col items-center justify-center text-center">
                 <p className="text-md font-medium text-muted-foreground leading-relaxed mb-4 ">
-                  Best Marketing Agency for Developing Digital
-                  Campaigns
+                  Leverage the Power of the Best Digital Marketing Agency in USA
                 </p>
                 <div className="w-full px-4">
                   <Button onClick={openModal} className="w-fit rounded-full h-10 text-sm font-bold bg-primary hover:bg-primary/80 transition-colors">
@@ -107,7 +106,7 @@ export function NewHero() {
                   <div className="mb-6 mt-6">
                     {/* Stat Heading */}
                     <h3 className="text-7xl font-semibold text-primary tracking-tighter leading-none mb-6">
-                      25+
+                      150+
                     </h3>
 
                     {/* 2. Avatar Stack - Moved below the heading */}
@@ -135,7 +134,7 @@ export function NewHero() {
                   {/* 3. Description Section */}
                   <div className="mt-2">
                     <p className="text-sm text-muted-foreground leading-relaxed font-medium">
-                      Our team members ensure that your project stands out by applying industry best practices and performance-driven strategic insights.
+                      Our team members ensure that your project stands out by applying industry-best digital marketing practices and performance-driven strategic insights.
                     </p>
                   </div>
                 </div>
@@ -156,7 +155,7 @@ export function NewHero() {
                 <div className="mb-16">
                   <h3 className="text-xl font-bold text-primary mb-5">About Us</h3>
                   <p className="text-sm text-muted-foreground leading-snug font-normal max-w-[340px]">
-                    We offer exceptional marketing solutions to our clients, upholding their requests and satisfaction as the utmost priority while delivering excellent analytical results.
+                    We offer exceptional best digital marketing agency in USA to our clients, upholding their requests and satisfaction as the utmost priority while delivering excellent analytical results.
                   </p>
                 </div>
 
@@ -170,10 +169,10 @@ export function NewHero() {
                 {/* 3. Services Pills Grid */}
                 <div className="grid grid-cols-2 gap-x-4 gap-y-4">
                   {[
-                    { label: "Web design" },
                     { label: "SEO" },
-                    { label: "Content" },
-                    { label: "Email" }
+                    { label: "Social Media" },
+                    { label: "Native Ads" },
+                    { label: "Pay Per Click" }
                   ].map((service, i) => (
                     <div
                       key={i}

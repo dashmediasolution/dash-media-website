@@ -2,7 +2,20 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Facebook, Instagram, Twitter, ArrowRight } from "lucide-react";
+import { 
+  Facebook, 
+  Instagram, 
+  Twitter, 
+  ArrowRight,
+  Linkedin,
+  Youtube,
+  BookOpen,
+  FileText,
+  HelpCircle,
+  MessageSquare,
+  Pin,
+  Type
+} from "lucide-react";
 
 // --- Data Configuration ---
 
@@ -46,7 +59,14 @@ const socialLinks = {
   items: [
     { title: "Instagram", href: "https://www.instagram.com/dashmediasolutions", icon: Instagram },
     { title: "Facebook", href: "#", icon: Facebook },
-
+    { title: "LinkedIn", href: "https://www.linkedin.com/in/dashmedia-solution-51ba483bb/", icon: Linkedin },
+    { title: "YouTube", href: "https://www.youtube.com/@Dashmediasolution", icon: Youtube },
+    { title: "Pinterest", href: "https://in.pinterest.com/dashmediasolutionus/", icon: Pin },
+    { title: "Medium", href: "https://medium.com/@dashmediasolutionus", icon: BookOpen },
+    { title: "Blogger", href: "https://dashmediasolution.blogspot.com/", icon: FileText },
+    { title: "Quora", href: "https://www.quora.com/profile/Dashmediasolution", icon: HelpCircle },
+    { title: "Reddit", href: "https://www.reddit.com/user/Plenty_Position_2594/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button", icon: MessageSquare },
+    { title: "Tumblr", href: "https://www.tumblr.com/dashmediasolution", icon: Type },
   ],
 };
 
@@ -109,7 +129,7 @@ export function Footer() {
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
               Full-stack digital marketing agency specializing in high-performance growth strategies.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               {socialLinks.items.map((social, i) => (
                 <Link
                   key={i}

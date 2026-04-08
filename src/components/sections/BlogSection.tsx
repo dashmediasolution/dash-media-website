@@ -1,10 +1,8 @@
-import { PrismaClient } from "@prisma/client";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { BlogCard } from "@/components/blog/BlogCard";
+import { prisma } from "@/lib/prisma";
 
-// Ideally import from your lib folder: import prisma from "@/lib/prisma"
-const prisma = new PrismaClient(); 
 
 export async function BlogSection() {
   // ✅ Fetch exactly 3 posts for the grid
