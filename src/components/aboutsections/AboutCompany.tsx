@@ -32,11 +32,11 @@ export function AboutCompany() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-regular font-heading text-primary leading-tight">
                 Leading Digital {" "}
                 <span className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold" style={{ backgroundSize: "300% 100%" }}>
-                Marketing Agency
+                Marketing Agency in USA
                 </span>
               </h2>
               <p className="text-md sm:text-lg text-muted-foreground leading-relaxed max-w-xl">
-                We are a digital marketing agency that combines industry expertise with multiple strategies and tools to ensure the quality of our services and boost growth. Our mission is to help businesses in their online journey with our innovative approach and tailored digital marketing techniques.
+                We are professionals who combine industry expertise with diverse strategies to boost growth. As a top-rated digital marketing agency in USA, our mission is to help businesses navigate their online journey using innovative, tailored techniques. We desire to become your dedicated partner in all your web adventures.
               </p>
             </div>
 

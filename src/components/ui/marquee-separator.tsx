@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 import { Sparkle } from "lucide-react"; // Using Lucide icons for the star
 
 const services = [
-  "WEB DESIGN",
-  "APP DEVELOPMENT",
-  "SEO OPTIMIZATION",
-  "SOCIAL MEDIA MARKETING",
-  "SEM OPTIMIZATION",
-  "EMAIL MARKETING",
-  "PPC CAMPAIGNS",
-  "CONTENT MARKETING",
-  "NATIVE ADVERTISING",
-  "CONTENT MARKETING",
+  "Premier Digital Marketing Agency in USA.",
+  "Scaling Brands Through Performance",
+  "Data-Driven Digital Marketing Agency in USA",
+  "Leading Digital Marketing Experts",
+  "Expert Digital Marketing Services in USA",
+  "Drive Measurable Business Growth",
+  "The Best Digital Marketing Agency in USA",
+  "Premium Performance Marketing Solutions",
+  "Strategic Growth. Expert Results.",
+  "Full-Stack Digital Marketing Agency in USA",
 ];
 
 export function MarqueeSeparator() {

@@ -1,14 +1,15 @@
 'use client';
 
+import Link from "next/link";
 import Image from "next/image";
 import CountUp from "react-countup";
 import { VerticalCutReveal } from "@/components/ui/vertical-cut-reveal";
 
 
 const mainStats = [
-  { value: 12, suffix: "+", label: "Years Experience" },
+  { value: 12, suffix: "+", label: "Years of Experience" },
   { value: 1300, suffix: "+", label: "Projects Delivered" },
-  { value: 25, suffix: "+", label: "Professional Team" },
+  { value: 150, suffix: "+", label: "Professional Team" },
 ];
 
 export function AboutIntro() {
@@ -18,12 +19,12 @@ export function AboutIntro() {
         <div className="container mx-auto px-5 md:px-20">
           <div className="flex flex-col items-center justify-center gap-4 sm:gap-6 mb-0 p-5 md:p-0 text-center">
             <h2 className="text-4xl md:text-6xl font-regular font-heading text-primary">
-              We are{" "}
+              The Best Digital Marketing{" "}
               <span
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                 style={{ backgroundSize: "300% 100%" }}
               >
-                Built Different
+                Experts
               </span>
             </h2>
           </div>
@@ -45,7 +46,7 @@ export function AboutIntro() {
         <div className="container mx-auto ">
           <div className="text-xl lg:text-3xl font-regular text-center text-primary leading-relaxed mx-auto p-5 md:p-0 max-w-6xl">
             <VerticalCutReveal splitBy="words" staggerDuration={0.05}>
-              At Dash Media Solutions, we help our partners to navigate ever-evolving online innovation and offer solutions that not only align with their business but also support their online visibility. 
+              As a premier digital marketing agency in USA, Dash Media Solutions helps our partners navigate ever-evolving online innovation with solutions that align with their business and maximize online visibility.
             </VerticalCutReveal>
           </div>
         </div>
@@ -58,20 +59,14 @@ export function AboutIntro() {
             {/* Left Column: Targeted Headline */}
             <div className="flex flex-col gap-6 items-center text-center lg:items-start lg:text-left">
               <h2 className="text-xl md:text-2xl font-regular font-heading text-primary tracking-tight leading-tight">
-                Be there for your {" "}               
-                 <span
-                  className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
-                  style={{ backgroundSize: "300% 100%" }}
-                >
-                audience
-                </span><br />
-                with effective{" "}
+                Scale Your Brand {" "}               
                 <span
                   className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                   style={{ backgroundSize: "300% 100%" }}
                 >
-                  strategies.
-                </span>
+                Through Expert Digital
+                </span><br />
+                Marketing Services in USA.
               </h2>
             </div>
 
@@ -91,6 +86,22 @@ export function AboutIntro() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* 4. Call to Action Section */}
+      <div className="bg-blue-50/40 mt-20 py-20 px-5 text-center flex flex-col items-center justify-center border-t border-blue-50">
+        <h2 className="text-3xl md:text-5xl font-regular font-heading text-primary leading-tight mb-8">
+          Want the best digital <br />
+          <span className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold" style={{ backgroundSize: "300% 100%" }}>
+            Marketing services in USA?
+          </span>
+        </h2>
+        <Link 
+          href="/contact" 
+          className="bg-primary text-white h-12 px-10 rounded-full font-bold text-md flex items-center justify-center transition-all hover:bg-primary/80 shadow-md hover:shadow-lg"
+        >
+          Contact Us Today
+        </Link>
       </div>
     </section>
   );
