@@ -13,6 +13,7 @@ import {
   UserCircle,
   Users,
   Briefcase,
+  MapPin,
 } from "lucide-react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import Link from "next/link";
@@ -239,6 +240,19 @@ export function SessionNavBar() {
                           <Briefcase className="h-4 w-4 shrink-0" />
                           <motion.li variants={variants}>
                             {!isCollapsed && <p className="ml-2 text-sm">Manage Careers</p>}
+                          </motion.li>
+                        </Link>
+
+                        <Link
+                          href="/dashboard/area-serve-location"
+                          className={cn(
+                            "flex h-9 w-full flex-row items-center rounded-md px-2 py-1.5 transition hover:bg-muted hover:text-foreground",
+                            pathname === "/dashboard/area-serve-location" && "bg-muted text-primary font-medium",
+                          )}
+                        >
+                          <MapPin className="h-4 w-4 shrink-0" />
+                          <motion.li variants={variants}>
+                            {!isCollapsed && <p className="ml-2 text-sm">Manage Locations</p>}
                           </motion.li>
                         </Link>
 

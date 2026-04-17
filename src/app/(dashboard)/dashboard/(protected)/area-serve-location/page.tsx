@@ -49,6 +49,7 @@ export default function AreaServeLocationAdminPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [formData, setFormData] = useState(initialFormData);
   const [isEditing, setIsEditing] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     fetchLocations();
@@ -147,6 +148,11 @@ export default function AreaServeLocationAdminPage() {
       console.error('Failed to delete location', error);
     }
   };
+
+  const filteredLocations = locations.filter(loc => 
+    loc.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    loc.slug.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <div className="p-6 max-w-6xl mx-auto space-y-8">
@@ -264,8 +270,15 @@ export default function AreaServeLocationAdminPage() {
 
       {/* Data Table Section */}
       <div className="bg-white rounded-xl shadow-sm border overflow-hidden">
-        <div className="p-6 border-b">
+        <div className="p-6 border-b flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <h2 className="text-xl font-semibold">Managed Locations</h2>
+          <input
+            type="text"
+            placeholder="Search locations..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="block w-full sm:w-72 rounded-md border-gray-300 shadow-sm p-2 border focus:ring-blue-500 focus:border-blue-500"
+          />
         </div>
         <div className="overflow-x-auto">
           <table className="min-w-full divide-y divide-gray-200">
@@ -280,10 +293,10 @@ export default function AreaServeLocationAdminPage() {
             <tbody className="bg-white divide-y divide-gray-200">
               {isLoading ? (
                 <tr><td colSpan={4} className="px-6 py-8 text-center text-gray-500">Loading locations...</td></tr>
-              ) : locations.length === 0 ? (
-                <tr><td colSpan={4} className="px-6 py-8 text-center text-gray-500">No locations found. Add one above.</td></tr>
+              ) : filteredLocations.length === 0 ? (
+                <tr><td colSpan={4} className="px-6 py-8 text-center text-gray-500">No locations found.</td></tr>
               ) : (
-                locations.map((loc) => (
+                filteredLocations.map((loc) => (
                   <tr key={loc.id} className="hover:bg-gray-50">
                     <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">{loc.name}</td>
                     <td className="px-6 py-4 whitespace-nowrap text-gray-500">{loc.slug}</td>
