@@ -4,31 +4,40 @@ import { motion } from "framer-motion";
 import { Sparkle } from "lucide-react"; // Using Lucide icons for the star
 
 const services = [
-  "Premier Digital Marketing Agency in USA.",
-  "Scaling Brands Through Performance",
-  "Data-Driven Digital Marketing Agency in USA",
-  "Leading Digital Marketing Experts",
-  "Expert Digital Marketing Services in USA",
-  "Drive Measurable Business Growth",
+  "Elite SEO Services in USA",
   "The Best Digital Marketing Agency in USA",
-  "Premium Performance Marketing Solutions",
-  "Strategic Growth. Expert Results.",
-  "Full-Stack Digital Marketing Agency in USA",
+  "Expert USA SEO Marketing Services",
+  "Data-Driven Performance Marketing",
+  "SEO Strategies That Scale",
+  "Top Search Engine Optimization Services in USA",
+  "Digital Marketing Services in USA to Boost Organic Traffic",
+  "Search Engine Growth Experts",
+  "Sustainable Ranking Excellence",
+  "Maximize Your Organic Reach",
+  "Scale with SEO Services in USA",
+  "Data-Driven SEO Excellence",
+  "Elevate Your Global Search Visibility",
+  "Organic Growth with Our Digital Marketing Agency in USA",
+  "Results-Driven SEO Services in USA",
+  "Dominating Search Rankings Through Data",
+  "Digital Marketing Agency in USA to Next-Level SEO",
+  "Mastering Search Engine Performance Globally",
+  "Comprehensive SEO Services in USA"
 ];
 
-export function MarqueeSeparator() {
+export function MarqueeSeparator({ items = services }: { items?: string[] }) {
   return (
     <div className="w-full bg-primary py-4 overflow-hidden border-y border-white/10 relative z-10">
       
       <div className="flex whitespace-nowrap">
-        <MarqueeContent />
-        <MarqueeContent />
+        <MarqueeContent items={items} />
+        <MarqueeContent items={items} />
       </div>
     </div>
   );
 }
 
-function MarqueeContent() {
+function MarqueeContent({ items }: { items: string[] }) {
   return (
     <motion.div
       initial={{ x: 0 }}
@@ -40,7 +49,7 @@ function MarqueeContent() {
       }}
       className="flex items-center flex-shrink-0"
     >
-      {services.map((item, index) => (
+      {items.map((item, index) => (
         <div key={index} className="flex items-center">
           <span className="text-white text-md font-semibold tracking-wider px-10 uppercase font-heading">
             {item}

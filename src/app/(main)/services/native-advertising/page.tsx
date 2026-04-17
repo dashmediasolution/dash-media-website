@@ -6,17 +6,40 @@ import { MarqueeSeparator } from "@/components/ui/marquee-separator";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Native Advertising Agency Services | Dash Media Solutions",
-  description: "Strategize, create, and perform ongoing optimization. Our native advertising blends into premium editorial environments for better engagement and conversion.",
-  keywords: ["Native Advertising Agency", "Sponsored Content Marketing", "Native Ads Campaign Management", "Paid Media Advertising Solutions", "Content-Driven Advertising Strategy", "Native Display Advertising Services"],
+  title: "Native Advertising Services in USA | Dash Media Solutions",
+  description: "Stop interrupting and start connecting. Our native advertising services in USA help your brand blend into the platforms your audience loves for building trust.",
+  keywords: ["Native Advertising Services in USA", "Digital Marketing Agency in USA", "Digital Marketing Services in USA"],
 };
+
+const nativeAdvertisingItems = [
+  "Top Native Advertising Services in USA",
+  "Ads That Don’t Feel Like Ads",
+  "Partner with a Digital Marketing Agency in USA",
+  "Blend In, Stand Out",
+  "Expert Native Advertising Services in USA",
+  "Non-Disruptive Brand Growth",
+  "Leading Digital Marketing Agency in USA",
+  "Build Trust Through Content",
+  "Premium Native Advertising Services in USA",
+  "Engage Your Audience Naturally",
+  "Proven Native Advertising Services in USA",
+  "Seamless Content Integration",
+  "Your Trusted Digital Marketing Agency in USA",
+  "Drive High-Quality Traffic",
+  "Strategic Native Advertising Services in USA",
+  "Value-Driven Ad Solutions",
+  "Premier Digital Marketing Agency in USA",
+  "Capture Attention Authentically",
+  "Scalable Native Advertising Services in USA",
+  "Smart Ads, Better Results"
+];
 
 export default function NativeServicePage() {
   return (
     <>
     <NativeStrategySection/>
     <NativeToolkits/>
-    <MarqueeSeparator/>
+    <MarqueeSeparator items={nativeAdvertisingItems} />
     <Testimonials/>
     <Faq/>
     </>

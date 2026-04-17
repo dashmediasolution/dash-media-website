@@ -6,8 +6,8 @@ import Image from "next/image";
 const strategyData = [
   {
     id: "01",
-    title: "Discovery & Research",
-    description: "We start by understanding your brand, audience, and goals, then analyze competitors to uncover opportunities for a competitive edge.",
+    title: "Research & Analysis",
+    description: "We begin with brand understanding, audience analysis, objective determination, and competitor analysis to discover opportunity gaps for a competitive advantage.",
     image: "/images/strategy/discovery.png", 
     imageBg: "bg-blue-50/50",
     bgColor: "bg-white",
@@ -15,14 +15,14 @@ const strategyData = [
   {
     id: "02",
     title: "Strategy & Planning",
-    description: "Our experts conduct thorough analyses and timely audits to identify the trends that can be used to create a promising SEO roadmap.",
+    description: "Our specialists perform in-depth analyses and regular audits to discover patterns that can be leveraged to build a positive SEO strategy.",
     image: "/images/strategy/planning.png", 
     imageBg: "bg-purple-50/30",
     bgColor: "bg-white",
   },
   {
     id: "03",
-    title: " Excellent Execution",
+    title: "Excellent Execution",
     description: "We create compelling content and targeted campaigns to optimize our clients' overall online presence for enhanced visibility.",
     image: "/images/strategy/launch.png", 
     imageBg: "bg-emerald-50/30",
@@ -31,7 +31,7 @@ const strategyData = [
   {
     id: "04",
     title: "Analysis & Refinement",
-    description: "We continuously monitor campaign performance, drafting transparent reports and refining our approach to maximize ROI.",
+    description: "We provide continuous campaign monitoring and reporting, keeping our methods aligned to improve reach and overall ROI.",
     image: "/images/strategy/analysis.png", 
     imageBg: "bg-rose-50/50",
     bgColor: "bg-white",
@@ -46,15 +46,15 @@ export function SeoStrategySection() {
         <div className="container mx-auto px-5 sm:px-15">
           <header className="text-center">
             <span className="text-md font-bold tracking-[0.4em] uppercase text-muted-foreground mb-4 block">
-              Our Services
+              Search Engine Optimization Services in USA
             </span>
             <h2 className="text-5xl md:text-6xl lg:text-[75px] font-semibold tracking-tighter text-primary uppercase leading-none">
-              Strategy built for <br />
+              Rank #1: <br />
               <span
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                 style={{ backgroundSize: "300% 100%" }}
               >
-                Search Engine Optimization
+                Expert SEO & Growth
               </span>
             </h2>
           </header>

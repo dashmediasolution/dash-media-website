@@ -13,11 +13,11 @@ import {
 const faqs = [
   {
     question: "Does social media marketing work for all businesses?",
-    answer: "Using a social media marketing strategy is useful for businesses of all sizes. However, applying it correctly requires detailed research, identifying the target audience, understanding the nature of the business, and developing a consistent strategy to achieve desired results.",
+    answer: "Yes, social media marketing can work for all businesses, but the strategy and execution are very important. It requires a deep understanding of the business to help in the identification of the target audience. Also, consistent efforts are required to achieve the objectives set.",
   },
   {
-    question: "Can social media help to get leads for businesses?",
-    answer: "Yes, if social media is used effectively, it can generate leads. Nowadays, businesses seek help from a professional digital marketing agency to drive an effective campaign that creates local engagement, which converts to business leads.",
+    question: "Can social media help generate leads?",
+    answer: "Definitely. When done right, social media is a lead-generation machine. We’re seeing a major shift where businesses are moving away from generic posting and hiring pros to build targeted local campaigns. These are designed to turn simple \"likes\" into genuine inquiries and sales.",
   },
   {
     question: "How can social media marketing help my business?",
@@ -25,15 +25,15 @@ const faqs = [
   },
   {
     question: "How does a social media marketing agency operate?",
-    answer: "Agencies leverage their years of expertise to strategically plan, create content, and publish it on time. Additionally, they perform regular performance assessments to optimize campaign outcomes and achieve clients’ business goals.",
+    answer: "Think of us as your external marketing department. We do the hard work of figuring out what to post, when to post, and analyzing the data to see what’s actually working. We do not just post and ghost. We pivot to tell the plan what to do to achieve better outcomes in line with your goals.",
   },
   {
     question: "Which social media platforms work well for business?",
-    answer: "Social media marketing involves multiple platforms, e.g., Facebook, Instagram, LinkedIn, and Twitter. Each platform offers different benefits, and we tailor our campaign to target those specific benefits—capturing a wider audience with similar interests to your business.",
+    answer: "It really depends on where your audience is. For B2B, LinkedIn is usually the best, along with Instagram and Facebook for visual or lifestyle brands. We utilize expert digital marketing services in USA so you do not spend effort on underperforming platforms.",
   },
   {
-    question: "How do you measure the success of your marketing campaigns?",
-    answer: "We measure our marketing campaigns' success by using some technical key performance indicators (KPIs), such as engagement rates, click-through rates, conversions, and ROI. These insights allow us to refine our marketing strategies and achieve the best results.",
+    question: "How do you measure the success of a campaign?",
+    answer: "We don’t guess—we track. We look at the numbers that actually matter, like how many people are clicking, engaging, and ultimately buying. By using data-led digital marketing services in USA, we can see exactly what’s working in real-time and adjust the strategy to keep your growth steady.",
   },
 ];
 
@@ -62,7 +62,7 @@ export function Faq() {
                 </span>
               </h2>
               <p className="text-md sm:text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                Can&apos;t find the answer you&apos;re looking for? Feel free to reach out to our team for more information.
+                Still struggling with concerns about digital marketing services in USA? Read our FAQs or contact our team if you need additional information.
               </p>
             </div>
 

@@ -7,17 +7,41 @@ import { MarqueeSeparator } from "@/components/ui/marquee-separator";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "PPC Services for Genuine Businesses | Dash Media Solutions",
-  description: "Get your brand discovered faster with expert pay-per-click marketing services by Dash Media. Hire our professionals and boost your sales at an affordable cost.",
-  keywords: ["Powerful Pay Per Click (PPC) solutions", "Effective Ads Campaigns", "High-Impact Social Advertising", "Boost Your Sales with Pay Per Click (PPC)"],
+  title: "Best Pay Per Click Services in USA | Dash Media Solutions",
+  description: "Stop wasting your ad budget. Our pay per click services in USA drive high-intent leads and instant sales with precision targeting and expert PPC audits.",
+  keywords: ["Pay Per Click Services in USA", "Digital Marketing Agency in USA", "Digital Marketing Services in USA"],
 };
+
+const ppcItems = [
+  "Top Rated Pay Per Click Services in USA",
+  "Partner with a Digital Marketing Agency in USA",
+  "Ads That Actually Convert",
+  "Top Pay Per Click Services in USA",
+  "High-Intent Lead Generation",
+  "Expert Pay Per Click Services in USA",
+  "Precision Targeted Campaigns",
+  "Leading Digital Marketing Agency in USA",
+  "Smart Spend, Better Results",
+  "Premium Pay Per Click Services in USA",
+  "Scale Your Brand Today",
+  "Effective Pay Per Click Services in USA",
+  "Instant Search Presence",
+  "Your Trusted Digital Marketing Agency in USA",
+  "Stop Wasting Ad Budget",
+  "Strategic Pay Per Click Services in USA",
+  "Leverage Every Single Click",
+  "Premier Digital Marketing Agency in USA",
+  "Data-Driven Ad Success",
+  "Scalable Pay Per Click Services in USA",
+  "Dominate Your Market"
+];
 
 export default function PpcServicePage() {
   return (
     <>
     <PpcStrategySection/>
     <PpcToolkits/>
-    <MarqueeSeparator/>
+    <MarqueeSeparator items={ppcItems} />
     <Testimonials/>
     <Faq/>
     </>

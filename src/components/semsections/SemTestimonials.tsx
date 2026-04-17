@@ -17,13 +17,13 @@ const testimonials = [
     avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=300",
     name: "Vikram Sethi",
     role: "Business Strategy Lead, Growth-Focused Company",
-    review: "Dash Media Solutions' premier SEM solutions are definitely game-changing. They helped us with web design and digital marketing services to promote our businesses worldwide, and honestly, we are impressed with the results.",
+    review: "Dash Media Solutions' premier SEM solutions are definitely game-changing. They helped us with a complete search engine marketing strategy to promote our business worldwide. And honestly, we are impressed with the marketing results.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300",
     name: "Kabir Thapar",
     role: "Operations Manager, Digital Services Company",
-    review: "As a startup, we kind of got lost with the digital marketing until we partnered with Dash Media Solutions. Their professionalism and attention to detail are commendable. Thanks to them, we successfully delivered some exceptional campaigns in the industry, which strengthened our connection and drew business.",
+    review: "We were new to the industry and kinda lost in the way of marketing. Then we partnered with Dash Media Solutions. Their expertise and powerful approaches helped us a lot. Thanks to them, we delivered some of the exceptional campaigns in our industry, which drew newer clients and connections.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300",
@@ -71,7 +71,7 @@ export function Testimonials() {
                             Are Saying
                         </h2>
                         <p className="text-md sm:text-lg text-muted-foreground mt-6 leading-relaxed">
-                            Listen to what our clients have to say about our search engine marketing (SEM) solutions and learn how they empower their marketing and user engagement. 
+                            Explore what our clients have to say about our digital marketing services in USA and how they improve their online presence. 
                         </p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ export function Testimonials() {
                                 (1500+ Reviews)
                             </p>
                             <p className="text-md font-semibold leading-relaxed text-white mb-4">
-                                Discover Clients&apos; Experiences <br />That Define Our Partnerships.
+                                Discover Clients&apos; Experiences <br />That Define Our Partnerships
                             </p>
                         </div>
 
@@ -146,7 +146,7 @@ export function Testimonials() {
                                                 {/* MOVED: Quote to right side and FLIPPED vertically */}
                                                 <Quote className="absolute -top-6 right-10 w-28 h-28 text-gray-100 fill-gray-100 -z-10 opacity-70 transform scale-y-[-1]" />
                                                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-regular break-words relative z-10">
-                                                    "{testimonial.review}"
+                                                    &quot;{testimonial.review}&quot;
                                                 </p>
                                             </div>
 

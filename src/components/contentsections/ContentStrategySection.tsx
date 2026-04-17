@@ -6,8 +6,8 @@ import Image from "next/image";
 const strategyData = [
   {
     id: "01",
-    title: "Target Audience & Research",
-    description: "We design custom content strategies that align with business goals, audience intent, and search demand to drive long-term website traffic.",
+    title: "Target Audience & Topic Research",
+    description: "We develop content strategies that align with business goals, audience behavior, and search intent for sustainable traffic to your website.",
     image: "/images/strategy/discovery.png", 
     imageBg: "bg-blue-50/50",
     bgColor: "bg-white",
@@ -15,7 +15,7 @@ const strategyData = [
   {
     id: "02",
     title: "Content Creation & Production",
-    description: "We strategically produce high-quality blog posts, videos, and other promotional materials designed to engage or inform your audience.",
+    description: "We thoughtfully create blogs, videos, and other promotional materials in a quality manner to either engage or educate your audience.",
     image: "/images/strategy/planning.png", 
     imageBg: "bg-purple-50/30",
     bgColor: "bg-white",
@@ -23,7 +23,7 @@ const strategyData = [
   {
     id: "03",
     title: "Distribution & Promotion",
-    description: "Once the content is produced, we ensure it reaches the correct audience through our tailored content strategies and SEO-based practices.",
+    description: "Once the content is created, we strategically deliver it to your specific audience by means of our customized content distribution and promotion techniques.",
     image: "/images/strategy/launch.png", 
     imageBg: "bg-emerald-50/30",
     bgColor: "bg-white",
@@ -31,7 +31,7 @@ const strategyData = [
   {
     id: "04",
     title: "Content Syndication & Repurposing",
-    description: "We repurpose and distribute your existing content across multiple platforms to expand your reach and attract new audiences.",
+    description: "Our digital marketing services in USA reconfigure your content according to the varying needs of formats and platforms, helping you reach new audiences.",
     image: "/images/strategy/analysis.png", 
     imageBg: "bg-rose-50/50",
     bgColor: "bg-white",
@@ -49,12 +49,12 @@ export function ContentStrategySection() {
               Our Services
             </span>
             <h2 className="text-5xl md:text-6xl lg:text-[75px] font-semibold tracking-tighter text-primary uppercase leading-none">
-              Strategy built for <br />
+              Strategic Content <br />
               <span
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                 style={{ backgroundSize: "300% 100%" }}
               >
-                Content Marketing
+                Marketing Services in USA
               </span>
             </h2>
           </header>

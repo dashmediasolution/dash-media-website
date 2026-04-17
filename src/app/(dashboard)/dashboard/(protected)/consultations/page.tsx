@@ -28,6 +28,38 @@ export default function ConsultationsPage() {
     fetchRequests();
   }, []);
 
+  const handleMarkAsRead = async (id: string) => {
+    try {
+      // Optimistic update for a snappy UI
+      setRequests((prev) => prev.map((req) => req.id === id ? { ...req, isRead: true } : req));
+      
+      const response = await fetch(`/api/consultations/${id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ isRead: true }),
+      });
+
+      if (!response.ok) throw new Error("Failed to mark as read");
+      
+    } catch (error) {
+      console.error("Failed to mark as read:", error);
+      fetchRequests(); // Revert on failure
+    }
+  };
+
+  const handleDelete = async (id: string) => {
+    if (!confirm("Are you sure you want to delete this request?")) return;
+    try {
+      setRequests((prev) => prev.filter((req) => req.id !== id)); // Optimistic update
+      
+      const response = await fetch(`/api/consultations/${id}`, { method: 'DELETE' });
+      if (!response.ok) throw new Error("Failed to delete");
+    } catch (error) {
+      console.error("Failed to delete request:", error);
+      fetchRequests(); // Revert on failure
+    }
+  };
+
   return (
     <div className="w-full space-y-6">
       
@@ -52,7 +84,12 @@ export default function ConsultationsPage() {
       </div>
 
       {/* Table receiving state as props */}
-      <ConsultationTable requests={requests} loading={loading} />
+      <ConsultationTable 
+        requests={requests} 
+        loading={loading} 
+        onMarkAsRead={handleMarkAsRead}
+        onDelete={handleDelete}
+      />
     </div>
   );
 }

@@ -25,7 +25,7 @@ const testimonials = [
         avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300",
         name: "Aditya Mehta",
         role: "Founder & CEO, E-commerce Company",
-        review: " A professional team with excellent support. They delivered our e-commerce website ahead of schedule, and it performs perfectly. It's easy to use and responsive to all devices, making it easier for our customers to explore.",
+        review: "Outstanding team and support. They completed our e-commerce website ahead of time and it works flawlessly. The website is user friendly and works great across all devices, improving the browsing experience for our customers.",
     },
     {
        
@@ -74,7 +74,7 @@ export function Testimonials() {
                             Are Saying
                         </h2>
                         <p className="text-md sm:text-lg text-muted-foreground mt-6 leading-relaxed">
-                            Learn what our clients have to say about our professional web design services and how they improve their user experience.
+                            Explore what our clients have to say about our digital marketing services in USA and how they improve their online presence. 
                         </p>
                     </div>
                 </div>
@@ -100,7 +100,7 @@ export function Testimonials() {
                                 (1500+ Reviews)
                             </p>
                             <p className="text-md font-semibold leading-relaxed text-white mb-4">
-                                Discover Clients&apos; Experiences <br />That Define Our Partnerships.
+                                Discover Clients&apos; Experiences <br />That Define Our Partnerships
                             </p>
                         </div>
 
@@ -144,12 +144,12 @@ export function Testimonials() {
                                             </div>
 
                                             {/* Review Text */}
-                                            {/* ✅ FIX 2: Added 'relative' and the Quote Icon */}
+                                            {/*  FIX 2: Added 'relative' and the Quote Icon */}
                                             <div className="mb-10 w-full relative z-0">
                                                 {/* MOVED: Quote to right side and FLIPPED vertically */}
                                                 <Quote className="absolute -top-6 right-10 w-28 h-28 text-gray-100 fill-gray-100 -z-10 opacity-70 transform scale-y-[-1]" />
                                                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-regular break-words relative z-10">
-                                                    "{testimonial.review}"
+                                                    &quot;{testimonial.review}&quot;
                                                 </p>
                                             </div>
 

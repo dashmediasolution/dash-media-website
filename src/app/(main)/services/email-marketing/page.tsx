@@ -6,17 +6,40 @@ import { MarqueeSeparator } from "@/components/ui/marquee-separator";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best Email Marketing Services | Dash Media Solutions",
-  description: "Try our exceptional email marketing solutions to increase business sales. We've covered everything from email template design to targeted marketing strategies.",
-  keywords: ["Boost Your Sales with Email Marketing", "Automated Email Marketing", "Tailored Email Marketing", "Improve Click-Through Rate"],
+  title: "Email Marketing Services in USA | Dash Media Solutions",
+  description: "Land in the inbox, not the spam folder. Our email marketing services in USA help you automate campaigns, build loyalty, and drive real ROI with expert strategy.",
+  keywords: ["Email Marketing Services in USA", "Digital Marketing Agency in USA", "Digital Marketing Services in USA"],
 };
+
+const emailMarketingItems = [
+  "Top Email Marketing Services in USA",
+  "Inbox-Ready Strategies",
+  "Partner with a Digital Marketing Agency in USA",
+  "Turn Clicks into Customers",
+  "Expert Email Marketing Services in USA",
+  "Data-Driven Campaign Growth",
+  "Leading Digital Marketing Agency in USA",
+  "Personalized Messaging at Scale",
+  "Premium Email Marketing Services in USA",
+  "Build Lasting Brand Loyalty",
+  "Proven Email Marketing Services in USA",
+  "Direct Lines to Your Audience",
+  "Your Trusted Digital Marketing Agency in USA",
+  "Automate Your Success",
+  "Strategic Email Marketing Services in USA",
+  "High-Converting Newsletters",
+  "Premier Digital Marketing Agency in USA",
+  "Optimize Every Send",
+  "Scalable Email Marketing Services in USA",
+  "Smart Marketing, Real ROI"
+];
 
 export default function EmailServicePage() {
   return (
     <>
     <EmailStrategySection/>
     <EmailToolkits/>
-    <MarqueeSeparator/>
+    <MarqueeSeparator items={emailMarketingItems} />
     <Testimonials/>
     <Faq/>
     </>

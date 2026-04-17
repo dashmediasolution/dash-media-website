@@ -13,28 +13,28 @@ import {
 
 const faqs = [
   {
-    question: "Why is email marketing important for businesses?",
-    answer: "Even today, email marketing remains the most cost-effective and direct way to target an audience. With billions of daily email users, businesses are enabled to maintain customer relationships, increase engagement, and drive sales.",
+    question: "Why is email marketing still a big deal?",
+    answer: "It’s the most direct line you have to your customers. While social media algorithms hide your posts, email puts you right in their hands. It’s cheap, effective, and helps you build a real connection that drives sales.",
   },
   {
-    question: "Do email marketing designs affect the campaign performance?",
-    answer: "Yes, email marketing designs play a vital role in capturing users' attention and encouraging them to click. Therefore, visually appealing, mobile-responsive designs are high in demand because they improve readability, engagement, and the probability of actions.",
+    question: "Does the design actually change the results?",
+    answer: "Definitely. If an email looks like a mess on a phone, people won’t read it. Clean, mobile-friendly email marketing services in USA ensure your message is easy on the eyes, which naturally leads to more clicks and fewer unsubscribes.",
   },
   {
-    question: "How do automated email marketing services benefit my business?",
-    answer: "Automated email marketing services streamline your efforts by sending targeted messages based on predetermined triggers and users' behavior. This allows your team to focus on important strategies rather than performing repetitive tasks.",
+    question: "How does automation help my business?",
+    answer: "It does the heavy lifting for you. Automation sends the right message at the perfect time—like a welcome note the second someone signs up. This lets a digital marketing agency in USA help you grow without you having to hit \"send\" manually every time.",
   },
   {
-    question: "Do you provide consulting services for email marketing?",
-    answer: "Yes, we do offer email marketing consulting to guide brands and businesses. We provide expert insights, popular platform recommendations, and performance analysis to help them gain reach and effective ROI.",
+    question: "Do you offer email marketing consulting?",
+    answer: "We sure do! Email marketing is one area where people tend to lose customers. We use your email marketing analytics to help you choose your most compatible email marketing type and adjust your strategy to improve your ROI.",
   },
   {
-    question: "Do you provide customizable packages for email marketing?",
-    answer: "Yes, we offer customizable packages for email marketing to deliver tailored service to each of our clients. Whether brands are looking for full-service management or just strategic support, our agency covers all.",
+    question: "Can I get a customized package?",
+    answer: "Absolutely. Every business is not the same; they are unique, and so should your plan be. We can create a package that serves your goals. Whether you need full-service management or just some assistance on the technical side.",
   },
   {
-    question: "How do I choose an email marketing provider?",
-    answer: "When evaluating email marketing agencies, prioritize those who offer reliable automation, advanced segmentation options, detailed analytics, and deliverability rates. Additionally, consider their customer support services, pricing structure, compliance features, and experience in the relevant industry.",
+    question: "How do I choose the right provider?",
+    answer: "Look for a team that prioritizes deliverability. You need a digital marketing agency in USA that understands how to stay out of the spam folder and knows how to segment your list so your audience actually cares about what you’re sending.",
   },
 ];
 
@@ -63,7 +63,7 @@ export function Faq() {
                 </span>
               </h2>
               <p className="text-md sm:text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                Can&apos;t find the answer you're looking for? Feel free to reach out to our team for more information.
+                Still struggling with concerns about digital marketing services in USA? Read our FAQs or contact our team if you need additional information.
               </p>
             </div>
 

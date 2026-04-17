@@ -14,15 +14,15 @@ import {
 const faqs = [
   {
     question: "What is a video marketing service?",
-    answer: "Video marketing service is a subdomain of digital marketing that helps brands and businesses create a powerful strategy that uses video content to promote services, products, and narratives.",
+    answer: "Video marketing services focus on the creation of strategies that center on the use of video content to tell a brand’s story or sell a service or product.",
   },
   {
     question: "Does video marketing actually work?",
-    answer: "Yes, video marketing is highly effective and is leveraged by multiple organizations to spread narratives and help to achieve their marketing goals. It primarily drives engagement, brand awareness, and generates high-quality leads.",
+    answer: "Absolutely. Nowadays, it's one of the best ways to grab people's attention. Video is a great medium to drive more engagement and leads because it doesn't impose all information at once like a manual but gives time to understand all viewpoints and information.",
   },
   {
     question: "Which types of businesses can benefit from video marketing?",
-    answer: "Video marketing is an effective way to promote businesses with strong storytelling. Regardless of business type, video marketing fosters better understanding among potential customers. Eventually, improving performance analytics and overall ROI.",
+    answer: "Pretty much everyone. Whether you’re a local service provider or a big tech firm, video helps people \"get\" what you do faster. It builds a connection with your audience that simple images just can't match.",
   },
   {
     question: "What are the advantages of video marketing?",
@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     question: "How does a video marketing service improve user understanding?",
-    answer: "Our professional video marketing service presents your products'/services' information in a visually appealing manner for the audience. Through engaging videos, we exhibit how your products work, showcase their features, and even show real-time scenarios.",
+    answer: "People like to see your products and services in action, not just in reading manuals. That's why we offer digital marketing services in USA to create compelling content that tells your story and shows exactly how you solve real-world problems.",
   },
   {
     question: "Why should businesses partner with a video marketing agency?",
@@ -63,7 +63,7 @@ export function Faq() {
                 </span>
               </h2>
               <p className="text-md sm:text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                Can&apos;t find the answer you're looking for? Feel free to reach out to our team for more information.
+                Still struggling with concerns about digital marketing services in USA? Read our FAQs or contact our team if you need additional information.
               </p>
             </div>
 

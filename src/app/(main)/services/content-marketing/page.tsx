@@ -6,17 +6,40 @@ import { MarqueeSeparator } from "@/components/ui/marquee-separator";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Expert Content Marketing Services—Dash Media Solutions",
-  description: "Dash Media Solutions is a leading digital marketing agency that offers high-quality content marketing services to improve brand authority and visibility.",
-  keywords: ["Expert Content Marketing Solutions", "SEO-based practices", "Improve Visibility in Search Engines", "Develop a Stronger Online Presence", "Organic Search Growth"],
+  title: "Content Marketing Services in USA | Dash Media Solutions",
+  description: "Our best content marketing services in USA offer brands to improve their storytelling by data-driven strategies and SEO techniques to enhance reach and ROI.",
+  keywords: ["Content Marketing Services in USA", "Digital Marketing Services in USA", "Digital Marketing Agency in USA"],
 }
+
+const contentMarketingItems = [
+  "Growth with Content Marketing Services in USA",
+  "Data-Driven Storytelling Excellence",
+  "Boost Your Reach With Our Digital Marketing Agency in USA",
+  "Strategic Inbound Marketing Solutions",
+  "High-Authority Content Marketing Services in USA",
+  "Build Trust Through Expert Content",
+  "Leading Content Marketing Services in USA",
+  "Master Your Brand’s Voice",
+  "Exceptional Digital Marketing Agency in USA",
+  "Top Content Marketing Services in USA",
+  "Drive Measurable Customer Engagement",
+  "Premium Content Marketing Services in USA",
+  "Innovative Social Media Content Strategies",
+  "Boost ROI with Our Digital Marketing Agency in USA",
+  "Creative Copywriting That Converts",
+  "Expert Digital Marketing Services in USA",
+  "Scale Your Online Authority Fast",
+  "Proven Content Marketing Services in USA",
+  "Sustainable Brand Growth Through Content",
+  "Action-Oriented Digital Marketing Agency in USA"
+];
 
 export default function ContentMarketingServicePage() {
   return (
     <>
      <ContentStrategySection/>
      <ContentToolkits/>
-      <MarqueeSeparator/>
+      <MarqueeSeparator items={contentMarketingItems} />
       <Testimonials/>
       <Faq/>
     </>

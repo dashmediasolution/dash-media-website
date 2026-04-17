@@ -14,28 +14,28 @@ import {
 
 const faqs = [
   {
-    question: "What is Pay Per Click (PPC)?",
-    answer: "Pay-per-click (PPC) is a very popular digital advertising model where advertisers pay a specific fee every time their ad is clicked, rather than paying for impressions. This model allows businesses and brands to purchase visitors for their sites. Advertisers bid on keywords or targeting criteria, and ads appear when users search for those terms.",
+    question: "What exactly is Pay Per Click (PPC)?",
+    answer: "It’s a straightforward way to buy traffic for your website. Instead of hoping people find you organically, you pay a small fee every time someone actually clicks on your ad. It’s a bidding system where you show up exactly when people search for specific terms that matter to your business.",
   },
   {
-    question: "Why should I advertise with Pay-Per-Click ads?",
-    answer: "Pay-Per-Click (PPC) advertising offers high targeted visibility that drives instant traffic. Therefore, generating leads and sales becomes easier compared to long-term SEO strategies. With total control, brands are only eligible to pay when someone clicks PPC ads, which maximizes return on investment.",
+    question: "Do you offer Pay Per Click audits?",
+    answer: "We do. If you feel like you’re throwing money into a black hole, a digital marketing agency in USA can look into your account. We’ll find the leaks in your budget and show you exactly how to tweak your settings to get more bang for your buck on platforms like Google or Meta.",
   },
   {
-    question: "Do you provide Pay-Per-Click audits?",
-    answer: "Yes, our professional provides in-depth, specialized pay-per-click audits to help optimize, reduce inefficient ad spend, and improve the return on investment (ROI) for platforms like Google Ads, Microsoft Ads, and social media.",
+    question: "What actually happens during a PPC audit?",
+    answer: "We analyze your campaign down to the last detail to identify what costs are being wasted. We analyze your keyword targeting and landing pages. In the end, you receive the roadmap to declutter your campaign and increase your marketing efficiency to the maximum.",
   },
   {
-    question: "What is included in a Pay-Per-Click audit?",
-    answer: "A Pay-Per-Click (PPC) audit is a comprehensive report that is created by analyzing PPC campaign structure, performance, targeting settings, landing page quality, and efficiency across the platforms. With the detailed insights, a brand can eliminate wasted ad spend and maximize ROI.",
+    question: "How long does it take to see results?",
+    answer: "The ads themselves can go live and start getting clicks within hours. However, real, \"bankable\" results usually take a bit of time to settle in. A professional digital marketing agency in USA will typically spend the first 3 to 6 months testing and optimizing to make sure the campaign is as profitable as possible.",
   },
   {
-    question: "How long does it take Pay-Per-Click to show results?",
-    answer: "It usually depends on the specific campaigns and can show results—specifically, ads appearing in search results and receiving clicks—almost immediately (within hours or a few days). However, generating meaningful results can also take up to 3-6 months.",
+    question: "How much is a PPC campaign actually going to cost me?",
+    answer: "There’s no flat rate because every industry is different. While some clicks cost a few cents, highly competitive ones can be much pricier. Most small businesses start with somewhere between a few hundred and a few thousand dollars a month. We help you find the sweet spot for pay per click services in USA that hit your goals without breaking the bank.",
   },
   {
-    question: "How much does a PPC campaign cost?",
-    answer: "PPC campaign costs fluctuate based on industry and goals, but small to medium-sized businesses typically spend between $100 and $10,000 per month on ad spend. Average cost-per-click (CPC) is usually $0.11–$0.50, though competitive industries often exceed $2.69 per click.",
+    question: "Can I control how much I spend each day?",
+    answer: "Absolutely. One of the best parts about Pay Per Click Services in USA is that you control everything. You can set a strict daily cap so you never spend a penny more than you planned. Whether you want to scale up during a busy season or dial it back on the weekends, a professional digital marketing agency in USA can adjust your limits instantly to keep your budget in check.",
   },
 ];
 
@@ -64,7 +64,7 @@ export function Faq() {
                 </span>
               </h2>
               <p className="text-md sm:text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                Can&apos;t find the answer you're looking for? Feel free to reach out to our team for more information.
+                Still struggling with concerns about digital marketing services in USA? Read our FAQs or contact our team if you need additional information.
               </p>
             </div>
 

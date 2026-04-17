@@ -31,7 +31,7 @@ const strategyData = [
   {
     id: "04",
     title: "Testing & Support",
-    description: "We test the functionality, compatibility, performance, and security of the website to ensure the premium quality of our services.",
+    description: "To guarantee first-rate services, we evaluate the functionality, compatibility, performance, and security of the website.",
     image: "/images/strategy/analysis.png", 
     imageBg: "bg-rose-50/50",
     bgColor: "bg-white",
@@ -46,15 +46,15 @@ export function WebStrategySection() {
         <div className="container mx-auto px-5 sm:px-20">
           <header className="text-center">
             <span className="text-md font-bold tracking-[0.4em] uppercase text-muted-foreground mb-4 block">
-              Our Services
+              Discover the Best
             </span>
             <h2 className="text-5xl md:text-6xl lg:text-[75px] font-semibold tracking-tighter text-primary uppercase leading-none">
-              Strategy built for <br />
+              Web Design <br />
               <span
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                 style={{ backgroundSize: "300% 100%" }}
               >
-                Web Development
+                Services in USA
               </span>
             </h2>
           </header>

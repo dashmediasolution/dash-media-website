@@ -25,7 +25,7 @@ export function AppDevToolkits() {
               </span>
             </h2>
             <p className="mt-6 text-muted-foreground text-lg max-w-xl font-medium">
-              We leverage industry-leading data platforms to ensure your strategy is backed by absolute precision.
+              Explore what our clients have to say about our digital marketing services in USA and how they improve their online presence.
             </p>
           </div>
 

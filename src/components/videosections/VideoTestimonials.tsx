@@ -17,7 +17,7 @@ const testimonials = [
     avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=300",
     name: "Vikram Malhotra",
     role: "Chief Marketing Officer (CMO), Services Organization",
-    review: "Ever since we partnered with Dash Media Solutions, our lead generation has never been the same. We’ve seen a 35% uptick in leads within just three months. Their video marketing strategy is effective, and their tech tools are revolutionary.",
+    review: "Since we started working with Dash Media Solutions, our ability to get leads has changed. We've gotten 35% more leads in just three months. Their tools are great, and their video marketing strategy works.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300",
@@ -29,7 +29,7 @@ const testimonials = [
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300",
     name: "Ishani Verma",
     role: "Chief Executive Officer (CEO), Technology Firm",
-    review: "Video marketing wasn’t working for us until we discovered Dash Media Solutions. Their expertise combines comprehensive approaches with advanced tools to ensure the effectiveness of the marketing campaign.",
+    review: "Video marketing wasn’t working for us until we discovered Dash Media Solutions. Their expertise blends detailed methods with advanced tools to ensure the effectiveness of the marketing campaign and deliver growth results.",
   },
 ];
 
@@ -71,7 +71,7 @@ export function Testimonials() {
                             Are Saying
                         </h2>
                         <p className="text-md sm:text-lg text-muted-foreground mt-6 leading-relaxed">
-                           Listen to what our clients have to say about our video marketing services and learn how the brand is improving awareness and overall reach. 
+                           Explore what our clients have to say about our digital marketing services in USA and how they improve their online presence. 
                         </p>
                     </div>
                 </div>
@@ -146,7 +146,7 @@ export function Testimonials() {
                                                 {/* MOVED: Quote to right side and FLIPPED vertically */}
                                                 <Quote className="absolute -top-6 right-10 w-28 h-28 text-gray-100 fill-gray-100 -z-10 opacity-70 transform scale-y-[-1]" />
                                                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-regular break-words relative z-10">
-                                                    "{testimonial.review}"
+                                                    &quot;{testimonial.review}&quot;
                                                 </p>
                                             </div>
 

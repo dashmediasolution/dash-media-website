@@ -25,7 +25,7 @@ export function EmailToolkits() {
               </span>
             </h2>
             <p className="mt-6 text-muted-foreground text-lg max-w-xl font-medium">
-              We leverage industry-leading data platforms to ensure your strategy is backed by absolute precision.
+              Master the inbox with data-driven strategies that turn cold subscribers into loyal, high-converting brand fans.
             </p>
           </div>
 

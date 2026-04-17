@@ -22,8 +22,8 @@ const strategyData = [
   },
   {
     id: "03",
-    title: " Scalable Cloud-Native Architecture",
-    description: "Our company specializes in creating versatile, user-friendly applications for various platforms, including Android, iOS, web, and more.",
+    title: "Scalable Cloud-Native Architecture",
+    description: "We develop flexible and adaptable solutions. Our applications are compatible with multiple systems like Android, iOS, web, and others.",
     image: "/images/strategy/launch.png", 
     imageBg: "bg-emerald-50/30",
     bgColor: "bg-white",
@@ -31,7 +31,7 @@ const strategyData = [
   {
     id: "04",
     title: "Governance & Safety Measures",
-    description: "With our expertise, we strike a balance between control, creativity, and safety to ensure application efficiency and reliability.",
+    description: "Thanks to our experience, we manage to combine control, creativity, and safety for the effective and reliable functioning of applications.",
     image: "/images/strategy/analysis.png", 
     imageBg: "bg-rose-50/50",
     bgColor: "bg-white",
@@ -49,12 +49,12 @@ export function AppDevStrategySection() {
               Our Services
             </span>
             <h2 className="text-5xl md:text-6xl lg:text-[75px] font-semibold tracking-tighter text-primary uppercase leading-none">
-              Strategy built for <br />
+              Innovative App Development <br />
               <span
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                 style={{ backgroundSize: "300% 100%" }}
               >
-                App Development
+                Services in USA
               </span>
             </h2>
           </header>

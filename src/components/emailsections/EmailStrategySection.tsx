@@ -7,7 +7,7 @@ const strategyData = [
   {
     id: "01",
     title: "Enhanced Audience Research",
-    description: "We create relevant email forms to fetch all the necessary details about the users, understanding the key metrics, such as the expectations, preferences, and more.",
+    description: "We create relevant email templates to fetch user details, understanding the key metrics, such as the expectations, preferences, and more.",
     image: "/images/strategy/discovery.png", 
     imageBg: "bg-blue-50/50",
     bgColor: "bg-white",
@@ -15,7 +15,7 @@ const strategyData = [
   {
     id: "02",
     title: "Campaign Design",
-    description: "We design emails to meet relevant objectives of brands, whether it is to improve sales, reach a new audience, or even retarget the existing one.",
+    description: "We design emails to meet the relevant objectives of brands, whether it is to improve sales, reach a new audience, or even retarget the existing one.",
     image: "/images/strategy/planning.png", 
     imageBg: "bg-purple-50/30",
     bgColor: "bg-white",
@@ -23,7 +23,7 @@ const strategyData = [
   {
     id: "03",
     title: "Advanced Marketing Automation",
-    description: "Our team of professionals helps businesses to automate email marketing campaigns, empowering them to establish a connection with their customers.",
+    description: "Our team of experts assists companies in automating email marketing strategies so that they can communicate effectively with their clients.",
     image: "/images/strategy/launch.png", 
     imageBg: "bg-emerald-50/30",
     bgColor: "bg-white",
@@ -31,7 +31,7 @@ const strategyData = [
   {
     id: "04",
     title: "Analysis & Reporting",
-    description: "We analyze the marketing campaign results to learn about the users' metrics. Further, we use those results to improve our campaign performance.",
+    description: "We analyze the marketing campaign results to learn about the users' metrics. Further, we use those results to improve upcoming campaign performance.",
     image: "/images/strategy/analysis.png", 
     imageBg: "bg-rose-50/50",
     bgColor: "bg-white",
@@ -49,12 +49,12 @@ export function EmailStrategySection() {
               Our Services
             </span>
             <h2 className="text-5xl md:text-6xl lg:text-[75px] font-semibold tracking-tighter text-primary uppercase leading-none">
-              Strategy built for <br />
+              Boost Your Sales with Email <br />
               <span
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                 style={{ backgroundSize: "300% 100%" }}
               >
-                Email Marketing
+                Marketing Services in USA
               </span>
             </h2>
           </header>

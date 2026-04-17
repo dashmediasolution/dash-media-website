@@ -21,11 +21,11 @@ export function SemToolkits() {
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                 style={{ backgroundSize: "300% 100%" }}
               >
-                SEM Toolkit
+                Search Engine Marketing Toolkit
               </span>
             </h2>
             <p className="mt-6 text-muted-foreground text-lg max-w-xl font-medium">
-              We leverage industry-leading data platforms to ensure your strategy is backed by absolute precision.
+              Skip the wait for organic growth with precision-targeted ads that put your brand front and center.
             </p>
           </div>
 

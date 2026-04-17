@@ -17,19 +17,19 @@ const testimonials = [
     avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=300",
     name: "Rajesh Singhal",
     role: "Director of Product Development, Software Company",
-    review: "So far, I’m very impressed with the work of Dash Media Solutions on my app project. They understood the requirement properly and suggested their insight to improve the user experience and post-deployment support.",
+    review: "So far, I’m very impressed with the work of Dash Media Solutions on my app project. They understood the requirement properly and suggested their insight to improve the user experience and provide detailed support.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300",
     name: "Karan Oberoi",
     role: "VP of Engineering, IT Services Firm",
-    review: "It's been a pleasure working with Dash Media Solutions; their team is prominent and responds to every request. They share timely updates for the service and provide detailed insights that automate business functions.",
+    review: "It's been a pleasure working with Dash Media Solutions; their team is prominent and responds to every request. They share timely updates for the app service and provide detailed insights that automate user functions.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300",
     name: "Mehak Chawla",
     role: "Chief Technology Officer (CTO), SaaS Organization",
-    review: "Dash Media Solutions successfully created and deployed our mobile app. Later, the app was released on the app stores smoothly. Their team is currently updating the app to enhance the user experience. Greatly recommended!",
+    review: "Dash Media Solutions successfully created and deployed our mobile app. Later, the app was released on the app stores smoothly. Their team is currently updating the app to enhance the user experience. Highly recommended!",
   },
 ];
 
@@ -71,7 +71,7 @@ export function Testimonials() {
                             Are Saying
                         </h2>
                         <p className="text-md sm:text-lg text-muted-foreground mt-6 leading-relaxed">
-                        Listen to what our clients have to say about our app development solutions and learn how they automate business functioning and user engagement.
+                        Explore what our clients have to say about our digital marketing services in USA and how they improve their online presence. 
                         </p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ export function Testimonials() {
                                 (1500+ Reviews)
                             </p>
                             <p className="text-md font-semibold leading-relaxed text-white mb-4">
-                                Discover Clients&apos; Experiences <br />That Define Our Partnerships.
+                                Discover Clients&apos; Experiences <br />That Define Our Partnerships
                             </p>
                         </div>
 
@@ -146,7 +146,7 @@ export function Testimonials() {
                                                 {/* MOVED: Quote to right side and FLIPPED vertically */}
                                                 <Quote className="absolute -top-6 right-10 w-28 h-28 text-gray-100 fill-gray-100 -z-10 opacity-70 transform scale-y-[-1]" />
                                                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-regular break-words relative z-10">
-                                                    "{testimonial.review}"
+                                                    &quot;{testimonial.review}&quot;
                                                 </p>
                                             </div>
 

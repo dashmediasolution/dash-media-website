@@ -17,11 +17,11 @@ const faqs = [
   },
   {
     question: "How long does website design usually take?",
-    answer: "It usually depends on the design and complexities of the project. However, a custom website design can take from 2 to 6 weeks, depending on the client’s requirements.",
+    answer: "Generally, it fluctuates based on the project scope and specifications. However, custom website design takes between 2 to 6 weeks based on how the design specifications suit the client and the changes required.",
   },
   {
     question: "Do you offer mobile-responsive design?",
-    answer: "Yes, we offer fully responsive designs, which include mobiles, tablets, laptops, and PCs. Additionally, we also optimize the web design for different browsers to ensure user-friendliness on multiple platforms.",
+    answer: "Yes! We create fully responsive websites that adapt to all devices—smartphones, tablets, laptops and desktop computers. Also, we conduct user testing on our web designs on different browsers to verify user-friendliness on all platforms.",
   },
   {
     question: "Are you capable of redesigning the existing website?",
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     question: "What’s the cost of your web design service?",
-    answer: "The right answer to this question is that it depends on the website and the requirements of the clients. However, at Dash Media, we strive to provide the best design solution at an affordable price range. To learn more, contact us today!",
+    answer: "The right answer to this question depends on the website and client demands. However, at Dash Media, we aim to provide the best design answer at the most affordable price. Get in touch to find out more!",
   },
 ];
 
@@ -51,18 +51,13 @@ export function Faq() {
             {/* Header Section Inside Left Column */}
             <div className="max-w-4xl">
               <h2 className="text-2xl sm:text-3xl md:text-5xl font-regular text-primary tracking-tighter leading-none mb-6">
-                Have{" "}
+                Frequently Asked{" "}
                 <span className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold" style={{ backgroundSize: "300% 100%" }}>
-                  Questions?
-                </span>
-                <br />
-                Get{" "}
-                <span className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold" style={{ backgroundSize: "300% 100%" }}>
-                  Answers
+                  Questions (FAQs)
                 </span>
               </h2>
               <p className="text-md sm:text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                Can&apos;t find the answer you're looking for? Feel free to reach out to our team for more information.
+                Still struggling with concerns about digital marketing services in USA? Read our FAQs or contact our team if you need additional information.
               </p>
             </div>
 

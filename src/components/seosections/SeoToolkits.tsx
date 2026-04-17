@@ -16,7 +16,7 @@ export function SeoToolkits() {
           {/* Left Column (8 Columns): Headline */}
           <div className="lg:col-span-8 text-left">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-regular tracking-tighter text-primary leading-none">
-              Our{" "}
+              Our Comprehensive{" "}
               <span
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                 style={{ backgroundSize: "300% 100%" }}
@@ -25,7 +25,7 @@ export function SeoToolkits() {
               </span>
             </h2>
             <p className="mt-6 text-muted-foreground text-lg max-w-xl font-medium">
-              We leverage industry-leading data platforms to ensure your strategy is backed by absolute precision.
+              We offer professional search engine optimization services in USA, providing advanced tools to boost rankings and traffic.
             </p>
           </div>
 

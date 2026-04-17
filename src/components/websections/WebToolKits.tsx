@@ -16,16 +16,16 @@ export function WebToolkits() {
           {/* Left Column (8 Columns): Headline */}
           <div className="lg:col-span-8 text-left">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-regular tracking-tighter text-primary leading-none">
-              Our{" "}
+              Our Tech Stack{" "}
               <span
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                 style={{ backgroundSize: "300% 100%" }}
               >
-                Web Dev Toolkit
+                Used for Web Design
               </span>
             </h2>
             <p className="mt-6 text-muted-foreground text-lg max-w-xl font-medium">
-              We leverage industry-leading data platforms to ensure your strategy is backed by absolute precision.
+              Our web design services in USA leverage a cutting-edge tech stack to create the framework for your digital success. We build high-performing websites designed to convert visitors into loyal customers.
             </p>
           </div>
 

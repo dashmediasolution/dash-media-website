@@ -7,17 +7,40 @@ import { MarqueeSeparator } from "@/components/ui/marquee-separator";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cutting-Edge App Development Service | Dash Media Solutions",
-  description: "Dash Media is dedicated to providing prominent app development solutions for multiple OS that run on all platforms while remaining within your budget.",
-  keywords: ["Mobile App Development Services", "Custom App Development Company", "Cross-Platform App Development", "Enterprise App Solutions", "UI/UX Mobile App Design"],
+  title: "App Development Services in USA | Dash Media Solutions",
+  description: "Partner with Dash Media Solutions for premier app development services in USA. We build secure and user-centric mobile and web apps tailored for growth.",
+  keywords: ["App Development Services in USA", "Digital Marketing Agency in USA", "Digital Marketing Services in USA"],
 };
+
+const appDevItems = [
+  "Top App Development Services in USA",
+  "Apps Built for Growth",
+  "Partner with a Digital Marketing Agency in USA",
+  "From Concept to App Store",
+  "Expert App Development Services in USA",
+  "User-First Design Thinking",
+  "Leading Digital Marketing Agency in USA",
+  "Fast, Secure, and Scalable",
+  "Premium App Development Services in USA",
+  "Build Your Digital Future",
+  "Proven App Development Services in USA",
+  "Next-Gen Mobile Solutions",
+  "Your Trusted Digital Marketing Agency in USA",
+  "Seamless Cross-Platform UX",
+  "Strategic App Development Services in USA",
+  "Code That Drives Revenue",
+  "Scalable App Development Services in USA",
+  "Performance-Driven Coding",
+  "Premier Digital Marketing Agency in USA",
+  "Your Vision, Our Expertise"
+];
 
 export default function AppDevServicePage() {
   return (
     <>
     <AppDevStrategySection/>
     <AppDevToolkits/>
-    <MarqueeSeparator/>
+    <MarqueeSeparator items={appDevItems} />
     <Testimonials/>
     <Faq/>
     </>

@@ -7,9 +7,9 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Best SEO Solutions with Proven Results—Dash Media Solutions",
-  description: "Drive organic growth with the best SEO company. With years of expertise, Dash Media Solutions delivers higher rankings, quality leads, and lasting SEO success.",
-  keywords: ["Search Engine Optimization", "SEO Management", "SEO Strategy Services", "Rank your content on search engines", "importance of SEO services"],
+  title: "Search Engine Optimization Services in USA | Dash Media Solutions",
+  description: "Drive organic growth with the best search engine optimization services in USA. Dash Media Solutions delivers higher rankings, quality leads, and lasting success.",
+  keywords: ["Search Engine Optimization Services in USA", "SEO Services in USA", "Digital Marketing Services in USA", "Digital Marketing Agency in USA"],
 };
 
 export default function SeoServicePage() {

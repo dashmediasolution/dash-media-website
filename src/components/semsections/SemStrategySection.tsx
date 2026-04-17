@@ -15,7 +15,7 @@ const strategyData = [
   {
     id: "02",
     title: "Campaign Management",
-    description: "Our professionals support brands from initial campaign strategies to monitoring performance to final adjustments for better results.",
+    description: "Our professionals support brands from initial campaign strategies to monitoring performance for final adjustments for better results.",
     image: "/images/strategy/planning.png", 
     imageBg: "bg-purple-50/30",
     bgColor: "bg-white",
@@ -23,7 +23,7 @@ const strategyData = [
   {
     id: "03",
     title: "Analytics and Reporting",
-    description: "We provide detailed reports that deliver complete information about the campaign's metrics, such as clicks, impressions, and more.",
+    description: "We offer detailed reports that include all relevant campaign metrics like clicks, impressions, and more to improve performance.",
     image: "/images/strategy/launch.png", 
     imageBg: "bg-emerald-50/30",
     bgColor: "bg-white",
@@ -49,12 +49,12 @@ export function SemStrategySection() {
               Our Services
             </span>
             <h2 className="text-5xl md:text-6xl lg:text-[75px] font-semibold tracking-tighter text-primary uppercase leading-none">
-              Strategy built for <br />
+              Expert Search Engine <br />
               <span
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                 style={{ backgroundSize: "300% 100%" }}
               >
-                Search Engine Marketing
+                Marketing Services in USA
               </span>
             </h2>
           </header>

@@ -25,7 +25,7 @@ const testimonials = [
         avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300",
         name: "Akash Dhull",
         role: "Founder, Direct-to-Consumer Brand",
-        review: "Working with Dash Media Solutions was an excellent experience for us. They took charge of creating and publishing all our social media content. Due to their detailed research and timely monitoring, the result is a fully transformed online presence with better engagement.",
+        review: "Working with Dash Media Solutions was an excellent experience for us. They took charge of creating and publishing all our social media content. With their detailed research and timely monitoring, the result is a fully transformed online presence with better engagement.",
     },
     {
        
@@ -74,7 +74,7 @@ export function Testimonials() {
                             Are Saying
                         </h2>
                         <p className="text-md sm:text-lg text-muted-foreground mt-6 leading-relaxed">
-                           Explore what our clients have to say about our social media marketing services and learn how they positively affected their brand awareness and overall reach.
+                           Explore what our clients have to say about our digital marketing services in USA and how they improve their online presence. 
                         </p>
                     </div>
                 </div>
@@ -149,7 +149,7 @@ export function Testimonials() {
                                                 {/* MOVED: Quote to right side and FLIPPED vertically */}
                                                 <Quote className="absolute -top-6 right-10 w-28 h-28 text-gray-100 fill-gray-100 -z-10 opacity-70 transform scale-y-[-1]" />
                                                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-regular break-words relative z-10">
-                                                    "{testimonial.review}"
+                                                    &quot;{testimonial.review}&quot;
                                                 </p>
                                             </div>
 

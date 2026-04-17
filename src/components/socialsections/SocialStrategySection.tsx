@@ -7,7 +7,7 @@ const strategyData = [
   {
     id: "01",
     title: "Strategy & Platform Selection",
-    description: "We assist brands in identifying their target audience and the best social media platforms to focus their campaign on.",
+    description: "We help brands to identify their target audience and decide which social media platforms would more likely benefit their campaign.",
     image: "/images/strategy/discovery.png", 
     imageBg: "bg-blue-50/50",
     bgColor: "bg-white",
@@ -15,7 +15,7 @@ const strategyData = [
   {
     id: "02",
     title: "Content Creation & Publishing",
-    description: "Through detailed research and analysis, our team creates engaging and visually compelling content, ideal for each platform.",
+    description: "After a lot of study and analysis, our teams produced content that has a unique balance of being engaging and appealing to audiences.",
     image: "/images/strategy/planning.png", 
     imageBg: "bg-purple-50/30",
     bgColor: "bg-white",
@@ -23,14 +23,14 @@ const strategyData = [
   {
     id: "03",
     title: "Community Management & Growth",
-    description: "We regularly interact with the brand audience—responding to comments and shares to improve engagement and foster growth.",
+    description: "We strategically interact with your audience to grow engagement. We respond to comments and reposts to boost interactions and encourage growth.",
     image: "/images/strategy/launch.png", 
     imageBg: "bg-emerald-50/30",
     bgColor: "bg-white",
   },
   {
     id: "04",
-    title: "Analysis & Reporting",
+    title: "Analytics & Reporting",
     description: "We constantly keep track of the performance and analyze our strategy, adjusting to deliver continuous improvement and maximize ROI.",
     image: "/images/strategy/analysis.png", 
     imageBg: "bg-rose-50/50",
@@ -49,12 +49,12 @@ export function SocialStrategySection() {
               Our Services
             </span>
             <h2 className="text-5xl md:text-6xl lg:text-[75px] font-semibold tracking-tighter text-primary uppercase leading-none">
-              Strategy built for <br />
+              Social Media Marketing <br />
               <span
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                 style={{ backgroundSize: "300% 100%" }}
               >
-                Social Media Marketing
+                Services in USA
               </span>
             </h2>
           </header>

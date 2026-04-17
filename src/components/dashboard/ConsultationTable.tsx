@@ -8,16 +8,19 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { Button } from "@/components/ui/button";
 import { type ConsultationRequest } from "@prisma/client";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, Check, Trash2 } from "lucide-react";
 
 // ✅ Define Props Interface
 interface ConsultationTableProps {
   requests: ConsultationRequest[];
   loading: boolean;
+  onMarkAsRead: (id: string) => void;
+  onDelete: (id: string) => void;
 }
 
-export function ConsultationTable({ requests, loading }: ConsultationTableProps) {
+export function ConsultationTable({ requests, loading, onMarkAsRead, onDelete }: ConsultationTableProps) {
   return (
     <div className="rounded-lg border bg-white dark:bg-zinc-900 shadow-sm overflow-hidden">
       <Table>
@@ -27,19 +30,20 @@ export function ConsultationTable({ requests, loading }: ConsultationTableProps)
             <TableHead>Client Details</TableHead>
             <TableHead>Service Interest</TableHead>
             <TableHead className="max-w-[300px]">Requirements</TableHead>
-            <TableHead className="text-right">Submitted On</TableHead>
+            <TableHead>Submitted On</TableHead>
+            <TableHead className="text-right">Actions</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           {loading ? (
             <TableRow>
-               <TableCell colSpan={5} className="h-24 text-center text-muted-foreground">
+               <TableCell colSpan={6} className="h-24 text-center text-muted-foreground">
                   Loading requests...
                </TableCell>
             </TableRow>
           ) : requests.length > 0 ? (
             requests.map((req, index) => (
-              <TableRow key={req.id}>
+              <TableRow key={req.id} className={req.isRead ? "opacity-60" : ""}>
                 <TableCell className="text-muted-foreground">{index + 1}</TableCell>
                 
                 {/* Client Details */}
@@ -77,14 +81,37 @@ export function ConsultationTable({ requests, loading }: ConsultationTableProps)
                 </TableCell>
                 
                 {/* Date */}
-                <TableCell className="text-right text-muted-foreground text-sm">
+                <TableCell className="text-muted-foreground text-sm">
                   {new Date(req.createdAt).toLocaleDateString()}
+                </TableCell>
+
+                {/* Actions */}
+                <TableCell className="text-right">
+                  <div className="flex justify-end gap-2">
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      onClick={() => onMarkAsRead(req.id)}
+                      disabled={req.isRead}
+                      title="Mark as Read"
+                    >
+                      <Check className="w-4 h-4" />
+                    </Button>
+                    <Button
+                      variant="destructive"
+                      size="icon"
+                      onClick={() => onDelete(req.id)}
+                      title="Delete"
+                    >
+                      <Trash2 className="w-4 h-4" />
+                    </Button>
+                  </div>
                 </TableCell>
               </TableRow>
             ))
           ) : (
             <TableRow>
-              <TableCell colSpan={5} className="text-center h-24 text-muted-foreground">
+              <TableCell colSpan={6} className="text-center h-24 text-muted-foreground">
                   No requests found.
               </TableCell>
             </TableRow>

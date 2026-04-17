@@ -7,7 +7,7 @@ const strategyData = [
   {
     id: "01",
     title: "Expert Video Marketing",
-    description: "Our team brings diverse professionals together. With their dedicated support, we are capable of delivering incredible marketing results.",
+    description: "Our team brings diverse professionals together. With their support, we are capable of creating incredible marketing drafts and videos.",
     image: "/images/strategy/discovery.png", 
     imageBg: "bg-blue-50/50",
     bgColor: "bg-white",
@@ -15,7 +15,7 @@ const strategyData = [
   {
     id: "02",
     title: "Tailored Marketing Strategy",
-    description: "Each brand is unique in its own way. As a result, we offer a tailored marketing strategy to support each brand's unique voice.",
+    description: "Your brand is one of a kind. Your marketing strategy should be, too. We focus on highlighting what makes you unique in video marketing.",
     image: "/images/strategy/planning.png", 
     imageBg: "bg-purple-50/30",
     bgColor: "bg-white",
@@ -30,7 +30,7 @@ const strategyData = [
   },
   {
     id: "04",
-    title: "Witness Proven Results",
+    title: "Content That Actually Performs",
     description: "Our videos not only look great but also perform well. We focused our strategy on creating content that generates brand awareness.",
     image: "/images/strategy/analysis.png", 
     imageBg: "bg-rose-50/50",
@@ -49,12 +49,12 @@ export function VideoStrategySection() {
               Our Services
             </span>
             <h2 className="text-5xl md:text-6xl lg:text-[75px] font-semibold tracking-tighter text-primary uppercase leading-none">
-              Strategy built for <br />
+              Full-Scale Video <br />
               <span
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                 style={{ backgroundSize: "300% 100%" }}
               >
-                Video Marketing
+                Marketing Services in USA
               </span>
             </h2>
           </header>

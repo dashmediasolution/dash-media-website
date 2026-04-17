@@ -7,7 +7,7 @@ const strategyData = [
   {
     id: "01",
     title: "Create Effective Campaigns",
-    description: "Our team of creative and skilled professionals focuses on creating ads that resonate with the target customer base and encourage action.",
+    description: "Our team emphasizes the crafting of creative advertising techniques that effectively target customer personas to stimulate desired responses.",
     image: "/images/strategy/discovery.png", 
     imageBg: "bg-blue-50/50",
     bgColor: "bg-white",
@@ -15,7 +15,7 @@ const strategyData = [
   {
     id: "02",
     title: "High-Impact Social Advertising",
-    description: "We help brands to leverage the true potential of social media, such as Facebook and Instagram, to target people and increase their brand visibility.",
+    description: "Brand engagement is taken to the next level through the underutilized power of social platforms like Facebook and Instagram.",
     image: "/images/strategy/planning.png", 
     imageBg: "bg-purple-50/30",
     bgColor: "bg-white",
@@ -49,12 +49,12 @@ export function PpcStrategySection() {
               Our Services
             </span>
             <h2 className="text-5xl md:text-6xl lg:text-[75px] font-semibold tracking-tighter text-primary uppercase leading-none">
-              Strategy built for <br />
+              Top Rated Pay Per Click <br />
               <span
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                 style={{ backgroundSize: "300% 100%" }}
               >
-              Pay Per Click
+              Services in USA
               </span>
             </h2>
           </header>

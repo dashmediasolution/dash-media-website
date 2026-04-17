@@ -21,11 +21,11 @@ export function PpcToolkits() {
                 className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold"
                 style={{ backgroundSize: "300% 100%" }}
               >
-                PPC Toolkit
+                Pay Per Click (PPC) Toolkit
               </span>
             </h2>
             <p className="mt-6 text-muted-foreground text-lg max-w-xl font-medium">
-              We leverage industry-leading data platforms to ensure your strategy is backed by absolute precision.
+              Stop wasting your ad budget. Our pay per click services in USA drive high-intent leads and instant sales with precision targeting and expert PPC audits.
             </p>
           </div>
 

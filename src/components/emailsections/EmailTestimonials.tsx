@@ -17,19 +17,19 @@ const testimonials = [
     avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=300",
     name: "Sameer Deshmukh",
     role: "Business Strategy Lead, Growth-Focused Company",
-    review: "Working with Dash Media Solutions has been beneficial; they helped us automate marketing. Their team is easy to work with and manages multiple campaigns effortlessly, resulting in enhanced visibility and performance.",
+    review: "Working with Dash Media Solutions was beneficial; they helped us automate marketing. Their team is easy to work with and manages multiple campaigns effortlessly, resulting in enhanced visibility and performance.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300",
     name: "Rishi Vardhan",
     role: "Operations Manager, Digital Services Company",
-    review: "We started with less than 1,000 email addresses, and now, thanks to Dash Media Solution, we have 20,000 daily recipients. They work exceptionally and quickly, advertising our business like never before.",
+    review: "We started with less than 1,000 email addresses, and now, thanks to Dash Media Solution, we have 20,000 daily recipients. They work exceptionally and quickly, advertising our business like we never before.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300",
     name: "Sanya Malhotra",
     role: "Product Manager, Mobile & Web Applications Firm",
-    review: "Their professional email marketing services deliver targeted campaigns, improved open rates, and higher conversions through strategic planning, automation, and data-driven insights tailored to our business goals.",
+    review: "Dash Media's email marketing services delivered us targeted campaigns, improved CTAs, and a higher conversion rate. Their strategic planning and data-driven insights have tailored our marketing drive to constant results.",
   },
 ];
 
@@ -71,7 +71,7 @@ export function Testimonials() {
                             Are Saying
                         </h2>
                         <p className="text-md sm:text-lg text-muted-foreground mt-6 leading-relaxed">
-                       Listen to what our clients have to say about our email marketing solutions and learn how they automate marketing and user engagement.
+                            Explore what our clients have to say about our digital marketing services in USA and how they improve their online presence. 
                         </p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ export function Testimonials() {
                                 (1500+ Reviews)
                             </p>
                             <p className="text-md font-semibold leading-relaxed text-white mb-4">
-                                Discover Clients&apos; Experiences <br />That Define Our Partnerships.
+                                Discover Clients&apos; Experiences <br />That Define Our Partnerships
                             </p>
                         </div>
 
@@ -146,7 +146,7 @@ export function Testimonials() {
                                                 {/* MOVED: Quote to right side and FLIPPED vertically */}
                                                 <Quote className="absolute -top-6 right-10 w-28 h-28 text-gray-100 fill-gray-100 -z-10 opacity-70 transform scale-y-[-1]" />
                                                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-regular break-words relative z-10">
-                                                    "{testimonial.review}"
+                                                    &quot;{testimonial.review}&quot;
                                                 </p>
                                             </div>
 

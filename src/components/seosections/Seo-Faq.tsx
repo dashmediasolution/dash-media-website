@@ -13,27 +13,27 @@ import {
 const faqs = [
   {
     question: "Why is SEO important for businesses?",
-    answer: "SEO optimizes the website's meta components and eliminates other technical problems. Working with a professional SEO firm helps a brand optimize these ranking components, which becomes essential to improve the navigation and visibility of the website.",
+    answer: "Search engine optimization services in USA create the framework for your digital presence by clearing up technical issues, analyzing metadata, and improving site layout. This strategic approach ensures you surpass competitors and gain valuable organic traffic.",
   },
   {
     question: "How long does it take to see results from SEO efforts?",
-    answer: "Usually, this mostly depends on the websites and niche, but some experts believe websites start delivering results in 3-6 months. However, with exceptional cases, such as using paid ads and marketing, this duration can be influenced to a great extent.",
+    answer: "Although some of the adjustments can be done quickly but some reports suggest that noticeable changes in ranking and traffic occur within 3 to 6 months.",
   },
   {
     question: "What makes Dash Media Solutions unique as an SEO firm?",
-    answer: "With years of experience in social media and digital marketing, we have gained unparalleled knowledge and methods that we leverage to improve the website ranking and visibility.",
+    answer: "We create the connection between social authority and search authority. Unlike other digital marketing services in USA, we provide the maximum level of visibility by combining social media analytics and search engine optimization.",
   },
   {
     question: "Do you offer a customizable SEO package?",
-    answer: "Yes, we offer a customizable SEO package to satisfy each client's business requirements—size, industry, and target audience—for maximizing ROI.",
+    answer: "Yes. Our search engine optimization services in USA offer customizable packages based on your business size, industry, and unique growth goals.",
   },
   {
     question: "How to effectively measure the success of SEO campaigns?",
-    answer: "At Dash Media, we keep a record of real-time ranking, traffic growth, and conversion rate through the SEO report to ensure transparent performance and insights.",
+    answer: "As part of our search engine optimization services in USA, we offer real-time data tracking of keyword positions, organic traffic, and conversions. This allows clients to assess the impact and ROI of our services.",
   },
   {
     question: "Do your SEO services work across multiple niche websites?",
-    answer: "Absolutely, we analyze each client’s business model carefully, assisting both startups and professional businesses to deliver growth patterns with visibility and conversion. Whatever the industry you are into—e-commerce, fintech, or any particular service-based industry—we deliver exceptional support.",
+    answer: "Yes. Our search engine optimization services in USA cater to any niche, from e-commerce to fintech. We analyze your specific business model to deliver customized growth, visibility, and high conversion rates.",
   },
 ];
 
@@ -51,18 +51,13 @@ export function Faq() {
             {/* Header Section Inside Left Column */}
             <div className="max-w-4xl">
               <h2 className="text-2xl sm:text-3xl md:text-5xl font-regular text-primary tracking-tighter leading-none mb-6">
-                Have{" "}
+                Frequently Asked{" "}
                 <span className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold" style={{ backgroundSize: "300% 100%" }}>
-                  Questions?
-                </span>
-                <br />
-                Get{" "}
-                <span className="bg-gradient-to-r from-[#FF0080] via-accent to-[#FF0080] bg-clip-text text-transparent animate-gradient font-semibold" style={{ backgroundSize: "300% 100%" }}>
-                  Answers
+                  Questions (FAQs)
                 </span>
               </h2>
               <p className="text-md sm:text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                Can&apos;t find the answer you're looking for? Feel free to reach out to our team for more information.
+                Still struggling with concerns about search engine optimization services in USA? Read our FAQs or contact our team if you need additional information.
               </p>
             </div>
 
