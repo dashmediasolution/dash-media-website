@@ -58,10 +58,10 @@ const staggerVariants = {
 export function SessionNavBar() {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const pathname = usePathname();
- // ✅ 1. Destructure 'status' to check if we are loading
+ //  1. Destructure 'status' to check if we are loading
   const { data: session, status } = useSession();
 
-  // ✅ 2. If loading, show a skeleton or nothing (prevents the "Editor" default)
+  //  2. If loading, show a skeleton or nothing (prevents the "Editor" default)
   if (status === "loading") {
     return (
       <div className="h-full border-r bg-background p-4 w-[3.5rem]">
@@ -75,8 +75,9 @@ export function SessionNavBar() {
     );
   }
 
-  // ✅ 3. NOW it is safe to read the role. 
+  //  3. NOW it is safe to read the role. 
   // If session is still null after loading, default to EDITOR (or handle as error)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const userRole = (session?.user as any)?.role || "EDITOR";
   
   // Debug log to verify it works now
@@ -229,7 +230,7 @@ export function SessionNavBar() {
                           </motion.li>
                         </Link>
 
-                        {/* ✅ ADDED: Careers Page Link */}
+                        {/*  ADDED: Careers Page Link */}
                         <Link
                           href="/dashboard/careers"
                           className={cn(

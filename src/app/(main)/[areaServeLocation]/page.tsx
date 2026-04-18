@@ -118,8 +118,8 @@ export default async function AreaServeLocationPage({ params }: AreaServeLocatio
     where: { slug: resolvedParams.areaServeLocation },
   })) as never as LocationPageData | null;
 
-  // If no location is found or it's not active, show a custom div message.
-  if (!location || !location.isActive) {
+  // If no location is found, show a custom div message.
+  if (!location) {
     return (
       <div className="min-h-[90vh] flex items-center justify-center bg-white px-4">
         <div className="text-center">
@@ -132,6 +132,12 @@ export default async function AreaServeLocationPage({ params }: AreaServeLocatio
 
   return (
     <main className="min-h-screen bg-white text-foreground font-sans selection:bg-primary/10 overflow-x-hidden">
+      {/* Show a banner if the location is inactive */}
+      {!location.isActive && (
+        <div className="bg-red-500 text-white text-center py-2 px-4 text-sm font-semibold relative z-50">
+          Preview Mode: This location is currently inactive and normally hidden from the public.
+        </div>
+      )}
       
       {/* 1. HERO SECTION */}
       <div className="relative font-sans antialiased">

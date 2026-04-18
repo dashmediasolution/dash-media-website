@@ -86,7 +86,7 @@ export default function TeamManagementPage() {
                     <UserPlus className="h-6 w-6 text-primary" />
                     <h2 className="text-3xl font-bold tracking-tight">Add Team Member</h2>
                 </div>
-                <Card variant="neubrutalism" className="max-w-2xl">
+                <Card  className="max-w-2xl">
                     <div className="p-6">
                         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
