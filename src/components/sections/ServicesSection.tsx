@@ -39,7 +39,7 @@ const servicesData = [
     title: "Social Media Marketing (SMM)",
     description: "Use social media to build brand awareness and drive sales with expert digital marketing services in USA.",
     imageSrc: "/images/services/social-media.png",
-    href: "/services/social-media",
+    href: "/services/social-media-marketing",
     gradient: "bg-gradient-to-br from-indigo-50 to-indigo-100",
     accent: "text-indigo-700"
   },
@@ -47,7 +47,7 @@ const servicesData = [
     title: "Pay Per Click (PPC)",
     description: "Target your campaigns for instant ROI with the best digital marketing agency in USA.",
     imageSrc: "/images/services/ppc.png",
-    href: "/services/ppc",
+    href: "/services/pay-per-click",
     gradient: "bg-gradient-to-br from-purple-50 to-purple-100",
     accent: "text-purple-700"
   },
@@ -79,7 +79,7 @@ const servicesData = [
     title: "App Development",
     description: "Build and deploy your desired app for mobile or browsers to engage your users and customers.",
     imageSrc: "/images/services/app-dev.png",
-    href: "/services/app-dev",
+    href: "/services/app-development",
     gradient: "bg-gradient-to-br from-amber-50 to-amber-100",
     accent: "text-amber-700"
   },

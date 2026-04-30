@@ -35,7 +35,7 @@ const servicesLinks = {
     { title: "Search Engine Optimization (SEO)", href: "/services/seo" },
     { title: "Video Marketing", href: "/services/video-marketing" },
     { title: "Content Marketing", href: "/services/content-marketing" },
-    { title: "Social Media", href: "/services/social-media" },
+    { title: "Social Media", href: "/services/social-media-marketing" },
     { title: "Pay Per Click (PPC)", href: "/services/pay-per-click" },
     { title: "Email Marketing", href: "/services/email-marketing" },
     { title: "Web Design", href: "/services/web-design" },
