@@ -75,11 +75,17 @@ export default function AreaServeLocationAdminPage() {
     e.preventDefault();
     const method = isEditing ? 'PUT' : 'POST';
     
+    // Ensure the slug is perfectly formatted and has no trailing dashes before submitting
+    const submissionData = {
+      ...formData,
+      slug: formData.slug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '')
+    };
+
     try {
       const res = await fetch('/api/area-serve-location', {
         method,
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(submissionData),
       });
 
       if (res.ok) {
@@ -179,7 +185,7 @@ export default function AreaServeLocationAdminPage() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700">Slug (URL Path)</label>
-                <input type="text" required value={formData.slug} onChange={(e) => setFormData({ ...formData, slug: e.target.value })} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border focus:ring-blue-500 focus:border-blue-500" placeholder="e.g. area-serve-new-york" />
+                <input type="text" required value={formData.slug} onChange={(e) => setFormData({ ...formData, slug: e.target.value.toLowerCase().replace(/[^a-z0-9]+/g, '-') })} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border focus:ring-blue-500 focus:border-blue-500" placeholder="e.g. your-slug-url" />
               </div>
               <div className="md:col-span-2">
                 <label className="block text-sm font-medium text-gray-700">Hero Heading</label>

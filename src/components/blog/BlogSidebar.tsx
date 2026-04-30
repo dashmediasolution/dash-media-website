@@ -1,7 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { slugify } from "@/lib/utils";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function BlogSidebar({ categories, latestPosts,currentCategory }: { categories: string[], latestPosts: any[], currentCategory?: string }) {
   return (
     <div className="space-y-16 sticky top-5">
@@ -27,7 +29,7 @@ export function BlogSidebar({ categories, latestPosts,currentCategory }: { categ
       {categories.map((cat) => (
         <li key={cat} className="group">
           <Link 
-            href={`/blog?category=${cat}`} 
+            href={`/category/${slugify(cat)}`} 
             className={`text-sm font-medium transition-colors flex items-center justify-between ${
               currentCategory === cat ? 'text-accent' : 'text-muted-foreground hover:text-primary'
             }`}

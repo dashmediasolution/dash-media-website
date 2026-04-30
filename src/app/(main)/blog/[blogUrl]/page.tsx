@@ -1,29 +1,44 @@
-import {prisma} from '@/lib/prisma';
+import { prisma } from '@/lib/prisma';
+import type { Blog } from '@prisma/client';
 import Image from 'next/image';
 import { type Metadata } from 'next';
-import { Badge } from "@/components/ui/badge";
-import { CalendarDays, ChevronLeft } from 'lucide-react';
+import { ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
+import { slugify } from '@/lib/utils';
 
-// ✅ Import the new Sidebar Component
+//  Import the new Sidebar Component
 import { BlogSidebar } from '@/components/blog/BlogSidebar';
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://dashmediasolutions.com';
 
 type Props = {
   params: Promise<{ blogUrl: string }>
 }
 
-function getJsonLd(blog: any) {
+function getJsonLd(blog: Blog) {
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/blog/${blog.blogUrl}`
+    },
     "headline": blog.headline,
-    "image": blog.imageUrl,
+    "image": blog.imageUrl ? [blog.imageUrl] : [],
     "datePublished": blog.createdAt.toISOString(),
+    "dateModified": blog.updatedAt ? blog.updatedAt.toISOString() : blog.createdAt.toISOString(),
     "author": [{
         "@type": "Person",
         "name": blog.authorName,
       }],
+    "publisher": {
+      "@type": "Organization",
+      "name": "Dash Media Solutions",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${SITE_URL}/images/dms-marketing-agency.webp`
+      }
+    },
     "description": blog.metaDescription,
   };
 }
@@ -67,22 +82,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!blog) return { title: "Not Found" };
 
-  const siteUrl = "https://dashmediasolutions.com";
-  const ogImage = blog.imageUrl || `${siteUrl}/default-og-image.jpg`;
+  const ogImage = blog.imageUrl || `${SITE_URL}/default-og-image.jpg`;
   
  return {
     title: blog.metaTitle,
     description: blog.metaDescription,
-    keywords: blog.metaKeywords.split(','),
+    keywords: blog.metaKeywords ? blog.metaKeywords.split(',').map((k: string) => k.trim()) : [],
+    authors: [{ name: blog.authorName }],
+    creator: "Dash Media Solutions",
+    alternates: {
+      canonical: `${SITE_URL}/blog/${blog.blogUrl}`,
+    },
 
     // ✅ Open Graph (Covers Facebook, Instagram, and WhatsApp)
     openGraph: {
       title: blog.metaTitle,
       description: blog.metaDescription,
-      url: `${siteUrl}/blog/${blog.blogUrl}`,
+      url: `${SITE_URL}/blog/${blog.blogUrl}`,
       siteName: "Dash Media Solutions",
       type: "article",
       publishedTime: blog.createdAt.toISOString(),
+      modifiedTime: blog.updatedAt ? blog.updatedAt.toISOString() : blog.createdAt.toISOString(),
       authors: [blog.authorName],
       section: blog.category,
       
@@ -141,9 +161,9 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="container mx-auto px-5 sm:px-20 pt-32 pb-16 max-w-7xl text-center">
           
           <div className="flex items-center justify-center gap-2 mb-6">
-            <span className="text-sm font-bold uppercase tracking-[0.3em] text-accent">
-                {blog.category}
-            </span>
+                <Link href={`/blog/${slugify(blog.category)}`} className="text-sm font-bold uppercase tracking-[0.3em] text-accent hover:underline">
+                    {blog.category}
+                </Link>
           </div> 
 
           <h1 className="text-4xl md:text-7xl font-bold tracking-tighter text-primary leading-[1] mb-10 max-w-5xl mx-auto uppercase">

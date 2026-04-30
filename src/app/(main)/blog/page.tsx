@@ -6,6 +6,7 @@ import { Search } from "lucide-react"; // Import for the search bar
 import type { Metadata } from "next";
 import { MarqueeSeparator } from '@/components/ui/marquee-separator';
 import Link from 'next/link';
+import { Blog } from '@prisma/client';
 
 export const metadata: Metadata = {
   title: "Dash Media Solutions Insights—News, Updates & Tips",
@@ -118,7 +119,7 @@ export default async function BlogPage({
   const totalPages = Math.ceil(totalBlogs / BLOGS_PER_PAGE);
 
   // Helper to generate Blog Collection Schema
-  function getBlogCollectionJsonLd(blogs: any[]) {
+  function getBlogCollectionJsonLd(blogs: Blog[]) {
     return {
       "@context": "https://schema.org",
       "@type": "Blog",
@@ -207,7 +208,7 @@ export default async function BlogPage({
                   {query && (
                     <div className="mt-4 flex items-center gap-2">
                       <p className="text-md text-muted-foreground">
-                        Showing results for <span className="text-primary font-bold">"{query}"</span>
+                        Showing results for <span className="text-primary font-bold">&quot;{query}&quot;</span>
                       </p>
                       <Link
                         href="/blog"

@@ -1,31 +1,19 @@
 import { prisma } from '@/lib/prisma';
 import { 
-  CheckCircle2, 
   Search, 
   MousePointer2, 
   Layout, 
-  Share2, 
   Mail, 
   MessageSquare, 
   ChevronLeft,
   ChevronRight,
   BarChart3,
-  Rocket,
   Zap,
-  TrendingUp,
-  Route,
   ArrowRight,
-  Target,
-  LineChart,
-  Briefcase,
-  Store,
-  ShoppingCart,
-  Users,
   ArrowUpRight,
   Check,
   Play,
   Star,
-  ChevronDown
 } from 'lucide-react';
 import Image from 'next/image';
 import { Metadata } from 'next';
@@ -108,7 +96,25 @@ const servicesList = [
   }
 ];
 
-// ... Metadata function remains the same as your provided code ...
+export async function generateMetadata({ params }: AreaServeLocationPageProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  
+  const location = (await prisma.areaServeLocation?.findUnique({
+    where: { slug: resolvedParams.areaServeLocation },
+  })) as never as LocationPageData | null;
+
+  if (!location || !location.isActive) {
+    return {
+      title: 'Location Not Found | Dash Media Solutions',
+      description: 'The requested location could not be found.',
+    };
+  }
+
+  return {
+    title: location.metaTitle || `Digital Marketing in ${location.name} | Dash Media Solutions`,
+    description: location.metaDescription || `Dash Media Solutions provides digital marketing services tailored for businesses in ${location.name}.`,
+  };
+}
 
 export default async function AreaServeLocationPage({ params }: AreaServeLocationPageProps) {
   const resolvedParams = await params;
@@ -118,13 +124,13 @@ export default async function AreaServeLocationPage({ params }: AreaServeLocatio
     where: { slug: resolvedParams.areaServeLocation },
   })) as never as LocationPageData | null;
 
-  // If no location is found, show a custom div message.
-  if (!location) {
+  // If no location is found or it's inactive, show a custom div message.
+  if (!location || !location.isActive) {
     return (
       <div className="min-h-[90vh] flex items-center justify-center bg-white px-4">
         <div className="text-center">
-          <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">Location Not Found</h1>
-          <p className="text-lg text-slate-600">The location you are looking for is currently unavailable or does not exist.</p>
+          <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">This page could not be found.</h1>
+          <p className="text-lg text-slate-600">The page you are looking for is currently unavailable or does not exist.</p>
         </div>
       </div>
     );
@@ -132,13 +138,6 @@ export default async function AreaServeLocationPage({ params }: AreaServeLocatio
 
   return (
     <main className="min-h-screen bg-white text-foreground font-sans selection:bg-primary/10 overflow-x-hidden">
-      {/* Show a banner if the location is inactive */}
-      {!location.isActive && (
-        <div className="bg-red-500 text-white text-center py-2 px-4 text-sm font-semibold relative z-50">
-          Preview Mode: This location is currently inactive and normally hidden from the public.
-        </div>
-      )}
-      
       {/* 1. HERO SECTION */}
       <div className="relative font-sans antialiased">
         {/* SECTION 1: BACKGROUND AND LEFT TEXT */}

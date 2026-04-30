@@ -96,7 +96,7 @@ export function Footer() {
             </div>
 
             {/* Right Image Column: Expanded and Bigger */}
-            <div className="lg:col-span-4 h-full min-h-[300px] relative">
+            <div className="lg:col-span-4 h-full min-h-[300px]  relative">
               <div className="absolute inset-0 lg:-right-1">
                 <Image
                   src="/footer-banner.png"
@@ -123,7 +123,7 @@ export function Footer() {
                 alt="Dash Media Solutions"
                 width={160}
                 height={40}
-                className="h-16 w-auto object-contain pr-20"
+                className="h-16 w-auto object-contain"
               />
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
