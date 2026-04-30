@@ -28,7 +28,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/social-media-marketing',
     '/web-design',
     '/video-marketing',
-
   ];
 
   const staticEntries = staticRoutes.map((route) => ({
