@@ -123,7 +123,7 @@ export default async function CategoryBlogPage(props: Props) {
 
   return (
     <main className="min-h-screen">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getBlogCollectionJsonLd(blogs)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getBlogCollectionJsonLd(blogs)).replace(/</g, '\\x3c') }} />
 
       {/* Header Area */}
       <section className="bg-blue-50 pt-34 pb-20 border-b border-black/5">

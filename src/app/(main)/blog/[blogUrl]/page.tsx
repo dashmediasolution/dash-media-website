@@ -50,7 +50,7 @@ async function getBlogByUrl(blogUrl: string) {
   return blog;
 }
 
-// ✅ New helper for Sidebar Data (Categories)
+//  New helper for Sidebar Data (Categories)
 async function getCategories() {
   const categories = await prisma.blog.findMany({
     select: { category: true },
@@ -59,7 +59,7 @@ async function getCategories() {
   return categories.map(c => c.category);
 }
 
-// ✅ New helper for Sidebar Data (Latest Posts)
+//  New helper for Sidebar Data (Latest Posts)
 async function getLatestPosts(currentId: string) {
   return await prisma.blog.findMany({
     where: { id: { not: currentId } }, // Don't show the post currently being read
@@ -94,7 +94,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `${SITE_URL}/blog/${blog.blogUrl}`,
     },
 
-    // ✅ Open Graph (Covers Facebook, Instagram, and WhatsApp)
+    //  Open Graph (Covers Facebook, Instagram, and WhatsApp)
     openGraph: {
       title: blog.metaTitle,
       description: blog.metaDescription,
@@ -117,7 +117,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ],
     },
 
-    // ✅ Twitter/X
+    //  Twitter/X
     twitter: {
       card: "summary_large_image",
       title: blog.metaTitle,
@@ -130,7 +130,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function BlogPostPage({ params }: Props) {
   const { blogUrl } = await params;
   
-  // ✅ Fetch all required data in parallel
+  //  Fetch all required data in parallel
   const blog = await getBlogByUrl(blogUrl);
   
   if (!blog) {
@@ -144,7 +144,7 @@ export default async function BlogPostPage({ params }: Props) {
     );
   }
 
-  // ✅ Fetch sidebar data after confirming blog exists
+  //  Fetch sidebar data after confirming blog exists
   const categories = await getCategories();
   const latestPosts = await getLatestPosts(blog.id);
 
@@ -153,7 +153,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(getJsonLd(blog)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getJsonLd(blog)).replace(/</g, '\\x3c') }}
       />
       
       {/* --- Header Section (Magazine Style) --- */}
@@ -161,7 +161,7 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="container mx-auto px-5 sm:px-20 pt-32 pb-16 max-w-7xl text-center">
           
           <div className="flex items-center justify-center gap-2 mb-6">
-                <Link href={`/blog/${slugify(blog.category)}`} className="text-sm font-bold uppercase tracking-[0.3em] text-accent hover:underline">
+                <Link href={`/category/${slugify(blog.category)}`} className="text-sm font-bold uppercase tracking-[0.3em] text-accent hover:underline">
                     {blog.category}
                 </Link>
           </div> 
@@ -227,7 +227,7 @@ export default async function BlogPostPage({ params }: Props) {
 
             {/* Right Column (Sidebar) */}
             <aside className="lg:col-span-4">
-                {/* ✅ Passing the fetched data to prevent the .map() undefined error */}
+                {/*  Passing the fetched data to prevent the .map() undefined error */}
                 <BlogSidebar categories={categories} latestPosts={latestPosts} />
             </aside>
 

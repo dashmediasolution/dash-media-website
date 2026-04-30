@@ -144,7 +144,7 @@ export default async function BlogPage({
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(getBlogCollectionJsonLd(blogs)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getBlogCollectionJsonLd(blogs)).replace(/</g, '\\x3c') }}
       />
 
       {/* ✅ SECTION 1: Blue Header Hero */}
