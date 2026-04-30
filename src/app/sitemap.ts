@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { prisma } from '@/lib/prisma';
 import { slugify } from '@/lib/utils';
+export const dynamic = 'force-dynamic';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://dashmediasolutions.com";
@@ -55,7 +56,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ],
     select: { category: true, updatedAt: true, imageUrl: true }
   });
-
+ 
+  
   const categoryEntries = categories.map((cat) => ({
     url: `${baseUrl}/category/${slugify(cat.category)}`,
     lastModified: cat.updatedAt || new Date(),
