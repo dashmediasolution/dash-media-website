@@ -153,7 +153,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(getJsonLd(blog)).replace(/</g, '\\x3c') }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getJsonLd(blog)).replace(/</g, '\\u003c') }}
       />
       
       {/* --- Header Section (Magazine Style) --- */}

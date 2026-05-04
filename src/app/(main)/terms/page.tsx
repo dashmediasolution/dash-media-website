@@ -1,11 +1,17 @@
-export const metadata = {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Terms and Conditions | Dash Media Solutions",
   description: "Terms and Conditions for using Dash Media Solutions services.",
+  alternates: {
+    canonical: "https://dashmediasolutions.com/terms",
+  },
 };
 
 export default function TermsPage() {
   return (
     <div className="min-h-screen bg-white pb-32">
+      <h1 className="sr-only">Terms and Conditions | Dash Media Solutions</h1>
       
       {/* --- Page Header: High Impact Editorial Style --- */}
       <section className="bg-blue-50 border-b border-gray-100 pt-32 pb-20 md:pt-40 md:pb-24">
@@ -85,7 +91,7 @@ export default function TermsPage() {
               <section className="mb-20">
                 <h2>02. Intellectual Property</h2>
                 <p>
-                  The service and its original content, features, and functionality remain the exclusive property of Dash Media Solutions. Our trademarks and design assets are part of our unique "Architect" identity and may not be used without prior written consent.
+                  The service and its original content, features, and functionality remain the exclusive property of Dash Media Solutions. Our trademarks and design assets are part of our unique &quot;Architect&quot; identity and may not be used without prior written consent.
                 </p>
               </section>
 
@@ -123,7 +129,7 @@ export default function TermsPage() {
               <section className="mb-20">
                 <h2>06. Changes to Terms</h2>
                 <p>
-                  We reserve the right to modify these Terms as we evolve our service offerings. Continued use of our "Architecture of Growth" platform constitutes acceptance of updated revisions.
+                  We reserve the right to modify these Terms as we evolve our service offerings. Continued use of our &quot;Architecture of Growth&quot; platform constitutes acceptance of updated revisions.
                 </p>
               </section>
 

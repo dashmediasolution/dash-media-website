@@ -1,11 +1,17 @@
-export const metadata = {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Privacy Policy | Dash Media Solutions",
   description: "Privacy Policy regarding the collection and use of your data.",
+  alternates: {
+    canonical: "https://dashmediasolutions.com/privacy",
+  },
 };
 
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-white pb-32">
+      <h1 className="sr-only">Privacy Policy | Dash Media Solutions</h1>
       
       {/* --- Page Header: High Impact Editorial Style --- */}
       <section className="bg-blue-50 border-b border-gray-100 pt-32 pb-20 md:pt-40 md:pb-24">
@@ -100,7 +106,7 @@ export default function PrivacyPage() {
               <section id="cookies" className="mb-20">
                 <h2>03. Cookies and Tracking Data</h2>
                 <p>
-                  We use cookies and similar tracking technologies to track activity on our Service. You can instruct your browser to refuse all cookies; however, some portions of our "Architecture of Growth" may be limited.
+                  We use cookies and similar tracking technologies to track activity on our Service. You can instruct your browser to refuse all cookies; however, some portions of our &quot;Architecture of Growth&quot; may be limited.
                 </p>
               </section>
 
