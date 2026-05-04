@@ -157,27 +157,27 @@ export default async function BlogPostPage({ params }: Props) {
       />
       
       {/* --- Header Section (Magazine Style) --- */}
-      <div className="border-b border-black/5 bg-blue-50">
-        <div className="container mx-auto px-5 sm:px-20 pt-32 pb-16 max-w-7xl text-center">
+      <div className="border-b border-gray-100 bg-blue-50">
+        <div className="container mx-auto px-5 sm:px-10 lg:px-20 pt-28 md:pt-36 pb-12 md:pb-20 max-w-7xl text-center">
           
-          <div className="flex items-center justify-center gap-2 mb-6">
-                <Link href={`/category/${slugify(blog.category)}`} className="text-sm font-bold uppercase tracking-[0.3em] text-accent hover:underline">
+          <div className="flex items-center justify-center gap-2 mb-6 md:mb-8">
+                <Link href={`/category/${slugify(blog.category)}`} className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-accent hover:text-primary transition-colors">
                     {blog.category}
                 </Link>
           </div> 
 
-          <h1 className="text-4xl md:text-7xl font-bold tracking-tighter text-primary leading-[1] mb-10 max-w-5xl mx-auto uppercase">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-primary leading-tight md:leading-[1.1] mb-8 md:mb-12 max-w-5xl mx-auto uppercase">
             {blog.headline}
           </h1>
 
-          < div className="flex flex-wrap items-center justify-center gap-2 text-muted-foreground text-sm font-bold uppercase tracking-widest">
-            <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center">
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-muted-foreground text-xs sm:text-sm font-bold uppercase tracking-widest">
+            <div className="flex items-center gap-2 sm:gap-3">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary text-white flex items-center justify-center text-xs sm:text-base">
                     {blog.authorName.charAt(0)}
                 </div>
                 <span className="text-primary">{blog.authorName}</span>
             </div>
-            <span>|</span>
+            <span className="text-gray-300">|</span>
             <div className="flex items-center gap-2">
                 <time dateTime={blog.createdAt.toISOString()}>
                     {formatDate(blog.createdAt)}
@@ -189,20 +189,20 @@ export default async function BlogPostPage({ params }: Props) {
       </div>
 
       {/* --- Two Column Layout --- */}
-      <div className="container mx-auto px-5 sm:px-10 max-w-7xl mt-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+      <div className="container mx-auto px-5 sm:px-10 lg:px-20 max-w-7xl mt-12 md:mt-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
             
             {/* Left Column (Content) */}
             <div className="lg:col-span-8">
                 
                 {blog.imageUrl && (
-                <div className="relative w-full h-170 rounded-xl overflow-hidden mb-12 ">
+                <div className="relative w-full aspect-video sm:aspect-[16/9] rounded-2xl overflow-hidden mb-8 md:mb-12 shadow-sm">
                     <Image 
                         src={blog.imageUrl} 
                         alt={blog.headline} 
                         fill
-                        sizes="(max-width: 768px) 100vw, 80vw"
-                        className="object-cover" 
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw, 50vw"
+                        className="object-fill object-center" 
                         priority
                     />
                 </div>
@@ -210,16 +210,17 @@ export default async function BlogPostPage({ params }: Props) {
 
                 {/* Editorial Typography for Content */}
                 <div 
-                    className="prose prose-lg max-w-none 
-                                prose-headings:text-primary prose-headings:tracking-tighter prose-headings:font-bold
-                                prose-p:text-primary/80 prose-p:leading-relaxed
+                    className="prose prose-base sm:prose-lg lg:prose-xl max-w-none 
+                                prose-headings:text-primary prose-headings:tracking-tight prose-headings:font-bold
+                                prose-p:text-gray-600 prose-p:leading-relaxed
                                 prose-strong:text-primary
-                                prose-img:rounded-xl" 
+                                prose-a:text-accent hover:prose-a:underline
+                                prose-img:rounded-2xl prose-img:shadow-md" 
                     dangerouslySetInnerHTML={{ __html: blog.content }} 
                 />
 
-                <div className="mt-24 pt-8 border-t border-black/5">
-                    <Link href="/blog" className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:text-accent transition-colors">
+                <div className="mt-16 md:mt-24 pt-8 border-t border-gray-100">
+                    <Link href="/blog" className="inline-flex items-center text-xs sm:text-sm font-bold uppercase tracking-widest text-primary hover:text-accent transition-colors">
                         <ChevronLeft className="w-4 h-4 mr-2"/> Back to Journal
                     </Link>
                 </div>

@@ -4,48 +4,46 @@ import { ArrowRight } from "lucide-react";
 import { slugify } from "@/lib/utils";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function BlogSidebar({ categories, latestPosts,currentCategory }: { categories: string[], latestPosts: any[], currentCategory?: string }) {
+export function BlogSidebar({ categories, latestPosts, currentCategory }: { categories: string[], latestPosts: any[], currentCategory?: string }) {
   return (
     <div className="space-y-16 sticky top-5">
       {/* Categories Section */}
-     <div>
-    <div className="flex items-center justify-between mb-8 border-b border-black/5 pb-3">
-      <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-primary">
-        All Categories
-      </h4>
-      
-      {/* ✅ Clear Filter Button (Visible only when a category is active) */}
-      {currentCategory && (
-        <Link 
-          href="/blog" 
-          className="text-xs font-bold uppercase tracking-tighter text-accent hover:text-primary transition-colors"
-        >
-          Clear Filter
-        </Link>
-      )}
-    </div>
+      <div className="border rounded-lg p-6 hidden md:flex flex-col">
+        <div className="flex items-center  justify-between mb-8 border-b border-black/5 pb-3">
+          <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+            All Categories
+          </h4>
 
-    <ul className="space-y-4">
-      {categories.map((cat) => (
-        <li key={cat} className="group">
-          <Link 
-            href={`/category/${slugify(cat)}`} 
-            className={`text-sm font-medium transition-colors flex items-center justify-between ${
-              currentCategory === cat ? 'text-accent' : 'text-muted-foreground hover:text-primary'
-            }`}
-          >
-            <div className="flex items-center gap-2">
-              {/* Optional: Small dot for the active category */}
-              {cat}
-            </div>
-            <ArrowRight className={`w-4 h-4 transition-all ${
-              currentCategory === cat ? 'opacity-100' : 'opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0'
-            }`} />
-          </Link>
-        </li>
-      ))}
-    </ul>
-  </div>
+          {/* ✅ Clear Filter Button (Visible only when a category is active) */}
+          {currentCategory && (
+            <Link
+              href="/blog"
+              className="text-xs font-bold uppercase tracking-tighter text-accent hover:text-primary transition-colors"
+            >
+              Clear Filter
+            </Link>
+          )}
+        </div>
+
+        <ul className="space-y-4">
+          {categories.map((cat) => (
+            <li key={cat} className="group">
+              <Link
+                href={`/category/${slugify(cat)}`}
+                className={`text-sm font-medium transition-colors flex items-center justify-between ${currentCategory === cat ? 'text-accent' : 'text-muted-foreground hover:text-primary'
+                  }`}
+              >
+                <div className="flex items-center gap-2">
+                  {/* Optional: Small dot for the active category */}
+                  {cat}
+                </div>
+                <ArrowRight className={`w-4 h-4 transition-all ${currentCategory === cat ? 'opacity-100' : 'opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0'
+                  }`} />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       {/* Latest Posts Thumbnails */}
       <div>
@@ -60,7 +58,7 @@ export function BlogSidebar({ categories, latestPosts,currentCategory }: { categ
               </div>
               <div className="flex flex-col justify-center">
                 <span className="text-xs font-bold text-muted-foreground mb-1 uppercase tracking-tighter">
-                   {new Date(post.createdAt).toLocaleDateString("en-US", { month: 'long', day: 'numeric' })}
+                  {new Date(post.createdAt).toLocaleDateString("en-US", { month: 'long', day: 'numeric' })}
                 </span>
                 <h5 className="text-sm font-bold text-primary group-hover:text-accent transition-colors leading-tight line-clamp-2">
                   {post.headline}
@@ -72,4 +70,4 @@ export function BlogSidebar({ categories, latestPosts,currentCategory }: { categ
       </div>
     </div>
   );
-}
+} 
