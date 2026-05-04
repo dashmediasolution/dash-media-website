@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "App Development Services in USA | Dash Media Solutions",
   description: "Partner with Dash Media Solutions for premier app development services in USA. We build secure and user-centric mobile and web apps tailored for growth.",
   keywords: ["App Development Services in USA", "Digital Marketing Agency in USA", "Digital Marketing Services in USA"],
+  alternates: {
+    canonical: "https://dashmediasolutions.com/services/app-development",
+  },
 };
 
 const appDevItems = [
@@ -38,6 +41,7 @@ const appDevItems = [
 export default function AppDevServicePage() {
   return (
     <>
+    <h1 className="sr-only">App Development Services in USA | Dash Media Solutions</h1>
     <AppDevStrategySection/>
     <AppDevToolkits/>
     <MarqueeSeparator items={appDevItems} />

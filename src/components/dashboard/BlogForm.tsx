@@ -162,9 +162,14 @@ export function BlogForm({ onFormSubmit, initialData }: BlogFormProps) {
                 
                 <FormField control={form.control} name="headline" render={({ field }) => (
                     <FormItem>
-                        <FormLabel>Headline</FormLabel>
+                        <div className="flex items-center justify-between">
+                            <FormLabel>Headline</FormLabel>
+                            <span className={`text-xs ${(field.value?.length || 0) > 100 ? "text-red-500 font-bold" : (field.value?.length || 0) > 85 ? "text-orange-500" : "text-muted-foreground"}`}>
+                                {field.value?.length || 0} / 100
+                            </span>
+                        </div>
                         <FormControl>
-                            <Input placeholder="Enter your blog title" {...field} />
+                            <Input placeholder="Enter your blog title" {...field} className={(field.value?.length || 0) > 100 ? "border-red-500 focus-visible:ring-red-500" : ""} />
                         </FormControl>
                         <FormMessage />
                     </FormItem>
@@ -270,10 +275,28 @@ export function BlogForm({ onFormSubmit, initialData }: BlogFormProps) {
                     </FormItem>
 
                     <FormField control={form.control} name="metaTitle" render={({ field }) => (
-                        <FormItem><FormLabel>Meta Title</FormLabel><FormControl><Input {...field} /></FormControl><FormMessage /></FormItem>
+                        <FormItem>
+                            <div className="flex items-center justify-between">
+                                <FormLabel>Meta Title</FormLabel>
+                                <span className={`text-xs ${(field.value?.length || 0) > 60 ? "text-red-500 font-bold" : (field.value?.length || 0) > 50 ? "text-orange-500" : "text-muted-foreground"}`}>
+                                    {field.value?.length || 0} / 60
+                                </span>
+                            </div>
+                            <FormControl><Input {...field} className={(field.value?.length || 0) > 60 ? "border-red-500 focus-visible:ring-red-500" : ""} /></FormControl>
+                            <FormMessage />
+                        </FormItem>
                     )} />
                     <FormField control={form.control} name="metaDescription" render={({ field }) => (
-                        <FormItem><FormLabel>Meta Description</FormLabel><FormControl><Textarea rows={3} {...field} /></FormControl><FormMessage /></FormItem>
+                        <FormItem>
+                            <div className="flex items-center justify-between">
+                                <FormLabel>Meta Description</FormLabel>
+                                <span className={`text-xs ${(field.value?.length || 0) > 160 ? "text-red-500 font-bold" : (field.value?.length || 0) > 140 ? "text-orange-500" : "text-muted-foreground"}`}>
+                                    {field.value?.length || 0} / 160
+                                </span>
+                            </div>
+                            <FormControl><Textarea rows={3} {...field} className={(field.value?.length || 0) > 160 ? "border-red-500 focus-visible:ring-red-500" : ""} /></FormControl>
+                            <FormMessage />
+                        </FormItem>
                     )} />
                     <FormField control={form.control} name="metaKeywords" render={({ field }) => (
                         <FormItem><FormLabel>Meta Keywords</FormLabel><FormControl><Input placeholder="e.g., marketing, seo, growth" {...field} /></FormControl><FormDescription>Separate keywords with a comma.</FormDescription><FormMessage /></FormItem>

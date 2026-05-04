@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Email Marketing Services in USA | Dash Media Solutions",
   description: "Land in the inbox, not the spam folder. Our email marketing services in USA help you automate campaigns, build loyalty, and drive real ROI with expert strategy.",
   keywords: ["Email Marketing Services in USA", "Digital Marketing Agency in USA", "Digital Marketing Services in USA"],
+  alternates: {
+    canonical: "https://dashmediasolutions.com/services/email-marketing",
+  },
 };
 
 const emailMarketingItems = [
@@ -37,6 +40,7 @@ const emailMarketingItems = [
 export default function EmailServicePage() {
   return (
     <>
+    <h1 className="sr-only">Email Marketing Services in USA | Dash Media Solutions</h1>
     <EmailStrategySection/>
     <EmailToolkits/>
     <MarqueeSeparator items={emailMarketingItems} />

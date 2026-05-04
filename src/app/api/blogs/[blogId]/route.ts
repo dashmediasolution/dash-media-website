@@ -2,9 +2,9 @@ import { NextResponse } from "next/server";
 import {prisma }from '@/lib/prisma';
 
 // Function to handle PUT requests for updating a blog
-export async function PUT(request: Request, { params }: { params: { blogId: string } }) {
+export async function PUT(request: Request, { params }: { params: Promise<{ blogId: string }> }) {
   try {
-    const { blogId } = params;
+    const { blogId } = await params;
     const body = await request.json();
     
     const updatedBlog = await prisma.blog.update({
@@ -20,9 +20,9 @@ export async function PUT(request: Request, { params }: { params: { blogId: stri
 }
 
 // Function to handle DELETE requests for deleting a blog
-export async function DELETE(request: Request, { params }: { params: { blogId: string } }) {
+export async function DELETE(request: Request, { params }: { params: Promise<{ blogId: string }> }) {
     try {
-        const { blogId } = params;
+        const { blogId } = await params;
 
         await prisma.blog.delete({
             where: { id: blogId },

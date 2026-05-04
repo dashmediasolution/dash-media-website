@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Best Pay Per Click Services in USA | Dash Media Solutions",
   description: "Stop wasting your ad budget. Our pay per click services in USA drive high-intent leads and instant sales with precision targeting and expert PPC audits.",
   keywords: ["Pay Per Click Services in USA", "Digital Marketing Agency in USA", "Digital Marketing Services in USA"],
+  alternates: {
+    canonical: "https://dashmediasolutions.com/services/pay-per-click",
+  },
 };
 
 const ppcItems = [
@@ -39,6 +42,7 @@ const ppcItems = [
 export default function PpcServicePage() {
   return (
     <>
+    <h1 className="sr-only">Best Pay Per Click Services in USA | Dash Media Solutions</h1>
     <PpcStrategySection/>
     <PpcToolkits/>
     <MarqueeSeparator items={ppcItems} />

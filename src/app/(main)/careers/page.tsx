@@ -4,6 +4,15 @@ import { JobDetailsModal } from "@/components/careers/JobDetailsModal";
 import { MapPin, ArrowUpRight, Globe2, Zap } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { MarqueeSeparator } from '@/components/ui/marquee-separator';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Careers | Dash Media Solutions",
+  description: "Architecture of growth requires the right builders. Join Dash Media Solutions to build the next generation of digital experiences.",
+  alternates: {
+    canonical: "https://dashmediasolutions.com/careers",
+  },
+};
 
 export const dynamic = 'force-dynamic';
 

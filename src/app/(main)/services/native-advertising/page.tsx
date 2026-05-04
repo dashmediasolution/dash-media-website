@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Native Advertising Services in USA | Dash Media Solutions",
   description: "Stop interrupting and start connecting. Our native advertising services in USA help your brand blend into the platforms your audience loves for building trust.",
   keywords: ["Native Advertising Services in USA", "Digital Marketing Agency in USA", "Digital Marketing Services in USA"],
+  alternates: {
+    canonical: "https://dashmediasolutions.com/services/native-advertising",
+  },
 };
 
 const nativeAdvertisingItems = [
@@ -37,6 +40,7 @@ const nativeAdvertisingItems = [
 export default function NativeServicePage() {
   return (
     <>
+    <h1 className="sr-only">Native Advertising Services in USA | Dash Media Solutions</h1>
     <NativeStrategySection/>
     <NativeToolkits/>
     <MarqueeSeparator items={nativeAdvertisingItems} />

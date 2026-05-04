@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Content Marketing Services in USA | Dash Media Solutions",
   description: "Our best content marketing services in USA offer brands to improve their storytelling by data-driven strategies and SEO techniques to enhance reach and ROI.",
   keywords: ["Content Marketing Services in USA", "Digital Marketing Services in USA", "Digital Marketing Agency in USA"],
+  alternates: {
+    canonical: "https://dashmediasolutions.com/services/content-marketing",
+  },
 }
 
 const contentMarketingItems = [
@@ -37,6 +40,7 @@ const contentMarketingItems = [
 export default function ContentMarketingServicePage() {
   return (
     <>
+     <h1 className="sr-only">Content Marketing Services in USA | Dash Media Solutions</h1>
      <ContentStrategySection/>
      <ContentToolkits/>
       <MarqueeSeparator items={contentMarketingItems} />

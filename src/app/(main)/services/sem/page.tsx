@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Search Engine Marketing in USA | Dash Media Solutions",
   description: "Drive instant traffic with expert Search Engine Marketing services in USA. Dash Media Solutions offers ROI-focused ads and data-driven SEM strategies. Grow today!",
   keywords: ["Search Engine Marketing Services in USA", "Digital Marketing Agency in USA", "Digital Marketing Services in USA"],
+  alternates: {
+    canonical: "https://dashmediasolutions.com/services/sem",
+  },
 };
 
 const semItems = [
@@ -37,6 +40,7 @@ const semItems = [
 export default function SemServicePage() {
     return (
         <>
+            <h1 className="sr-only">Search Engine Marketing in USA | Dash Media Solutions</h1>
             <SemStrategySection />
             <SemToolkits />
             <MarqueeSeparator items={semItems} />

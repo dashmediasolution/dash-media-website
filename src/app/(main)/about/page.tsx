@@ -56,6 +56,7 @@ export default function AboutUsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <h1 className="sr-only">About Dash Media: Top Digital Marketing Agency in USA</h1>
       <AboutCompany/>
       <MarqueeSeparator />
       <AboutIntro />

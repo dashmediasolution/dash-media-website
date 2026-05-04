@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Social Media Marketing Services in USA: Dash Media Solutions",
   description: "Boost your brand with social media marketing services in USA. We skip the fluff to focus on real growth and ROI. See how Dash Media makes social work for you.",
   keywords: ["Social Media Marketing Services in USA", "Digital Marketing Agency in USA", "Digital Marketing Services in USA"],
+  alternates: {
+    canonical: "https://dashmediasolutions.com/services/social-media-marketing",
+  },
 };
 
 const socialMediaItems = [
@@ -37,6 +40,7 @@ const socialMediaItems = [
 export default function SocialMediaServicePage() {
   return (
     <>
+      <h1 className="sr-only">Social Media Marketing Services in USA: Dash Media Solutions</h1>
       <SocialStrategySection/>
       <SocialToolkits/>
       <MarqueeSeparator items={socialMediaItems} />

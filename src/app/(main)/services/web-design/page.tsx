@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Expert Web Design Services in USA | Dash Media Solutions",
   description: "We offer web design services in USA to take your brand to the next level. Our top-level websites are fully responsive and support traffic growth and performance.",
   keywords: ["Web Design Services in USA", "Digital Marketing Services in USA", "Digital Marketing Agency in USA"],
+  alternates: {
+    canonical: "https://dashmediasolutions.com/services/web-design",
+  },
 };
 
 const webDesignItems = [
@@ -33,6 +36,7 @@ const webDesignItems = [
 export default function WebDesignServicePage() {
   return (
     <>
+     <h1 className="sr-only">Expert Web Design Services in USA | Dash Media Solutions</h1>
      <WebStrategySection/>
      <WebToolkits/>
      <MarqueeSeparator items={webDesignItems} />

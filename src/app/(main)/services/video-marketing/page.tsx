@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Video Marketing Services in USA | Dash Media Solutions",
   description: "Stop blending in. Use video marketing services in USA to tell your story and actually convert viewers. No more boring ads—just high-impact content that works.",
   keywords: ["Video Marketing Services in USA", "Digital Marketing Services in USA", "Digital Marketing Agency in USA"],
+  alternates: {
+    canonical: "https://dashmediasolutions.com/services/video-marketing",
+  },
 };
 
 const videoMarketingItems = [
@@ -38,6 +41,7 @@ const videoMarketingItems = [
 export default function VideoServicePage() {
   return (
     <>
+    <h1 className="sr-only">Video Marketing Services in USA | Dash Media Solutions</h1>
     <VideoStrategySection/>
     <VideoToolkits/>
     <MarqueeSeparator items={videoMarketingItems} />
