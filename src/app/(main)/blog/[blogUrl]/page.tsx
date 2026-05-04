@@ -157,7 +157,7 @@ export default async function BlogPostPage({ params }: Props) {
       />
       
       {/* --- Header Section (Magazine Style) --- */}
-      <div className="border-b border-gray-100 bg-blue-50">
+      <header className="border-b border-gray-100 bg-blue-50">
         <div className="container mx-auto px-5 sm:px-10 lg:px-20 pt-28 md:pt-36 pb-12 md:pb-20 max-w-7xl text-center">
           
           <div className="flex items-center justify-center gap-2 mb-6 md:mb-8">
@@ -186,7 +186,7 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
 
         </div>
-      </div>
+      </header>
 
       {/* --- Two Column Layout --- */}
       <div className="container mx-auto px-5 sm:px-10 lg:px-20 max-w-7xl mt-12 md:mt-20">

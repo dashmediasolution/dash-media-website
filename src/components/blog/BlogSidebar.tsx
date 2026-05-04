@@ -10,9 +10,9 @@ export function BlogSidebar({ categories, latestPosts, currentCategory }: { cate
       {/* Categories Section */}
       <div className="border rounded-lg p-6 hidden md:flex flex-col">
         <div className="flex items-center  justify-between mb-8 border-b border-black/5 pb-3">
-          <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+          <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-primary">
             All Categories
-          </h4>
+          </h3>
 
           {/* ✅ Clear Filter Button (Visible only when a category is active) */}
           {currentCategory && (
@@ -47,9 +47,9 @@ export function BlogSidebar({ categories, latestPosts, currentCategory }: { cate
 
       {/* Latest Posts Thumbnails */}
       <div>
-        <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-primary mb-6 border-b border-black/10 pb-2">
+        <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-primary mb-6 border-b border-black/10 pb-2">
           Latest Posts
-        </h4>
+        </h3>
         <div className="space-y-6">
           {latestPosts.map((post) => (
             <Link key={post.id} href={`/blog/${post.blogUrl}`} className="flex gap-4 group">
@@ -60,9 +60,9 @@ export function BlogSidebar({ categories, latestPosts, currentCategory }: { cate
                 <span className="text-xs font-bold text-muted-foreground mb-1 uppercase tracking-tighter">
                   {new Date(post.createdAt).toLocaleDateString("en-US", { month: 'long', day: 'numeric' })}
                 </span>
-                <h5 className="text-sm font-bold text-primary group-hover:text-accent transition-colors leading-tight line-clamp-2">
+                <h4 className="text-sm font-bold text-primary group-hover:text-accent transition-colors leading-tight line-clamp-2">
                   {post.headline}
-                </h5>
+                </h4>
               </div>
             </Link>
           ))}

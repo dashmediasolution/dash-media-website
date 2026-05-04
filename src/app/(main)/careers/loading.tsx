@@ -2,10 +2,10 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 export default function CareersLoading() {
   return (
-    <div className="min-h-screen bg-white pb-32">
+    <main className="min-h-screen bg-white pb-32">
       
       {/* --- Page Header Skeleton (Matches Editorial Style) --- */}
-      <section className="bg-blue-50 border-b border-gray-100 pt-32 pb-20 md:pt-40 md:pb-24">
+      <header className="bg-blue-50 border-b border-gray-100 pt-32 pb-20 md:pt-40 md:pb-24">
         <div className="container mx-auto px-5 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 items-end gap-10">
             <div className="space-y-4">
@@ -27,13 +27,14 @@ export default function CareersLoading() {
             </div>
           </div>
         </div>
-      </section>
+      </header>
 
       {/* --- Marquee Placeholder --- */}
       <div className="h-12 w-full bg-gray-50 border-y border-gray-100 animate-pulse" />
 
       {/* --- JOB LIST SECTION SKELETON --- */}
-      <div className="container mx-auto px-6 max-w-6xl mt-12">
+      <section className="container mx-auto px-6 max-w-6xl mt-12">
+        <h2 className="sr-only">Loading Open Positions</h2>
         <div className="flex flex-col">
           
           {/* Header Row Skeleton */}
@@ -84,7 +85,7 @@ export default function CareersLoading() {
             </div>
           ))}
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
