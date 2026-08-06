@@ -16,7 +16,7 @@ export async function BlogSection() {
   return (
     <section className="py-20 bg-blue-50">
       <div className="container mx-auto px-5 sm:px-20">
-        
+
         {/* --- Header --- */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div className="max-w-3xl space-y-3">
@@ -30,8 +30,8 @@ export async function BlogSection() {
               </span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Deep dives into the trends shaping the future of digital marketing.
-            </p>
+              Want the best digital
+              Marketing services in USA?            </p>
           </div>
 
           <Link href="/blog" className="hidden md:flex items-center font-bold text-xs text-primary hover:opacity-70 transition-opacity uppercase tracking-widest mb-2">
@@ -43,10 +43,10 @@ export async function BlogSection() {
         {latestBlogs.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {latestBlogs.map((blog) => (
-              <BlogCard 
-                  key={blog.id} 
-                  blog={blog} 
-                  // Removed hideDescription={true} so they look exactly like service cards (with text)
+              <BlogCard
+                key={blog.id}
+                blog={blog}
+              // Removed hideDescription={true} so they look exactly like service cards (with text)
               />
             ))}
           </div>

@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { 
-  Facebook, 
-  Instagram, 
-  Twitter, 
+import {
+  Facebook,
+  Instagram,
+  Twitter,
   ArrowRight,
   Linkedin,
   Youtube,
@@ -83,8 +83,9 @@ export function Footer() {
             {/* Left Content Column */}
             <div className="lg:col-span-6 px-8 py-12 md:px-20 md:py-20 flex flex-col items-start text-left">
               <h2 className="text-4xl md:text-5xl font-semibold tracking-tighter text-primary leading-[1.05] mb-10">
-                Ready to architect
-                your  <br /> digital growth?
+                Want the best digital
+
+                <br />Marketing services in USA
               </h2>
 
               <Link href="/contact">
@@ -190,7 +191,7 @@ export function Footer() {
         {/* --- Bottom Row: Copyright --- */}
         <div className="mt-24 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-[11px] font-medium text-muted-foreground uppercase tracking-widest">
-            © {new Date().getFullYear()} Dash Media Solutions. Engineered for Excellence.
+            © 2026 Dash Media Solutions | Expert Digital Marketing Services.
           </p>
           <div className="flex gap-8">
             <span className="text-[11px] font-bold text-primary/30 uppercase tracking-tighter">SEO Specialist</span>

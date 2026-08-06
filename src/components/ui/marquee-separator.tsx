@@ -4,25 +4,16 @@ import { motion } from "framer-motion";
 import { Sparkle } from "lucide-react"; // Using Lucide icons for the star
 
 const services = [
-  "Elite SEO Services in USA",
-  "The Best Digital Marketing Agency in USA",
-  "Expert USA SEO Marketing Services",
-  "Data-Driven Performance Marketing",
-  "SEO Strategies That Scale",
-  "Top Search Engine Optimization Services in USA",
-  "Digital Marketing Services in USA to Boost Organic Traffic",
-  "Search Engine Growth Experts",
-  "Sustainable Ranking Excellence",
-  "Maximize Your Organic Reach",
-  "Scale with SEO Services in USA",
-  "Data-Driven SEO Excellence",
-  "Elevate Your Global Search Visibility",
-  "Organic Growth with Our Digital Marketing Agency in USA",
-  "Results-Driven SEO Services in USA",
-  "Dominating Search Rankings Through Data",
-  "Digital Marketing Agency in USA to Next-Level SEO",
-  "Mastering Search Engine Performance Globally",
-  "Comprehensive SEO Services in USA"
+"Full-Funnel Search Engine Visibility",
+"Algorithmic Search Optimization",
+'Modern High-Performance Web Development',
+'Brand Storytelling &amp; Thought Leadership',
+'Full-Funnel Social Brand Building',
+'High-Impact Commercial Video Production',
+'Contextual Native Ad Targeting',
+'Enterprise Custom Software &amp; App Development',
+'Full-Stack Digital Marketing Agency in USA',
+'Performance Search Advertising &amp; Retargeting',
 ];
 
 export function MarqueeSeparator({ items = services }: { items?: string[] }) {

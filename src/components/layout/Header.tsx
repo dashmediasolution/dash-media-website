@@ -39,7 +39,7 @@ const services = [
     { name: 'Search Engine Optimization (SEO)', description: 'Boost your visibility on search engines', href: '/services/seo', icon: ChartPieIcon },
     { name: 'Web Design', description: 'Creative and responsive websites for your brand', href: '/services/web-design', icon: ComputerDesktopIcon },
     { name: 'Content Marketing', description: 'Engaging content that tells your brand’s story', href: '/services/content-marketing', icon: PencilSquareIcon },
-    { name: 'Social Media Marketing', description: 'Build and engage your community across platforms', href: '/services/social-media', icon: ShareIcon },
+    { name: 'Social Media Marketing', description: 'Build and engage your community across platforms', href: '/services/social-media-marketing', icon: ShareIcon },
     { name: 'Video Marketing', description: 'Compelling video content that captures attention', href: '/services/video-marketing', icon: PlayCircleIcon },
     { name: 'Native Advertising', description: 'Ads that blend seamlessly with platform content', href: '/services/native-advertising', icon: MegaphoneIcon },
     { name: 'App Development', description: 'Custom mobile apps for iOS and Android', href: '/services/app-development', icon: DevicePhoneMobileIcon },
