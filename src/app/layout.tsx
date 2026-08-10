@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "@/app/globals.css"
+import "@/app/globals.css";
 import { cn } from "@/lib/utils";
 import Providers from "@/components/Provider";
 import { Toaster } from "sonner";
- import Script from "next/script"; // 👈 Import the Next.js Script component
- 
- 
+import Script from "next/script";
+
 const fontSans = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -27,7 +26,7 @@ export const metadata: Metadata = {
     ],
   },
 
-  // ✅ iOS Specific behavior
+  // iOS Specific behavior
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -48,7 +47,6 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-<<<<<<< HEAD
         {/* Google Analytics Scripts */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-WPGVVH2EQ3"
@@ -63,8 +61,6 @@ export default function RootLayout({
           `}
         </Script>
 
-=======
->>>>>>> 1f3e878 (change content)
         <Providers>
           {children}
         </Providers>
