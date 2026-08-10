@@ -64,8 +64,7 @@ export function Faq() {
                 </span>
               </h2>
               <p className="text-md sm:text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                Still struggling with concerns about digital marketing services in USA? Read our FAQs or contact our team if you need additional information.
-              </p>
+Connect with our team to find the answers to all of your questions.              </p>
             </div>
 
             {/* Accordion List */}

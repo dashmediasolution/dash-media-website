@@ -15,7 +15,7 @@ const strategyData = [
   {
     id: "02",
     title: "Content Creation & Publishing",
-    description: "After a lot of study and analysis, our teams produced content that has a unique balance of being engaging and appealing to audiences.",
+    description: "Based on thorough research and analysis, our teams develop content that uniquely balances being engaging and appealing to audiences.",
     image: "/images/strategy/planning.png", 
     imageBg: "bg-purple-50/30",
     bgColor: "bg-white",

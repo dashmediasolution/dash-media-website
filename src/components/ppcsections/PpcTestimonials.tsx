@@ -15,19 +15,19 @@ import {
 const testimonials = [
   {
     avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=300",
-    name: "Aman Khurana",
+    name: "Greg Mercer",
     role: "Marketing Manager, B2B Services Company",
     review: "Dash Media Solutions delivered outstanding PPC results for our business. Their keyword targeting, ad optimization, and continuous monitoring reduced our cost per acquisition while increasing qualified leads.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300",
-    name: "Devansh Mehra",
+    name: "David Miller",
     role: "Founder, E-Commerce Brand",
     review: "Their PPC expertise helped us scale quickly. From initial campaign setup to optimization, the Dash Media Solutions team focused on efficiency at every stage. After live, we witnessed traffic improvements and steady conversion growth within weeks.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300",
-    name: "Shreya Bansal",
+    name: "Lauren Bennett",
     role: "Head of Digital Marketing, Technology Firm",
     review: "Working with Dash Media Solutions really transformed our paid marketing. Their data-based approach, attractive ad copy, and accurate audience targeting led us to higher CTA and measurable revenue growth.",
   },
