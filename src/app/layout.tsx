@@ -4,12 +4,9 @@ import "@/app/globals.css"
 import { cn } from "@/lib/utils";
 import Providers from "@/components/Provider";
 import { Toaster } from "sonner";
-<<<<<<< HEAD
-import Script from "next/script"; // 👈 Import the Next.js Script component
-=======
-
->>>>>>> 1f3e878 (change content)
-
+ import Script from "next/script"; // 👈 Import the Next.js Script component
+ 
+ 
 const fontSans = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
