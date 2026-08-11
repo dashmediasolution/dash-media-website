@@ -15,19 +15,19 @@ import {
 const testimonials = [
   {
     avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=300",
-    name: "Rajesh Singhal",
+    name: "Rhys Gallagher",
     role: "Director of Product Development, Software Company",
     review: "So far, I’m very impressed with the work of Dash Media Solutions on my app project. They understood the requirement properly and suggested their insight to improve the user experience and provide detailed support.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300",
-    name: "Karan Oberoi",
+    name: "Hamish MacLeod",
     role: "VP of Engineering, IT Services Firm",
     review: "It's been a pleasure working with Dash Media Solutions; their team is prominent and responds to every request. They share timely updates for the app service and provide detailed insights that automate user functions.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300",
-    name: "Mehak Chawla",
+    name: "Hamish MacLeod",
     role: "Chief Technology Officer (CTO), SaaS Organization",
     review: "Dash Media Solutions successfully created and deployed our mobile app. Later, the app was released on the app stores smoothly. Their team is currently updating the app to enhance the user experience. Highly recommended!",
   },

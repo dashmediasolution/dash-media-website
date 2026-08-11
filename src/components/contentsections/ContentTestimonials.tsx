@@ -16,21 +16,21 @@ const testimonials = [
     {
 
         avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=300",
-        name: "Rajeev Ranjan",
+        name: "Caleb Brooks",
         role: "Operations Lead, Service-Based Business",
         review: "Dash Media Solutions helped us with their dedicated effort in content marketing, which boosted our website traffic and reach. Their team provides us with the right strategy that results in 3x more impressions in the first month.",
     },
     {
        
         avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300",
-        name: "Adit Singh",
+        name: "AEthan Miller",
         role: "Co-Founder, E-commerce Company",
         review: "We greatly appreciate the service and support from Dash Media Solutions. With their help, we managed to create content authority for our target topics, which improved our content ranking and monthly traffic.",
     },
     {
        
         avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300",
-        name: "Riya Kapoor",
+        name: "Sierra Jenkins",
         role: "Head of Marketing, Professional Services Firm",
         review: "We highly recommend the content marketing service! We partnered with Dash Media Solutions for over a year, and their professional support helped us a lot with finding the right audience and increasing overall traffic.",
     },

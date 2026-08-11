@@ -15,15 +15,15 @@ import {
 const testimonials = [
   {
     avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=300",
-    name: "Sameer Deshmukh",
+    name: "Colton Mercer",
     role: "Business Strategy Lead, Growth-Focused Company",
     review: "Working with Dash Media Solutions was beneficial; they helped us automate marketing. Their team is easy to work with and manages multiple campaigns effortlessly, resulting in enhanced visibility and performance.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300",
-    name: "Rishi Vardhan",
+    name: "Waylon Reed",
     role: "Operations Manager, Digital Services Company",
-    review: "We started with less than 1,000 email addresses, and now, thanks to Dash Media Solution, we have 20,000 daily recipients. They work exceptionally and quickly, advertising our business like we never before.",
+    review: "We started with less than 1,000 email addresses, and now, thanks to Dash MediaSolutions, we have 20,000 daily recipients. They work exceptionally and quickly,advertising our business as we have never before..",
   },
   {
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300",

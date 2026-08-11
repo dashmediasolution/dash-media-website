@@ -20,7 +20,7 @@ const faqs = [
     answer: "Content marketing produces organic results as content is published, increasing visibility,authority, and trust over time. While noticeable improvements can be seen within 2-3 months with a solid strategy, stronger inbound demand typically develops later.",
   },
   {
-    question: "Is content marketing ideal for my business?",
+    question: "Will content marketing be a perfect fit for your business?",
     answer: "Content marketing is a limitless tool that can help multiple business types—brands, service-based businesses, and even complex-offering organizations. It helps your brand grow its audience and convert reach into potential customers. That’s why content marketing can also help you improve your online growth, no matter your business type or model. ",
   },
   {

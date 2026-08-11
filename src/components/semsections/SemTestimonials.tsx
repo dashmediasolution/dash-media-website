@@ -15,19 +15,19 @@ import {
 const testimonials = [
   {
     avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=300",
-    name: "Vikram Sethi",
+    name: "Marcus Brooks",
     role: "Business Strategy Lead, Growth-Focused Company",
     review: "Dash Media Solutions' premier SEM solutions are definitely game-changing. They helped us with a complete search engine marketing strategy to promote our business worldwide. And honestly, we are impressed with the marketing results.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300",
-    name: "Kabir Thapar",
+    name: "Tyler Lawson",
     role: "Operations Manager, Digital Services Company",
     review: "We were new to the industry and kinda lost in the way of marketing. Then we partnered with Dash Media Solutions. Their expertise and powerful approaches helped us a lot. Thanks to them, we delivered some of the exceptional campaigns in our industry, which drew newer clients and connections.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300",
-    name: "Riya Kapoor",
+    name: "Amanda Cross",
     role: "Product Manager, Mobile & Web Applications Firm",
     review: "Working with Dash Media Solutions was fascinating. They assisted us in optimizing our search engine marketing strategy, which delivered effective results and improved analytic performance. Thanks to their support, we also performed relevant targeting to enhance our visibility.",
   },

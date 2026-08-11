@@ -16,22 +16,22 @@ const testimonials = [
     {
 
         avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=300",
-        name: "Yashwin Kapoor",
+        name: "Thaddeus Holt",
         role: "Co-Founder, Digital Commerce Startup",
         review: "Dash Media transformed our online presence completely with their stunning web design. Thanks to that, we are able to increase our clients' conversion rate to 40% within two months.",
     },
     {
        
         avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300",
-        name: "Aditya Mehta",
+        name: "Barrett Hayes",
         role: "Founder & CEO, E-commerce Company",
         review: "Outstanding team and support. They completed our e-commerce website ahead of time and it works flawlessly. The website is user friendly and works great across all devices, improving the browsing experience for our customers.",
     },
     {
        
         avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300",
-        name: "Kritika Sharma",
-        role: "Marketing Director, Consulting Company",
+        name: "Jubilee Miller",
+        role: "Managing Director, Consulting Service",
         review: "They completely understand and perfectly capture our brand's essence. Our customers love the color and style of our site. Due to this, it increased our users' engagement while reducing the bounce rate to 32% in the last month.",
     },
 ];

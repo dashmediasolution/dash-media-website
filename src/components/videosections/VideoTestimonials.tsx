@@ -15,19 +15,19 @@ import {
 const testimonials = [
   {
     avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=300",
-    name: "Vikram Malhotra",
-    role: "Chief Marketing Officer (CMO), Services Organization",
+    name: "Archie Bennett",
+    role: "Chief Operations Officer, DTC Brand",
     review: "Since we started working with Dash Media Solutions, our ability to get leads has changed. We've gotten 35% more leads in just three months. Their tools are great, and their video marketing strategy works.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300",
-    name: "Arjun Singhania",
+    name: "Harrison Croft",
     role: "Managing Director, Service-Based Business",
     review: "As a startup, we were struggling to establish ourselves in the industry as well as online. In this journey, we made a wise choice by partnering with Dash Media Solutions. Their expertise not only granted us presence but also a steady flow of conversions to sustain.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300",
-    name: "Ishani Verma",
+    name: "Isla Davenport",
     role: "Chief Executive Officer (CEO), Technology Firm",
     review: "Video marketing wasn’t working for us until we discovered Dash Media Solutions. Their expertise blends detailed methods with advanced tools to ensure the effectiveness of the marketing campaign and deliver growth results.",
   },

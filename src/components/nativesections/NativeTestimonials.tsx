@@ -15,20 +15,20 @@ import {
 const testimonials = [
   {
     avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=300",
-    name: "Rohan Khanna",
+    name: "Zachary Haye",
     role: "Head of Marketing, Enterprise Company",
     review: "Working with Dash Media Solutions was a pleasure. They helped us to navigate our native advertising campaigns, which were fully developed without ruining the user experience. Their team understands our user base and provides detailed, valuable insight to improve performance results.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300",
-    name: "Siddharth Rao",
-    role: "Founder & Principal Consultant, Consulting Agency",
+    name: "Wyatt Crawford",
+    role: "Founder &amp; Consultant, Consulting Agency",
     review: "We were amazed by witnessing the seamless integration of native ads into high-authority platforms by Dash Media Solutions. With their strategic approach, we improved our brand visibility as well as click-through rates while maintaining content relevance.",
   },
   {
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300",
-    name: "Ananya Iyer",
-    role: "Chief Operations Officer (COO), Solutions Provider",
+    name: "Clara Brown",
+    role: "Chief Operations Officer, SaaS Solution",
     review: "Working with Dash Media Solutions transformed our whole paid media strategy forever. With their support, we managed to reach the right audience at the right time. The result is consistent traffic growth and measurable ROI across all campaigns.",
   },
 ];

@@ -16,23 +16,23 @@ const testimonials = [
     {
 
         avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=300",
-        name: "Raj Verma",
+        name: "Logan Carter",
         role: "Entrepreneur, Online & Service Businesses",
         review: "Dash Media Solutions did an amazing job with our social media marketing. Their team manages our social media handles professionally, delivering a perfect welcoming vibe to engage with. With their help, we managed to increase our reach and community in a very short time.",
     },
     {
        
         avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=300",
-        name: "Akash Dhull",
+        name: "Dylan Parker",
         role: "Founder, Direct-to-Consumer Brand",
         review: "Working with Dash Media Solutions was an excellent experience for us. They took charge of creating and publishing all our social media content. With their detailed research and timely monitoring, the result is a fully transformed online presence with better engagement.",
     },
     {
        
         avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300",
-        name: "Kanchan Uppal",
+        name: "Aaliyah Myers",
         role: "Growth Lead, Service-Based Organization",
-        review: "For us, selecting Dash Media Solutions was a wise choice. They support us with the strategic content plan as well as proactive audience engagement. Their team is very professional and focuses its actions to drive interaction to boost visual impressions!",
+        review: "Choosing Dash Media Solutions was a smart decision for us. They assist with ourstrategic content planning and actively engage with the audience. Their team is highly professional and dedicated to increasing interactions to improve visual impressions.",
     },
 ];
 
