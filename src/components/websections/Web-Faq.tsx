@@ -70,7 +70,7 @@ export function Faq() {
                   key={index}
                   value={`item-${index}`}
                   className="border-b border-gray-100 px-0"
-                >
+                 >
                   <CustomAccordionTrigger className="hover:no-underline text-left font-bold text-xl py-6 text-primary">
                     {faq.question}
                   </CustomAccordionTrigger>

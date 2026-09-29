@@ -89,7 +89,7 @@ export function Testimonials() {
                         
                         <div className="relative z-10 flex flex-col items-center w-full mb-5">
                             <div className="text-7xl font-bold tracking-tighter mb-2">4.7</div>
-                            
+
                             {/* ✅ FIX 1: Added 'justify-center' to stars */}
                             <div className="flex gap-1 mb-4 text-yellow-400 justify-center">
                                 {[...Array(5)].map((_, i) => (
@@ -104,8 +104,7 @@ export function Testimonials() {
                             </p>
                         </div>
 
-                        {/* Avatar Stack */}
-                        {/* ✅ FIX 1: Added 'justify-center' to wrapper */}
+ 
                         <div className="mt-0 flex items-center justify-center relative z-10">
                             <div className="flex -space-x-4">
                                 {teamImages.map((src, i) => (
@@ -204,4 +203,4 @@ export function Testimonials() {
             </div>
         </section>
     );
-}
+  }

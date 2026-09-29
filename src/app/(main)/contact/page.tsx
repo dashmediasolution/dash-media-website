@@ -43,33 +43,74 @@ export default function ContactPage() {
                     {/* --- LEFT COLUMN: Sticky Contact Details --- */}
                     <div className="lg:col-span-4 order-2 lg:order-1">
                         <div className="lg:sticky lg:top-10 space-y-12">
+<div>
+  <h2 className="text-xl font-bold text-primary mb-4 tracking-tight">
+    Contact Information
+  </h2>
 
-                            <div>
-                                <h2 className="text-xl font-bold text-primary mb-4 tracking-tight">Contact Information</h2>
-                                <div className="space-y-6">
-                                    <div className="group">
-                                        <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-2">Email Us</p>
-                                        <a href="mailto:support@dashmediasolutions.com" className="text-md sm:text-lg font-medium text-primary hover:text-accent transition-colors flex items-center gap-2">
-                                            support@dashmediasolutions.com <ArrowUpRight className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-all" />
-                                        </a>
-                                    </div>
+  <div className="space-y-6">
 
-                                    <div>
-                                        <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-2">Visit Us</p>
-                                        <p className="text-md sm:text-lg font-medium text-primary leading-tight">
-                                            A-2, First Floor, Shankar Garden, Opposite Metro Pillar 620, Vikaspuri, Delhi, 110018
-                                        </p>
-                                    </div>
+    {/* Email */}
+    <div className="group">
+      <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-2">
+        Email Us
+      </p>
 
-                                    <div className="group">
-                                        <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-2">Call Us</p>
-                                        <a href="tel:+9199110 60907" className="text-md sm:text-lg font-medium text-primary hover:text-accent transition-colors flex items-center gap-2">
-                                            +91 99110 60907 <ArrowUpRight className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-all" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+      <a
+        href="mailto:support@dashmediasolutions.com"
+        className="text-md sm:text-lg font-medium text-primary hover:text-accent transition-colors flex items-center gap-2"
+      >
+        support@dashmediasolutions.com
 
+        <ArrowUpRight className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-all" />
+      </a>
+    </div>
+
+    {/* Delhi Office */}
+    <div>
+      <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-2">
+        India Office
+      </p>
+
+      <p className="text-md sm:text-lg font-medium text-primary leading-tight">
+        A-2, First Floor, Shankar Garden,
+        <br />
+        Opposite Metro Pillar 620,
+        <br />
+        Vikaspuri, Delhi, 110018
+      </p>
+    </div>
+
+    {/* Second Office */}
+    <div>
+      <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-2">
+        USA Office
+      </p>
+
+      <p className="text-md sm:text-lg font-medium text-primary leading-tight">
+       30 North Gould Street, Suite R, Sheridan, WY 82801 United State
+ 
+      </p>
+    </div>
+
+    {/* Phone */}
+    <div className="group">
+      <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-2">
+        Call Us
+      </p>
+
+      <a
+        href="tel:+919911060907"
+        className="text-md sm:text-lg font-medium text-primary hover:text-accent transition-colors flex items-center gap-2"
+      >
+        +91 99110 60907
+
+        <ArrowUpRight className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-all" />
+      </a>
+    </div>
+
+  </div>
+</div>
         
                         </div>
                     </div>

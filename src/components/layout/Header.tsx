@@ -144,7 +144,9 @@ export function Header() {
                     <Link href="/about" className="text-base font-semibold leading-6 text-primary hover:underline underline-offset-4">
                         About Us
                     </Link>
-
+  <Link href="/contact" className="text-base font-semibold leading-6 text-primary hover:underline underline-offset-4">
+                        Contact Us
+                    </Link>
                     <Popover className="relative">
                         {({ open, close }) => (
                             <div
@@ -294,6 +296,13 @@ export function Header() {
                                     onClick={() => setMobileMenuOpen(false)}
                                 >
                                     About Us
+                                </Link>
+                                 <Link
+                                    href="/contact"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-primary hover:underline underline-offset-4"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Contact Us
                                 </Link>
                                 <Disclosure as="div" className="-mx-3">
                                     <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-primary hover:underline underline-offset-4">
